@@ -1,0 +1,376 @@
+{
+  "arithmetic": "integers and fractions.Fraction; no binary floating point",
+  "nodes": [
+    {
+      "dependencies": [],
+      "expression": "1/200",
+      "id": "theta_out",
+      "kind": "exact_rational",
+      "role": "outer saddle sector",
+      "source": "Phase 21 / Phase 18",
+      "value": "1/200"
+    },
+    {
+      "dependencies": [
+        "theta_out"
+      ],
+      "expression": "1/400",
+      "id": "theta_boundary",
+      "kind": "exact_rational",
+      "role": "Cauchy boundary sector",
+      "source": "Phase 18",
+      "value": "1/400"
+    },
+    {
+      "dependencies": [
+        "theta_boundary"
+      ],
+      "expression": "1/800",
+      "id": "theta_center",
+      "kind": "exact_rational",
+      "role": "Cauchy center sector",
+      "source": "Phase 18",
+      "value": "1/800"
+    },
+    {
+      "dependencies": [],
+      "expression": "1/1000",
+      "id": "eta",
+      "kind": "exact_rational",
+      "role": "complex domain containment",
+      "source": "Phase 18",
+      "value": "1/1000"
+    },
+    {
+      "dependencies": [],
+      "expression": "1/1000",
+      "id": "delta_C",
+      "kind": "exact_rational",
+      "role": "nested-sector Cauchy gap",
+      "source": "Phase 18",
+      "value": "1/1000"
+    },
+    {
+      "dependencies": [
+        "delta_C"
+      ],
+      "expression": "delta_C^(-6)",
+      "id": "cauchy_sixth_loss",
+      "kind": "exact_integer",
+      "role": "raw sixth-derivative Cauchy loss",
+      "source": "Phase 18",
+      "value": "1000000000000000000"
+    },
+    {
+      "dependencies": [],
+      "expression": "8",
+      "id": "C_J",
+      "kind": "exact_integer",
+      "role": "single-factor Gershgorin radius",
+      "source": "Phase F Lean",
+      "value": "8"
+    },
+    {
+      "dependencies": [
+        "C_J"
+      ],
+      "expression": "12+8*sqrt(6)",
+      "id": "C_loc",
+      "kind": "algebraic",
+      "role": "finite-free product localization",
+      "source": "Phase F Lean / Phase 16",
+      "value": "12+8*sqrt(6)"
+    },
+    {
+      "dependencies": [
+        "C_loc"
+      ],
+      "expression": "32, since sqrt(6)<5/2",
+      "id": "C_loc_upper",
+      "kind": "exact_integer",
+      "role": "rational envelope for C_loc",
+      "source": "Phase E Lean",
+      "value": "32"
+    },
+    {
+      "dependencies": [
+        "C_J"
+      ],
+      "expression": "256",
+      "id": "K_pre",
+      "kind": "exact_integer",
+      "role": "positive factor endpoints",
+      "source": "Phase E Lean",
+      "value": "256"
+    },
+    {
+      "dependencies": [
+        "K_pre",
+        "C_loc_upper"
+      ],
+      "expression": "K_pre*C_loc_upper^2",
+      "id": "K_0",
+      "kind": "exact_integer",
+      "role": "strengthened Jacobi parameter box",
+      "source": "Phase E Lean",
+      "value": "262144"
+    },
+    {
+      "dependencies": [],
+      "expression": "48",
+      "id": "C_0",
+      "kind": "exact_integer",
+      "role": "P0 recurrence coefficient envelope",
+      "source": "Phase 16",
+      "value": "48"
+    },
+    {
+      "dependencies": [
+        "C_loc_upper"
+      ],
+      "expression": "max(3*C_loc_upper,66)",
+      "id": "C_1_upper",
+      "kind": "exact_integer",
+      "role": "P1 recurrence coefficient envelope",
+      "source": "Phase 16",
+      "value": "96"
+    },
+    {
+      "dependencies": [
+        "C_0",
+        "C_1_upper"
+      ],
+      "expression": "4096",
+      "id": "K_r",
+      "kind": "exact_integer",
+      "role": "critical-point derivative radius multiplier",
+      "source": "Phase H",
+      "value": "4096"
+    },
+    {
+      "dependencies": [
+        "K_r",
+        "C_0",
+        "C_1_upper"
+      ],
+      "expression": "8*C_1_upper/K_r+8*C_0/K_r^2",
+      "id": "q_constant",
+      "kind": "exact_rational",
+      "role": "constant Q1+Q0 neighbor contribution",
+      "source": "Phase H",
+      "value": "24579/131072"
+    },
+    {
+      "dependencies": [
+        "q_constant"
+      ],
+      "expression": "1/4-q_constant",
+      "id": "q_constant_margin",
+      "kind": "exact_rational",
+      "role": "strict budget left before vanishing terms",
+      "source": "Phase H",
+      "value": "8189/131072"
+    },
+    {
+      "dependencies": [
+        "K_r"
+      ],
+      "expression": "1/(3*(128*K_r)^2)",
+      "id": "x_q3",
+      "kind": "exact_rational",
+      "role": "forces Q3<=1/8",
+      "source": "Phase H",
+      "value": "1/824633720832"
+    },
+    {
+      "dependencies": [
+        "K_r",
+        "C_1_upper"
+      ],
+      "expression": "K_r^2/(2*(64*C_1_upper)^2)",
+      "id": "x_q1",
+      "kind": "exact_rational",
+      "role": "forces vanishing Q1 part<=1/8",
+      "source": "Phase H",
+      "value": "2/9"
+    },
+    {
+      "dependencies": [
+        "K_0"
+      ],
+      "expression": "1/(2*K_0)",
+      "id": "x_localization",
+      "kind": "exact_rational",
+      "role": "forces B,D>=K_0*d from B,D>=n/2",
+      "source": "Phase H",
+      "value": "1/524288"
+    },
+    {
+      "dependencies": [
+        "eta",
+        "K_r"
+      ],
+      "expression": "eta^2/(48*K_r^2)",
+      "id": "x_domain",
+      "kind": "exact_rational",
+      "role": "forces 2*rho<=eta*n/2 using B<=3n",
+      "source": "Phase H",
+      "value": "1/805306368000000"
+    },
+    {
+      "dependencies": [
+        "eta"
+      ],
+      "expression": "eta/2",
+      "id": "x_linear_domain",
+      "kind": "exact_rational",
+      "role": "forces d<=eta*n/2",
+      "source": "Phase H",
+      "value": "1/2000"
+    },
+    {
+      "dependencies": [
+        "x_q3",
+        "x_q1",
+        "x_localization",
+        "x_domain",
+        "x_linear_domain"
+      ],
+      "expression": "minimum of five exact d/n caps",
+      "id": "x_admissible",
+      "kind": "exact_rational",
+      "role": "common geometry/radius/domain cap",
+      "source": "Phase H",
+      "value": "1/805306368000000"
+    },
+    {
+      "dependencies": [
+        "x_admissible"
+      ],
+      "expression": "ceil(x_admissible^(-3))+1",
+      "id": "K_geometry",
+      "kind": "exact_integer",
+      "role": "wedge constant forcing d/n<x_admissible for n>=2",
+      "source": "Phase H",
+      "value": "522255954073519803473068032000000000000000001"
+    },
+    {
+      "dependencies": [],
+      "expression": "ceil((12*((22/7)*3^12+3/4)+2)/2)",
+      "id": "N_L12",
+      "kind": "exact_integer",
+      "role": "crude sufficient threshold for L_(2n-2)>=12",
+      "source": "Phase H",
+      "value": "10021465"
+    },
+    {
+      "dependencies": [],
+      "expression": "ceil((3^12+2)/2)",
+      "id": "N_exp12",
+      "kind": "exact_integer",
+      "role": "crude sufficient threshold for 2n-2>=e^12",
+      "source": "Phase H",
+      "value": "265722"
+    },
+    {
+      "dependencies": [
+        "N_L12",
+        "N_exp12"
+      ],
+      "expression": "max(128,2,N_L12,N_exp12)",
+      "id": "N_explicit",
+      "kind": "exact_integer",
+      "role": "maximum fully numerical threshold",
+      "source": "Phase H",
+      "value": "10021465"
+    },
+    {
+      "dependencies": [],
+      "expression": "positive absolute constant",
+      "id": "C_B6",
+      "kind": "external_constant",
+      "role": "uniform assembled sixth-derivative bound",
+      "source": "Phase 17 (B6)",
+      "value": null
+    },
+    {
+      "dependencies": [],
+      "expression": "positive integer",
+      "id": "N_analytic",
+      "kind": "external_threshold",
+      "role": "maximum branch/sector/asymptotic threshold",
+      "source": "Phases 15, 18, 21",
+      "value": null
+    },
+    {
+      "dependencies": [
+        "K_r"
+      ],
+      "expression": "3^6*3^3*K_r^6/720",
+      "id": "C_defect_factor",
+      "kind": "exact_rational",
+      "role": "converts C_B6 to the multiplier logarithm bound",
+      "source": "Phase H",
+      "value": "645488468627244630147072/5"
+    },
+    {
+      "dependencies": [
+        "C_defect_factor"
+      ],
+      "expression": "2*C_defect_factor",
+      "id": "C_multiplier_factor",
+      "kind": "exact_rational",
+      "role": "sufficient K coefficient for |exp(E)-1|<=1",
+      "source": "Phase H",
+      "value": "1290976937254489260294144/5"
+    },
+    {
+      "dependencies": [
+        "N_explicit",
+        "N_analytic"
+      ],
+      "expression": "max(N_explicit,N_analytic)",
+      "id": "N_0",
+      "kind": "symbolic",
+      "role": "single eventual proof threshold",
+      "source": "Phase H",
+      "value": null
+    },
+    {
+      "dependencies": [
+        "N_0"
+      ],
+      "expression": "N_0^2*(N_0+2)+1",
+      "id": "K_finite",
+      "kind": "symbolic",
+      "role": "dominates n^2*log(n+2) for every n<N_0",
+      "source": "Phase H",
+      "value": null
+    },
+    {
+      "dependencies": [
+        "K_geometry",
+        "C_multiplier_factor",
+        "C_B6",
+        "K_finite"
+      ],
+      "expression": "max(K_geometry,C_multiplier_factor*C_B6,K_finite)",
+      "id": "K_final",
+      "kind": "symbolic",
+      "role": "one sufficient existential theorem constant",
+      "source": "Phase H",
+      "value": null
+    }
+  ],
+  "policy": "A null value is mandatory for unresolved analytic constants and thresholds. Diagnostics are excluded from K_final.",
+  "summary": {
+    "effectivity_claim": "effective in principle; no useful numerical K claimed",
+    "explicit_geometry_constant": "522255954073519803473068032000000000000000001",
+    "fully_numeric_nodes": 28,
+    "only_unresolved_constant": "C_B6",
+    "only_unresolved_threshold": "N_analytic",
+    "symbolic_final_constant": "max(K_geometry,C_multiplier_factor*C_B6,N_0^2*(N_0+2)+1)",
+    "symbolic_or_external_nodes": 5
+  },
+  "version": 1
+}

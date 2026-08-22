@@ -1,0 +1,391 @@
+PASS package manifest (1282 files)
+PASS candidate/checkpoint cryptographic ancestry proof (44 commits)
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on JENSEN_TWO_THIRDS_MAIN.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "JENSEN_TWO_THIRDS_MAIN.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/jensen-phase-m-pdf.XXXXXX.ShjUe6avAA/JENSEN_TWO_THIRDS_MAIN.pdf` (210.53515625 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.toc" changed ...
+note: Running xdvipdfmx ...
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/jensen-phase-m-pdf.XXXXXX.ShjUe6avAA/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.pdf` (121.0390625 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)
+PASS extraction-local deterministic manuscript replay
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+info: mathlib: checking out revision '51e6992efd06126df61a496bebf8f49482a4e129'
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision '123d15766ba49356c02ebad2a4462dfe12d79899'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision 'f5c090429dff3cf66cb65562526c9ea6e8edfbcb'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision 'bb3469a87774349fe01898d8bf2fc6a1ce6411ca'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '222c58dad7706a6e7cae46c0edd65ea881d3ee27'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '7db8190085343afde2f5d2cdcc9bac719b6ec02c'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision 'ef42f8944eaf5b6cbfbe75d1917d824c7dd6cf33'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision '76e1c118b0700b4ceafe99532e887d6431625e1a'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision '1319485273bf87833fa472afbcefdedecb16b45f'
+✔ [1/5] Built Cache.Cli (340ms)
+✔ [2/5] Built Cache.Lean (425ms)
+✔ [7/26] Built Cache.Infra (329ms)
+✔ [8/26] Built Cache.Cli:c.o (314ms)
+✔ [9/26] Built Cache.Lean:c.o (314ms)
+✔ [10/26] Built Cache.Infra:c.o (171ms)
+✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (663ms)
+✔ [12/26] Built Cache.IO (1.0s)
+✔ [13/26] Built Cache.Hashing (752ms)
+✔ [14/26] Built Cache.IO:c.o (881ms)
+✔ [15/26] Built Cache.Hashing:c.o (281ms)
+✔ [16/26] Built Cache.Requests (1.3s)
+✔ [17/26] Built Cache.Marker (690ms)
+✔ [18/26] Built Cache.Marker:c.o (138ms)
+✔ [19/26] Built Cache.Requests:c.o (1.4s)
+✔ [20/26] Built Cache.Query (734ms)
+✔ [21/26] Built Cache.Query:c.o (226ms)
+✔ [22/26] Built Cache.Warning (720ms)
+✔ [23/26] Built Cache.Warning:c.o (206ms)
+✔ [24/26] Built Cache.Main (990ms)
+✔ [25/26] Built Cache.Main:c.o (533ms)
+✔ [26/26] Built cache:exe (1.2s)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Decompressing 8489 already-cached file(s) (192 already decompressed)
+No files to download
+Decompressed 8489 already-cached file(s)
+Completed successfully in 56334 ms!
+PASS Phase-25 metadata: baseline ancestry/logs, T1--T18 assurance, acyclic dependencies, Lean declarations, normalizations, and asymptotic-language inventory
+PASS semantic mutation rejected: missing T15 -> T16 seam
+PASS semantic mutation rejected: T2/T18 dependency cycle
+PASS semantic mutation rejected: unsupported green T1 classification
+PASS semantic mutation rejected: hidden MMP input
+PASS semantic mutation rejected: stale external HG dependency
+PASS semantic mutation rejected: fifth-for-sixth wedge exponent
+PASS semantic mutation rejected: factor-eight factorial transposition
+PASS semantic mutation rejected: positive branch point
+PASS semantic mutation rejected: H6 coefficientwise majorant
+PASS all Phase-25 semantic baseline mutations
+PASS phase24 exact interval certificates
+PASS Mathematica M1--M4 evidence: exact hashes, exact ledger, no external-input operations
+PASS Phase H effectivity ledger: exact DAG, explicit geometry K, symbolic final K, and honest analytic boundary
+PASS expanded manuscript sources, equations, references, review language, and PDFs
+PASS behavioral mutation rejected: sector nesting
+PASS behavioral mutation rejected: simplex mass 1/120
+PASS behavioral mutation rejected: factor-eight factorial
+PASS behavioral mutation rejected: branch coordinate permutation
+PASS behavioral mutation rejected: center-only contraction certificate
+PASS behavioral mutation rejected: hypergeometric recurrence sign
+PASS behavioral mutation rejected: Jacobi squared threshold
+PASS behavioral mutation rejected: fifth-for-sixth wedge exponent
+PASS behavioral mutation rejected: review overclaim
+PASS behavioral mutation rejected: branch interval endpoint
+PASS behavioral mutation rejected: vertical contour Gaussian sign
+PASS behavioral mutation rejected: log-gamma versus log-M bridge
+PASS behavioral mutation rejected: stale limiting-system elimination
+PASS behavioral mutation rejected: first-failure higher-neighbor inference
+PASS all Phase-K behavioral mutations fail for mathematical reasons
+PASS reproducibility inventory: platform/toolchain pins, Mathlib commit, Python artifact hashes, immutable CI actions, checkpoint ancestry, and Mathematica hashes
+PASS deterministic Git bundle: two byte-identical builds, exact HEAD, required-checkpoint ancestry, and clean reconstruction
+PASS VERIFY_ALL quick
+PASS Phase-25 metadata: baseline ancestry/logs, T1--T18 assurance, acyclic dependencies, Lean declarations, normalizations, and asymptotic-language inventory
+PASS semantic mutation rejected: missing T15 -> T16 seam
+PASS semantic mutation rejected: T2/T18 dependency cycle
+PASS semantic mutation rejected: unsupported green T1 classification
+PASS semantic mutation rejected: hidden MMP input
+PASS semantic mutation rejected: stale external HG dependency
+PASS semantic mutation rejected: fifth-for-sixth wedge exponent
+PASS semantic mutation rejected: factor-eight factorial transposition
+PASS semantic mutation rejected: positive branch point
+PASS semantic mutation rejected: H6 coefficientwise majorant
+PASS all Phase-25 semantic baseline mutations
+PASS Hermite--Genocchi source contract
+PASS Hermite--Genocchi mutation rejected: simplex mass 1/120
+PASS Hermite--Genocchi mutation rejected: outer Jacobian exponent 4
+PASS Hermite--Genocchi mutation rejected: fifth derivative substituted
+PASS Hermite--Genocchi mutation rejected: repeated-FTC identity disconnected
+PASS Hermite--Genocchi mutation rejected: sixth node transposed
+PASS Hermite--Genocchi mutation rejected: localized repeated-FTC identity disconnected
+PASS Hermite--Genocchi mutation rejected: Newton premise restored
+PASS all Hermite--Genocchi semantic mutations
+PASS elementary cube source contract
+PASS elementary mutation rejected: reverse forward difference
+PASS elementary mutation rejected: q3 loses factorial
+PASS elementary mutation rejected: q4 sign flip
+PASS elementary mutation rejected: scale exponent shift
+PASS elementary mutation rejected: remote product dropped
+PASS elementary mutation rejected: half shift doubled
+PASS elementary mutation rejected: x/e term inverted
+PASS all elementary cube semantic mutations
+PASS exact terminating 3F2 properties: 27 tuples, 2355 identities
+PASS terminating 3F2 source contract
+PASS hypergeometric mutation rejected: lambda scale transposed
+PASS hypergeometric mutation rejected: derivative degree unshifted
+PASS hypergeometric mutation rejected: Euler constant dropped
+PASS hypergeometric mutation rejected: zeroth sign flipped
+PASS hypergeometric mutation rejected: finite producer disconnected
+PASS all terminating 3F2 semantic mutations
+PASS exact branch intervals: margins, inner inclusion, inverse norm, ordering extrema, half-radius factor, and K_pre -> C_loc -> K_0
+PASS quantitative branch source contract
+PASS branch mutation rejected: coordinate permutation
+PASS branch mutation rejected: inverse norm weakened
+PASS branch mutation rejected: center residual doubled
+PASS branch mutation rejected: center-only Jacobian
+PASS branch mutation rejected: contraction removed
+PASS branch mutation rejected: C_loc transposed
+PASS branch mutation rejected: threshold regressed
+PASS branch mutation rejected: typed builder disconnected
+PASS all quantitative branch semantic mutations
+PASS 909 exact finite-free/Jacobi adapter checks: reflection, diagonal displacement, reciprocal/product endpoints, and localization
+PASS finite-free/Jacobi source contract
+PASS finite-free mutation rejected: ascending sign
+PASS finite-free mutation rejected: descending exponent
+PASS finite-free mutation rejected: binomial removed
+PASS finite-free mutation rejected: reflection disconnected
+PASS finite-free mutation rejected: Gershgorin constant
+PASS finite-free mutation rejected: root-eigenvalue source hidden
+PASS finite-free mutation rejected: reciprocal MSS half removed
+PASS finite-free mutation rejected: localization constant disconnected
+PASS finite-free mutation rejected: mesh not strict
+PASS finite-free mutation rejected: MMP seam hidden
+PASS all finite-free/Jacobi semantic mutations
+PASS phase24 exact interval certificates
+PASS Mathematica M1--M4 evidence: exact hashes, exact ledger, no external-input operations
+PASS Arb/ACB source contract
+PASS Arb/ACB mutation rejected: omega factor transposed
+PASS Arb/ACB mutation rejected: factor eight dropped
+PASS Arb/ACB mutation rejected: k tail deleted
+PASS Arb/ACB mutation rejected: Rouche remainder deleted
+PASS Arb/ACB mutation rejected: Rouche strictness weakened
+PASS Arb/ACB mutation rejected: Q check deleted
+PASS Arb/ACB mutation rejected: connector loosened
+PASS Arb/ACB mutation rejected: higher modes deleted
+PASS Arb/ACB mutation rejected: root separation deleted
+PASS Arb/ACB mutation rejected: uniformity overclaimed
+PASS Arb/ACB mutation rejected: human review overclaimed
+PASS all Arb/ACB semantic mutations
+PASS Phase H effectivity ledger: exact DAG, explicit geometry K, symbolic final K, and honest analytic boundary
+PASS effectivity source contract
+PASS effectivity mutation rejected: C_loc transposed
+PASS effectivity mutation rejected: K_pre regressed
+PASS effectivity mutation rejected: C0 hidden
+PASS effectivity mutation rejected: C1 hidden
+PASS effectivity mutation rejected: K_r chosen before bounds
+PASS effectivity mutation rejected: neighbor margin removed
+PASS effectivity mutation rejected: domain cap removed
+PASS effectivity mutation rejected: C_B6 fabricated
+PASS effectivity mutation rejected: analytic threshold fabricated
+PASS effectivity mutation rejected: finite range omitted
+PASS effectivity mutation rejected: analytic constant omitted from K
+PASS effectivity mutation rejected: diagnostic promoted
+PASS all effectivity semantic mutations
+PASS analytic-adapter source contract
+PASS analytic-adapter mutation rejected: center moved from one half
+PASS analytic-adapter mutation rejected: odd derivative used
+PASS analytic-adapter mutation rejected: factor eight dropped
+PASS analytic-adapter mutation rejected: factorial omitted
+PASS analytic-adapter mutation rejected: order five substituted
+PASS analytic-adapter mutation rejected: curvature seam deleted
+PASS all analytic-adapter semantic mutations
+PASS manuscript factor-eight equation regression (n=0..4, max relative error 2.3963e-37)
+PASS manuscript critical-point radius regression (correct K_r=0.880246, stale-scale ratio=14681.5)
+PASS all Phase-24 manuscript equation regressions
+PASS manuscript semantic mutation rejected: factor eight changed to four
+PASS manuscript semantic mutation rejected: horizontal contour made vertical
+PASS manuscript semantic mutation rejected: legal shifted ray changed to a full line
+PASS manuscript semantic mutation rejected: phase absorbs the Jacobian and loses the saddle
+PASS manuscript semantic mutation rejected: leading contour alias is disconnected
+PASS manuscript semantic mutation rejected: auxiliary moment changed to gamma
+PASS manuscript semantic mutation rejected: global maximum changed to first failure
+PASS manuscript semantic mutation rejected: leading-system elimination transposed
+PASS manuscript semantic mutation rejected: branch evidence overclaimed
+PASS manuscript semantic mutation rejected: gamma-factor subtraction omitted
+PASS manuscript semantic mutation rejected: horizontal tail variable made stale
+PASS manuscript semantic mutation rejected: expanded recurrence gains an extra m
+PASS manuscript semantic mutation rejected: effectivity threshold name made undefined
+PASS manuscript semantic mutation rejected: complete axiom audit changed to incomplete predecessor
+PASS all manuscript semantic mutations fail on production source
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on JENSEN_TWO_THIRDS_MAIN.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "JENSEN_TWO_THIRDS_MAIN.toc" changed ...
+note: Running xdvipdfmx ...
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_MAIN.aux` (12.384765625 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_MAIN.log` (8.123046875 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_MAIN.pdf` (210.53515625 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_MAIN.bbl` (1.421875 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_MAIN.blg` (209 B)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_MAIN.toc` (4.45703125 KiB)
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.log` (8.0751953125 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.blg` (225 B)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.pdf` (121.0390625 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.toc` (1.41796875 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.bbl` (268 B)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.D2zCyL7oU8/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.aux` (3.7861328125 KiB)
+PASS expanded manuscript sources, equations, references, review language, and PDFs
+PASS behavioral mutation rejected: sector nesting
+PASS behavioral mutation rejected: simplex mass 1/120
+PASS behavioral mutation rejected: factor-eight factorial
+PASS behavioral mutation rejected: branch coordinate permutation
+PASS behavioral mutation rejected: center-only contraction certificate
+PASS behavioral mutation rejected: hypergeometric recurrence sign
+PASS behavioral mutation rejected: Jacobi squared threshold
+PASS behavioral mutation rejected: fifth-for-sixth wedge exponent
+PASS behavioral mutation rejected: review overclaim
+PASS behavioral mutation rejected: branch interval endpoint
+PASS behavioral mutation rejected: vertical contour Gaussian sign
+PASS behavioral mutation rejected: log-gamma versus log-M bridge
+PASS behavioral mutation rejected: stale limiting-system elimination
+PASS behavioral mutation rejected: first-failure higher-neighbor inference
+PASS all Phase-K behavioral mutations fail for mathematical reasons
+PASS reproducibility inventory: platform/toolchain pins, Mathlib commit, Python artifact hashes, immutable CI actions, checkpoint ancestry, and Mathematica hashes
+✔ [8697/8711] Built Zeta23.Defs (5.3s)
+✔ [8698/8711] Built Zeta23.XiPrime.Defs (3.0s)
+✔ [8699/8711] Built Zeta23.Research.JensenWedge.AnalyticAdapters (4.3s)
+✔ [8700/8711] Built Zeta23.Research.JensenWedge.ElementaryCubeBounds (14s)
+✔ [8701/8711] Built Zeta23.Research.JensenWedge.DirectRecurrence (14s)
+✔ [8702/8711] Built Zeta23.Research.JensenWedge.MultiplierStability (14s)
+⚠ [8703/8711] Built Zeta23.Research.JensenWedge.HermiteGenocchiCube (14s)
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:71: This simp argument is unused:
+  I₃
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:64: This simp argument is unused:
+  I₂
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:57: This simp argument is unused:
+  I₁
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:157:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:180:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [8704/8711] Built Zeta23.Research.JensenWedge.LeadingSystem (16s)
+✔ [8705/8711] Built Zeta23.Research.JensenWedge.ConditionalAssembly (14s)
+✔ [8706/8711] Built Zeta23.Research.JensenWedge.TerminatingHypergeometric (15s)
+⚠ [8707/8711] Built Zeta23.Research.JensenWedge.ElementaryCubeCalculus (16s)
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:128:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8708/8711] Built Zeta23.Research.JensenWedge.HermiteGenocchiFTC (16s)
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:40:33: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:111:14: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hermiteGenocchiTriangleMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:127:19: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hermiteGenocchiTriangleMass, C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8709/8711] Built Zeta23.Research.JensenWedge.ComplexHermiteGenocchi (14s)
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:150:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:195:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [8710/8711] Built Zeta23.Research.JensenWedge.QuantitativeBranch (16s)
+⚠ [8711/8711] Built Zeta23.Research.JensenWedge.FiniteFreeAdapters (15s)
+warning: Zeta23/Research/JensenWedge/FiniteFreeAdapters.lean:104:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (8711 jobs).

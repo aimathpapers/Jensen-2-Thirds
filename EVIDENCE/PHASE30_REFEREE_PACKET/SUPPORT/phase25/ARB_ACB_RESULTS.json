@@ -1,0 +1,211 @@
+{
+  "coefficient_normalizations": {
+    "coverage": "The omitted theta and infinite-u tails are bounded analytically over their complete ranges, not sampled.",
+    "orders": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rows": [
+      {
+        "direct_completed_zeta": "[0.497120778188314109912773739685397720 +/- 1.93e-37]",
+        "direct_omega_overlap": true,
+        "n": 0,
+        "omega_absolute_tail_bound": "[1.09211716166713419165124399468034805e-65 +/- 4.01e-101]",
+        "omega_kernel": "[0.497120778188314109912773739685397720 +/- 1.93e-37]"
+      },
+      {
+        "direct_completed_zeta": "[0.0114859721575727187676249382488160851 +/- 3.23e-38]",
+        "direct_mellin_overlap": true,
+        "direct_omega_overlap": true,
+        "mellin_F_combination": "[0.0114859721575727187676249382488160851 +/- 3.23e-38]",
+        "n": 1,
+        "omega_absolute_tail_bound": "[2.37321211349821722766409789927090038e-70 +/- 2.26e-106]",
+        "omega_kernel": "[0.0114859721575727187676249382488160851 +/- 3.23e-38]"
+      },
+      {
+        "direct_completed_zeta": "[0.000246904036140636013780691582989702276 +/- 2.72e-40]",
+        "direct_mellin_overlap": true,
+        "direct_omega_overlap": true,
+        "mellin_F_combination": "[0.000246904036140636013780691582989702276 +/- 2.72e-40]",
+        "n": 2,
+        "omega_absolute_tail_bound": "[3.09424808986087011489461785506776575e-74 +/- 4.81e-110]",
+        "omega_kernel": "[0.000246904036140636013780691582989702276 +/- 2.72e-40]"
+      },
+      {
+        "direct_completed_zeta": "[4.99413288831316243202855235506772422e-6 +/- 1.76e-42]",
+        "direct_mellin_overlap": true,
+        "direct_omega_overlap": true,
+        "mellin_F_combination": "[4.99413288831316243202855235506772422e-6 +/- 1.76e-42]",
+        "n": 3,
+        "omega_absolute_tail_bound": "[1.00858781091996516847707021384843488e-77 +/- 4.45e-113]",
+        "omega_kernel": "[4.99413288831316243202855235506772422e-6 +/- 1.76e-42]"
+      }
+    ],
+    "status": "PASS",
+    "theta_terms_integrated": 6,
+    "u_cutoff": 4
+  },
+  "contour_grid": [
+    {
+      "absolute_ratio_error_upper": "[0.00189262647275127048287310037589142736 +/- 1.63e-39]",
+      "angle": "0",
+      "central_window_relative_error_upper": "[5.36848536199984014163591464172785665e-19 +/- 9.68e-56]",
+      "connector_relative_upper": "[7.78708840536339261632212455323900114e-104 +/- 4.39e-140]",
+      "higher_mode_relative_uppers": {
+        "2": "[1.88893420915529517577992229826416717e-46 +/- 3.77e-82]",
+        "3": "[6.96983397230422806285912762776796177e-46 +/- 4.97e-82]"
+      },
+      "main_to_gaussian_ratio": "[1.00189262647275127048287310037 +/- 5.90e-30] + I*([+/- 7.50e-30])",
+      "radius": 200,
+      "scope": "Certified values at this grid point; not a uniform sector proof."
+    },
+    {
+      "absolute_ratio_error_upper": "[0.00189262821877860042618863888301998740 +/- 3.89e-39]",
+      "angle": "0.01",
+      "central_window_relative_error_upper": "[5.37369578319186318397727374073441981e-19 +/- 4.19e-55]",
+      "connector_relative_upper": "[3.79454230936995548200689087416107517e-74 +/- 1.81e-110]",
+      "higher_mode_relative_uppers": {
+        "2": "[2.37564064399213986131114129932027925e-45 +/- 2.90e-81]",
+        "3": "[1.69311536737546632162047600042990754e-63 +/- 2.61e-99]"
+      },
+      "main_to_gaussian_ratio": "[1.00189256250253492630457773807 +/- 8.75e-30] + I*([-1.57717632430512939286102330248e-5 +/- 7.57e-30])",
+      "radius": 200,
+      "scope": "Certified values at this grid point; not a uniform sector proof."
+    },
+    {
+      "absolute_ratio_error_upper": "[0.000586330369420665801442197070314366018 +/- 3.30e-41]",
+      "angle": "0.01",
+      "central_window_relative_error_upper": "[5.19754938341640114275936043282394577e-29 +/- 2.1e-67]",
+      "connector_relative_upper": "[8.21756128384995956046228055350963544e-414 +/- 1.28e-450]",
+      "higher_mode_relative_uppers": {
+        "2": "[2.29667272807219932689355181845321890e-77 +/- 3.82e-113]",
+        "3": "[2.07826333070772842583819486415610475e-99 +/- 3.87e-135]"
+      },
+      "main_to_gaussian_ratio": "[1.00058630886266337029710924620 +/- 1.18e-29] + I*([-5.02191869305128655024723009919e-6 +/- 1.73e-29])",
+      "radius": 800,
+      "scope": "Certified values at this grid point; not a uniform sector proof."
+    }
+  ],
+  "derivative_tower": {
+    "method": "ACB implicit local power series; no symbolic derivative formulas",
+    "rows": [
+      {
+        "expected_asymptotic_constant": 2,
+        "normalized_enclosure": "[1.92000425321618740557796491038227241 +/- 2.35e-36]",
+        "order": 2,
+        "relative_difference_upper": "[0.0399978733919062972110175448088637938 +/- 2.70e-38]"
+      },
+      {
+        "expected_asymptotic_constant": -2,
+        "normalized_enclosure": "[-1.99372866009578683859503406456385048 +/- 4.90e-36]",
+        "order": 3,
+        "relative_difference_upper": "[0.00313566995210658070248296771807475755 +/- 3.04e-39]"
+      },
+      {
+        "expected_asymptotic_constant": 4,
+        "normalized_enclosure": "[4.06672552653730906824520351413804708 +/- 6.05e-37]",
+        "order": 4,
+        "relative_difference_upper": "[0.0166813816343272670613008785345117698 +/- 4.90e-38]"
+      },
+      {
+        "expected_asymptotic_constant": -12,
+        "normalized_enclosure": "[-12.3648729490545347022190112967613704 +/- 1.65e-35]",
+        "order": 5,
+        "relative_difference_upper": "[0.0304060790878778918515842747301142014 +/- 3.24e-38]"
+      },
+      {
+        "expected_asymptotic_constant": 48,
+        "normalized_enclosure": "[49.9666072209554991077765555971015089 +/- 2.02e-35]",
+        "order": 6,
+        "relative_difference_upper": "[0.0409709837699062314120115749396147683 +/- 2.93e-38]"
+      }
+    ],
+    "scope": "Finite-x enclosure corroborating, not proving, the asymptotic limit.",
+    "status": "PASS",
+    "x": 1000000000000
+  },
+  "finite_jensen_roots": {
+    "rows": [
+      {
+        "d": 3,
+        "isolated_pairwise_disjoint_negative_root_boxes": [
+          "[-81.4862672686576843 +/- 4.40e-6] + I*([7.43e-26 +/- 4.40e-6])",
+          "[-60.8624743968248367 +/- 6.11e-6] + I*([+/- 6.11e-6])",
+          "[-41.7719073295593262 +/- 2.09e-6] + I*([+/- 2.09e-6])"
+        ],
+        "n": 5
+      },
+      {
+        "d": 4,
+        "isolated_pairwise_disjoint_negative_root_boxes": [
+          "[-99.8315313160419464 +/- 5.06e-5] + I*([-2.5641381379e-17 +/- 5.06e-5])",
+          "[-80.5041215717792511 +/- 1.09e-4] + I*([4.1855e-22 +/- 1.09e-4])",
+          "[-63.6862775385379791 +/- 7.96e-5] + I*([-3.5236570e-19 +/- 7.96e-5])",
+          "[-47.0223308652639389 +/- 1.51e-5] + I*([4.1633363423e-17 +/- 1.51e-5])"
+        ],
+        "n": 10
+      },
+      {
+        "d": 5,
+        "isolated_pairwise_disjoint_negative_root_boxes": [
+          "[-123.392446756362915 +/- 5.89e-4] + I*([-1.315611573e-17 +/- 5.89e-4])",
+          "[-104.756006509065628 +/- 2.07e-3] + I*([2.117e-22 +/- 2.07e-3])",
+          "[-88.8772970438003540 +/- 2.16e-3] + I*([1.8566962e-18 +/- 2.16e-3])",
+          "[-73.9577883481979370 +/- 8.78e-4] + I*([-4.90518e-21 +/- 8.78e-4])",
+          "[-58.6350754648447037 +/- 1.29e-4] + I*([1.3010426069e-16 +/- 1.29e-4])"
+        ],
+        "n": 20
+      }
+    ],
+    "scope": "Finite examples only; these do not imply the asymptotic wedge.",
+    "status": "PASS"
+  },
+  "fresh_exact_recurrence": {
+    "arithmetic": "fractions.Fraction",
+    "cross_multiplied_exact_identities": 406,
+    "seed": "0xC48",
+    "status": "PASS",
+    "tuples": 64
+  },
+  "precision_decimal_digits": 120,
+  "python_flint_version": "0.6.0",
+  "saddle_box_certificates": [
+    {
+      "Q_abs_lower": "[799.641517613905736834669627749051604 +/- 2.57e-34]",
+      "angle": "0",
+      "radius": 200,
+      "root_center": "[3.03269728618055456085865256964 +/- 2.64e-30] + I*(0)",
+      "root_disc_radius": "[1.41421356237309504880168872420969808e-32 +/- 1.44e-68]",
+      "rouche_lhs": "[1.41421356616538655537270681068175493e-40 +/- 3.46e-76]",
+      "rouche_rhs": "[3.72890457745100046563849779824549627e-30 +/- 9.74e-67]",
+      "s_parameter_box": "[200.000000000000000000000000000 +/- 1e-32] + I*([+/- 1.01e-40])",
+      "unique_root_and_nonzero_derivative": true
+    },
+    {
+      "Q_abs_lower": "[799.642650007346719110167754540598193 +/- 3.19e-34]",
+      "angle": "0.01",
+      "radius": 200,
+      "root_center": "[3.03269515903230974023691877795 +/- 4.08e-30] + I*([0.00758514429693001922885606605684 +/- 1.91e-34])",
+      "root_disc_radius": "[1.41421356237309504880168872420969808e-32 +/- 1.44e-68]",
+      "rouche_lhs": "[1.41421356737494178750971428767003280e-40 +/- 1.51e-76]",
+      "rouche_rhs": "[3.72890081025785417330278327785328101e-30 +/- 2.17e-66]",
+      "s_parameter_box": "[199.990000083333055556051586750 +/- 4.42e-28] + I*([1.99996666683333293650848765382 +/- 5.44e-32])",
+      "unique_root_and_nonzero_derivative": true
+    },
+    {
+      "Q_abs_lower": "[4083.37476383489392437881191463863876 +/- 6.56e-34]",
+      "angle": "0.01",
+      "radius": 800,
+      "root_center": "[4.12012615947679942019977465585 +/- 3.60e-30] + I*([0.00807201450833496342333980553543 +/- 2.60e-34])",
+      "root_disc_radius": "[1.41421356237309504880168872420969808e-32 +/- 1.44e-68]",
+      "rouche_lhs": "[1.41421356737494178751056991329494046e-40 +/- 3.80e-76]",
+      "rouche_rhs": "[1.40159613202091443260452193498778185e-29 +/- 8.65e-66]",
+      "s_parameter_box": "[799.960000333332222224206347002 +/- 2.35e-28] + I*([7.99986666733333174603395061528 +/- 2.17e-31])",
+      "unique_root_and_nonzero_derivative": true
+    }
+  ],
+  "status": "PASS",
+  "trust_boundary": "Arb/ACB directed enclosures and explicit analytic tails prove the individual recorded inequalities. Finite contour/root grids are regression evidence and do not prove uniform sectorial asymptotics or the two-thirds theorem. No human or peer review is claimed."
+}

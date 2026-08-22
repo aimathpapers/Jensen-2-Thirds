@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "date": "2026-08-19",
+  "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
+  "base_commit": "125d36d5b4519178f31b4d37cdf63a70c603be7e",
+  "order": ["A", "B", "C", "D", "E", "F"],
+  "stages": [
+    {
+      "id": "A",
+      "claim_ids": ["T2", "T6", "T9", "T13", "T14"],
+      "description": "exact algebra and concrete finite certificates",
+      "status": "complete",
+      "closure": "order-six rational identity, whole-bidisc bound, and exact rational certificate constructors build in Lean"
+    },
+    {
+      "id": "B",
+      "claim_ids": ["T1"],
+      "description": "concrete xi/theta/Mellin identity",
+      "status": "complete",
+      "closure": "factor-eight coefficient theorem has no uninstantiated Mellin premise"
+    },
+    {
+      "id": "C",
+      "claim_ids": ["T2"],
+      "description": "quantitative sectorial saddle",
+      "status": "complete",
+      "closure": "concrete SectorialSaddleCertificate exists on the fixed sector"
+    },
+    {
+      "id": "D",
+      "claim_ids": ["T3"],
+      "description": "leading contour and Gaussian localization",
+      "status": "complete",
+      "closure": "uniform leading-mode contour certificate is constructed"
+    },
+    {
+      "id": "E",
+      "claim_ids": ["T4"],
+      "description": "higher theta modes",
+      "status": "complete",
+      "closure": "uniform infinite-mode suppression certificate is constructed"
+    },
+    {
+      "id": "F",
+      "claim_ids": ["T5", "T6", "T15", "T18"],
+      "description": "sectorial coefficient theorem and downstream instantiation",
+      "status": "complete",
+      "closure": "the exact complex coefficient theorem, xi branch, six-coefficient comparison, finite-free specialization, critical-point localization, and normalized critical-radius bound are kernel checked; the approved stronger-middle endpoint leaves the final xi-specific sixth-multiplier instantiation and the typed Jacobi/MMP/MSS literature inputs outside this phase"
+    }
+  ]
+}

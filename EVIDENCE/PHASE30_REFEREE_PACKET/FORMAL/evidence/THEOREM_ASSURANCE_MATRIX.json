@@ -1,0 +1,171 @@
+{
+  "version": 4,
+  "date": "2026-08-21",
+  "formal_endpoint": "Phase-30 xi-specific multiplier and headline closure over the Phase-28 literal T5 endpoint; Phase-29 Palomar candidate locally verified, official replay pending",
+  "review_status": "AI review only; no human or peer review",
+  "policy": "Green means the claim-specific contribution is kernel checked with concrete hypotheses supplied, though amber dependencies remain load-bearing. Amber names a concrete unformalized or imported boundary. Colors are not probabilities.",
+  "claims": [
+    {
+      "id": "T1",
+      "statement": "Exact xi/Mellin coefficient identity",
+      "assurance": "green",
+      "dependencies": [],
+      "external_inputs": [],
+      "lean_declarations": ["centeredXiCoefficient_eq_omegaMoment", "iteratedDeriv_centeredXi_eq_eight_omegaMoment"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T2",
+      "statement": "Sectorial saddle branch",
+      "assurance": "green",
+      "dependencies": [],
+      "external_inputs": [],
+      "lean_declarations": ["leanSectorialSaddleCertificate", "quantitativeSaddleBranch_curvature_ne_zero"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T3",
+      "statement": "Leading contour and Gaussian localization",
+      "assurance": "green",
+      "dependencies": ["T2"],
+      "external_inputs": [],
+      "lean_declarations": ["leading_infinite_rectangle_identity", "quantitativeSaddleBranch_leadingTopRay_relative_error_le"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T4",
+      "statement": "Uniform suppression of higher theta modes",
+      "assurance": "green",
+      "dependencies": ["T2", "T3"],
+      "external_inputs": [],
+      "lean_declarations": ["quantitativeSaddleBranch_fullThetaTopRay_relative_error_le", "quantitativeSaddleBranch_fullThetaMoment_relative_error_le"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T5",
+      "statement": "Sectorial xi-coefficient asymptotic",
+      "assurance": "green",
+      "dependencies": ["T1", "T2", "T3", "T4"],
+      "external_inputs": [],
+      "lean_declarations": ["manuscriptTheoremSevenOne_effective", "manuscriptTheoremSevenOne", "manuscriptPaperRelativeError_derivatives_through_six"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T6",
+      "statement": "Logarithmic derivatives through order six",
+      "assurance": "green",
+      "dependencies": ["T5"],
+      "external_inputs": [],
+      "lean_declarations": ["manuscriptG0SixthIdentification_of_mem_sector", "saddleH6_norm_lt_tenThousand"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T7",
+      "statement": "Quotient-to-six-coefficient adapter",
+      "assurance": "green",
+      "dependencies": [],
+      "external_inputs": [],
+      "lean_declarations": ["fourQuotients_twoNormalizations_sixCoefficients", "exp_sixCoefficients_of_log_sixCoefficients"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T8",
+      "statement": "Elementary C1 cube-integral estimates",
+      "assurance": "green",
+      "dependencies": ["T6"],
+      "external_inputs": [],
+      "lean_declarations": ["exactElementaryParameterMap_outerBox_value_error", "exactElementaryAffine_jacobianIntervalCertificate"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T9",
+      "statement": "Exact positive xi parameter branch and six matches",
+      "assurance": "green",
+      "dependencies": ["T7", "T8"],
+      "external_inputs": [],
+      "lean_declarations": ["exactXiPositiveParameterBranch_of_explicitCutoff", "xiNaturalSixPolynomialCoefficients_match_comparison_of_explicitCutoff"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T10",
+      "statement": "Positive simple Jacobi factors",
+      "assurance": "amber",
+      "dependencies": ["T9"],
+      "external_inputs": ["Jacobi"],
+      "lean_declarations": ["XiNaturalClassicalRootInputs.first_factor_interval", "XiNaturalClassicalRootInputs.second_scaled_factor_interval"],
+      "remaining_boundary": "Classical Jacobi root/matrix correspondence and entry bounds are typed literature inputs."
+    },
+    {
+      "id": "T11",
+      "statement": "Positive simple finite-free comparison polynomial",
+      "assurance": "amber",
+      "dependencies": ["T9", "T10"],
+      "external_inputs": ["MMP"],
+      "lean_declarations": ["xiNaturalComparisonPolynomial_eq_finiteFree_of_explicitCutoff", "XiNaturalClassicalRootInputs.comparison_hasDistinctPositiveRoots"],
+      "remaining_boundary": "MMP v3 real-root and logarithmic-mesh results are typed literature inputs."
+    },
+    {
+      "id": "T12",
+      "statement": "Root and critical-point localization",
+      "assurance": "amber",
+      "dependencies": ["T10", "T11"],
+      "external_inputs": ["Jacobi", "MMP", "MSS"],
+      "lean_declarations": ["XiNaturalClassicalRootInputs.comparison_root_localization", "XiNaturalClassicalRootInputs.comparison_critical_localization"],
+      "remaining_boundary": "MSS Theorem 1.6 and the T10/T11 literature inputs are typed rather than re-proved."
+    },
+    {
+      "id": "T13",
+      "statement": "Shifted hypergeometric recurrence",
+      "assurance": "green",
+      "dependencies": [],
+      "external_inputs": [],
+      "lean_declarations": ["terminating3F2_euler_ode", "terminating3F2_shifted_fourTerm_recurrence"],
+      "remaining_boundary": ""
+    },
+    {
+      "id": "T14",
+      "statement": "Critical-point derivative radius",
+      "assurance": "green",
+      "dependencies": ["T12", "T13"],
+      "external_inputs": [],
+      "lean_declarations": ["FourTermCriticalRadiusCertificate.derivative_radius", "xiNaturalComparison_critical_radius_of_explicitCutoff"],
+      "remaining_boundary": "The concrete theorem consumes the amber T12 literature-input record."
+    },
+    {
+      "id": "T15",
+      "statement": "Order-six multiplier defect",
+      "assurance": "green",
+      "dependencies": ["T6", "T7", "T8", "T9", "T14"],
+      "external_inputs": [],
+      "lean_declarations": ["hermiteGenocchiSix_remainder_bound_on", "manuscriptSixthResidual_outerBox_rate", "xiNaturalConcreteMultiplier_six_nodes", "xiNaturalConcreteMultiplier_sub_one_norm_lt_one_on_tube"],
+      "remaining_boundary": "The concrete theorem consumes the T14 radius and earlier analytic chain."
+    },
+    {
+      "id": "T16",
+      "statement": "Multiplier stability",
+      "assurance": "green",
+      "dependencies": ["T12", "T15"],
+      "external_inputs": [],
+      "lean_declarations": ["multiplierIntervalCertificate_of_complete_roots", "xiNatural_multiplierIntervalCertificate", "MultiplierIntervalCertificate.actual_hasDistinctPositiveRoots"],
+      "remaining_boundary": "The concrete certificate consumes the amber T10--T12 literature-input record."
+    },
+    {
+      "id": "T17",
+      "statement": "Positive-to-negative Jensen scaling",
+      "assurance": "green",
+      "dependencies": ["T16"],
+      "external_inputs": [],
+      "lean_declarations": ["xiNaturalActualLogPolynomial_eq_comparisonMultiplierTransform_of_explicitCutoff", "xiNaturalActualLogPolynomial_roots_to_riemannXi", "JensenWedgeCertificate.target_hasDistinctNegativeRoots"],
+      "remaining_boundary": "The concrete certificate and typed root inputs are supplied upstream."
+    },
+    {
+      "id": "T18",
+      "statement": "Main two-thirds wedge",
+      "assurance": "green",
+      "dependencies": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16", "T17"],
+      "external_inputs": ["Jacobi", "MMP", "MSS"],
+      "lean_declarations": ["riemannXiJensen_twoThirds_low_degree", "riemannXiJensen_twoThirds_headline"],
+      "remaining_boundary": "Classical Jacobi/MMP/MSS results remain explicitly typed theorem inputs."
+    }
+  ]
+}

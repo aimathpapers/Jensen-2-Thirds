@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "claims": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "assurance": {
+            "enum": ["green", "amber", "red"]
+          },
+          "channels": {
+            "items": {
+              "enum": [
+                "arb_acb",
+                "exact_cas",
+                "high_precision",
+                "lean_kernel",
+                "paper_proof",
+                "primary_source",
+                "separated_ai_review"
+              ]
+            },
+            "minItems": 2,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "critical": {
+            "type": "boolean"
+          },
+          "dependencies": {
+            "items": {
+              "pattern": "^T([1-9]|1[0-8])$",
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "external_inputs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "id": {
+            "pattern": "^T([1-9]|1[0-8])$",
+            "type": "string"
+          },
+          "lean_declarations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "paper_source": {
+            "type": "string"
+          },
+          "remaining_boundary": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "upgrade_phase": {
+            "pattern": "^Phase [A-N]$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "statement",
+          "critical",
+          "dependencies",
+          "external_inputs",
+          "paper_source",
+          "lean_declarations",
+          "channels",
+          "assurance",
+          "remaining_boundary",
+          "upgrade_phase"
+        ],
+        "type": "object"
+      },
+      "maxItems": 18,
+      "minItems": 18,
+      "type": "array"
+    },
+    "date": {
+      "format": "date",
+      "type": "string"
+    },
+    "policy": {
+      "type": "string"
+    },
+    "version": {
+      "const": 1
+    }
+  },
+  "required": ["version", "date", "policy", "claims"],
+  "type": "object"
+}

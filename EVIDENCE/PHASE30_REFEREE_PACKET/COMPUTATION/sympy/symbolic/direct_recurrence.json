@@ -1,0 +1,70 @@
+{
+  "central_coefficient_over_n_limit": "t",
+  "coefficient_order": [
+    "T_(m+3)",
+    "T_(m+2)",
+    "T_(m+1)",
+    "T_m"
+  ],
+  "coefficients": [
+    "-(-A*C + D*y)/(A*C)",
+    "(A*B*C + A*C*D + 2*A*C*m + A*C - A*D*y - C*D*y + D*d*y - 3*D*m*y - 3*D*y)/(A*C)",
+    "(A*B*C*D + A*B*C*m + A*C*D*m - A*C*D*y + A*C*m**2 + A*D*d*y - 2*A*D*m*y - A*D*y + C*D*d*y - 2*C*D*m*y - C*D*y + 2*D*d*m*y + D*d*y - 3*D*m**2*y - 3*D*m*y - D*y)/(A*C)",
+    "D*y*(A + m)*(C + m)*(d - m)/(A*C)"
+  ],
+  "elimination_identity_checks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "epsilon": "(C-D)/C",
+  "interpretation": "On the target branch the central T_(m+2) coefficient is asymptotic to 2n. The non-small epsilon term reinforces this coefficient in the exact direct recurrence instead of being estimated as an error.",
+  "ode_coefficient_checks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "ode_coefficients": [
+    "-(-A*C + D*y)/(A*C)",
+    "(A*B*C + A*C*D + 2*A*C*m + A*C - A*D*y - C*D*y + D*d*y - 3*D*m*y - 3*D*y)/(A*C)",
+    "(A*B*C*D + A*B*C*m + A*C*D*m - A*C*D*y + A*C*m**2 + A*D*d*y - 2*A*D*m*y - A*D*y + C*D*d*y - 2*C*D*m*y - C*D*y + 2*D*d*m*y + D*d*y - 3*D*m**2*y - 3*D*m*y - D*y)/(A*C)",
+    "D*y*(A + m)*(C + m)*(d - m)/(A*C)"
+  ],
+  "ode_polynomial_sample_checks": 31,
+  "ode_polynomial_samples": [
+    [
+      37,
+      11,
+      7,
+      3,
+      5
+    ],
+    [
+      101,
+      13,
+      17,
+      5,
+      6
+    ],
+    [
+      29,
+      7,
+      11,
+      4,
+      4
+    ],
+    [
+      4000,
+      2100,
+      1800,
+      1000,
+      12
+    ]
+  ],
+  "scope": "Exact m-shifted 3F2 ODE provenance, algebraic elimination, and leading-coefficient audit only. Uniform coefficient inequalities and the maximum argument are paper steps.",
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "target_split_value": "2"
+}

@@ -1,0 +1,40 @@
+{
+  "degrees": [
+    6,
+    8,
+    10
+  ],
+  "formal_status": "not proved",
+  "interpretation": "At one high-precision finite branch point, the derivative ratios at every computed critical point satisfy the proposed radius with K<1 for degrees 6, 8, and 10. This is a mechanism diagnostic, not a uniform theorem.",
+  "parameter_scales_A_B_C_D_over_n": [
+    "28.1757093576040536774137626737",
+    "2.2948112797121262871807026691",
+    "1.68437035763350986896253681636",
+    "1.06573632344350722914168108049"
+  ],
+  "rows": [
+    {
+      "all_roots_and_critical_points_real_at_45_digits": true,
+      "degree": 6,
+      "max_required_radius_constant_K": "0.81755436378346685",
+      "scaled_root_max_y_over_B": "1.02919519940777199",
+      "scaled_root_min_y_over_B": "0.971806327522780066"
+    },
+    {
+      "all_roots_and_critical_points_real_at_45_digits": true,
+      "degree": 8,
+      "max_required_radius_constant_K": "0.857022416810050288",
+      "scaled_root_max_y_over_B": "1.0365139516297697",
+      "scaled_root_min_y_over_B": "0.964960530687524111"
+    },
+    {
+      "all_roots_and_critical_points_real_at_45_digits": true,
+      "degree": 10,
+      "max_required_radius_constant_K": "0.881565573345750205",
+      "scaled_root_max_y_over_B": "1.04293028141365623",
+      "scaled_root_min_y_over_B": "0.959030303376458726"
+    }
+  ],
+  "source_branch_n": 10000,
+  "status": "PASS"
+}

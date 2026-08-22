@@ -1,0 +1,7 @@
+import Zeta23.Research.JensenWedge.ManuscriptTheoremSevenOne
+
+#print axioms Zeta23.Research.JensenWedge.manuscriptOuterSector_parameter_geometry
+#print axioms Zeta23.Research.JensenWedge.manuscriptInnerSector_subset_leanXiCoefficientSector
+#print axioms Zeta23.Research.JensenWedge.manuscriptTheoremSevenOne_effective
+#print axioms Zeta23.Research.JensenWedge.manuscriptTheoremSevenOne
+#print axioms Zeta23.Research.JensenWedge.manuscriptPaperRelativeError_derivatives_through_six

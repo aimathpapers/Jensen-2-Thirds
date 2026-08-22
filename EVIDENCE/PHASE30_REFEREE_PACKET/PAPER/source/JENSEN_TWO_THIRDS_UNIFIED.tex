@@ -1,0 +1,723 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\J}{\mathcal J}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\dd}{\,\mathrm d}
+
+\title{A Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of
+Riemann's Xi-Function\\\large Reader's synopsis and proof map}
+\author{John Savva}
+\date{21 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\fbox{\parbox{0.91\textwidth}{\small
+\textbf{Purpose and review status.} This is a compact synopsis; the maintained
+scholarly sources are the main paper and technical supplement in the
+\texttt{paper} directory.  The user-executed exact Mathematica reconstruction
+completed the independent-CAS checks M1--M4.  Lean now checks the complete
+T1--T5 analytic chain, the exact xi branch through six matches, and the
+critical-radius conclusion under narrow typed literature inputs.  The chosen
+Phase-30 endpoint also constructs the final xi-specific sixth-multiplier
+certificate, connects it to the actual transformed Jensen polynomial, and
+checks the headline conclusion conditional only on those typed inputs.
+All available reviews are AI-assisted evidence, not human or peer review.}}
+\end{center}
+
+\begin{abstract}
+Let $\gamma(n)$ be the Taylor coefficients of Riemann's completed
+$\xi$-function in the standard even normalization, and let
+\[
+  \J^{d,n}(X)=\sum_{j=0}^d \binom{d}{j}\gamma(n+j)X^j.
+\]
+We prove that there is an absolute $K>0$ such that
+$n^2\log(n+2)\ge Kd^3$ implies that $\J^{d,n}$ has $d$ distinct negative
+real zeros.  The gain from the earlier three-fifths architecture comes from
+matching six logarithmic coefficients with a four-parameter product of two
+Jacobi factors.  The proof combines a direct sectorial saddle analysis for
+the xi coefficients, a sixth-order residual estimate, finite-free
+convolution, and a non-perturbative critical-point recurrence.  We state the
+trust boundary precisely: decisive symbolic identities have exact
+SymPy/Lean regression evidence and an exact user-executed Mathematica
+second-CAS reconstruction, and the complete T1--T5 analytic chain is
+kernel-checked in Lean.  The xi-specific multiplier, its six nodes and unit
+bound, interval certificate, and headline assembly are also kernel checked.
+The remaining formal boundary consists only of typed Jacobi, MMP, and MSS
+literature inputs.
+This synopsis compresses that proof; detailed inequalities and evidence maps
+are in the main paper and supplement.
+\end{abstract}
+
+\section{Statement and architecture}
+
+\begin{theorem}[Two-thirds wedge]\label{thm:main}
+There is an absolute constant $K>0$ such that for integers $d\ge1$ and
+$n\ge0$, the implication
+\[
+             n^2\log(n+2)\ge Kd^3
+\]
+ensures that $\J^{d,n}$ has exactly $d$ distinct negative real zeros.
+\end{theorem}
+
+The proof is developed block by block below and is closed explicitly in
+Section~\ref{sec:assembly}.  The synopsis uses ordinary section-based theorem
+numbers; the labels T1--T18 in the expanded paper and assurance matrix are
+stable evidence identifiers rather than additional theorem numbers.  Thus
+the sectorial coefficient theorem is T5 and the present main theorem is T18.
+
+The proof is effective in principle after tracing the saddle and branch
+constants, but the present unweighted sup-norm contraction yields an
+astronomically large sufficient threshold.  We make no claim that the
+resulting constant is computationally useful, and we do not print a
+numerical value of $K$.
+
+The proof has four blocks.  First, Sections~\ref{sec:mellin}--\ref{sec:deriv}
+derive a sectorial coefficient asymptotic and its logarithmic derivatives
+through order six.  Second, Sections~\ref{sec:model}--\ref{sec:branch} choose
+a positive four-parameter comparison model matching six coefficients.
+Third, Sections~\ref{sec:finitefree}--\ref{sec:recurrence} establish positive,
+simple, localized roots and the derivative radius of that comparison.
+Finally, Sections~\ref{sec:residual}--\ref{sec:assembly} transfer signs to the
+actual Jensen polynomial.
+
+Throughout, a statement called ``uniform'' is uniform after the fixed
+nested sectors and compact parameter box have been chosen.  Holland's main
+theorem is not a premise.  His paper supplies architecture and several
+formulas which are rederived or connected directly to their primary
+sources.
+
+\section{The Mellin coefficient identity}\label{sec:mellin}
+
+Put
+\[
+ \Theta(t)=\sum_{m\ge1}e^{-\pi m^2t},\qquad
+ \omega(t)=\tfrac12\bigl(2t^2\Theta''(t)+3t\Theta'(t)\bigr).
+\]
+Riemann's integral and the substitution $t=e^{2u}$ give an even Fourier--
+Laplace representation of $\Xi$.  Differentiating at the origin, retaining
+both halves of the even integral, gives the exact normalization
+\begin{equation}\label{eq:factor8}
+  \gamma(n)=\frac{8\,n!}{(2n)!}
+       \int_0^\infty \omega(e^{2u})e^{u/2}u^{2n}\,\dd u .
+\end{equation}
+The factor eight in \eqref{eq:factor8} is important when the main term is
+compared character for character with the printed GORZ/GORTTW convention.
+It cancels from logarithmic derivatives but not from a source-fidelity
+check.  Indeed Riemann's kernel in these variables is
+$8e^{u/2}\omega(e^{2u})$, and extracting the coefficient of $w^{2n}$
+from $\cosh(wu)$ contributes $1/(2n)!$.  Since our convention is
+$\xi(1/2+w)=\sum_{n\ge0}\gamma(n)w^{2n}/n!$, this gives
+\eqref{eq:factor8}.  Equivalently, the prefactor is
+$8\sqrt\pi/(4^n\Gamma(n+1/2))$ by duplication.  No asymptotic input enters.
+
+Expanding $\Theta$ separates the $m=1$ mode from $m\ge2$.  If $M$ denotes the
+complex Mellin exponent, the leading phase has one saddle and the remaining
+theta modes acquire an additional negative exponential proportional to
+$m^2-1$.  This exact decomposition is the starting point for the sectorial
+analysis.
+
+\section{The sectorial saddle variable}\label{sec:saddle}
+
+For $0<\theta<\pi/2$, use principal logarithms in
+$|\arg N|\le\theta$, and set
+\[
+ \Psi(L)=L\left(\pi e^L+\frac34\right),\quad
+ w=\log N,\quad L_0=w-\log w-\log\pi.
+\]
+
+\begin{lemma}[Sectorial saddle, Lemma S]\label{lem:saddle}
+For $|N|\ge e^{12}$ and $|\arg N|\le\theta$ there is a unique holomorphic
+branch $L_N$, agreeing with the positive real solution, such that
+$N=\Psi(L_N)$ and $|L_N-L_0|<1$.  Uniformly on every fixed closed smaller
+sector,
+\[
+ |L_N|\asymp\log|N|,\qquad r:=L_N^{-1}\longrightarrow0,\qquad
+ \sigma:=L_N/N\longrightarrow0.
+\]
+Moreover $|L_N|\ge\tfrac12\log|N|$, $|r|,|\sigma|\le7/50$, and
+\begin{align}
+ Q_N&=(1+L_N)N-\tfrac34L_N^2
+     =NL_N(1+r-\tfrac34\sigma),\label{eq:Q}\\
+ |1+r-\tfrac34\sigma|&\ge9/16,\qquad L_N'=L_N/Q_N.\label{eq:Qbound}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Consider
+\[
+ G(L)=L+\log L+\log\pi-
+       \log\left(1-\frac{3L}{4N}\right)-\log N
+\]
+on $|L-L_0|\le1$.  If $\ell=\log|N|\ge12$, define
+\[
+ m(\ell)=\ell-\log(\ell+1)-\log\pi-1,
+ \qquad
+ M_\theta(\ell)=\ell+2+\log(\ell+1)+\theta/\ell+\log\pi.
+\]
+Then
+\[
+ \Re L\ge m(\ell)>0
+\]
+and
+\[
+ |L|\le M_\theta(\ell).
+\]
+Thus all principal logarithms are legal and
+$|3L/(4N)|<10^{-4}$.  On the boundary, compare $G$ with
+$H(L)=L-L_0$.  The elementary estimate $|\log(1+z)|\le2|z|$ for
+$|z|\le1/2$ gives
+\[
+ \sup_{\partial D}|G-H|
+ \le 2\frac{\log(\ell+1)+\theta/\ell+\log\pi+1}{\ell}
+   +\frac{3M_\theta(\ell)}{2e^\ell}<1.
+\]
+Rouche's theorem gives one simple zero.  Exponentiating at that zero yields
+$N=\Psi(L)$.  Simplicity and the holomorphic implicit-function theorem patch
+the local zeros into a branch; conjugation and real uniqueness identify the
+positive real branch.  The displayed disc bounds give the asserted
+asymptotics.  In particular $m(\ell)>\ell/2$ for $\ell\ge12$, so
+$|L_N|\ge\Re L_N\ge\ell/2$.
+
+For \eqref{eq:Qbound}, the reverse triangle inequality and
+$|r|,|\sigma|\le7/50$ give
+\[
+ |1+r-\tfrac34\sigma|
+ \ge1-\frac7{50}-\frac34\frac7{50}
+ =\frac{151}{200}>\frac9{16}.
+\]
+Hence $Q_N\ne0$ before implicit differentiation is invoked.  Differentiating
+$N=\Psi(L_N)$ then gives $L_N'=L_N/Q_N$.
+\end{proof}
+
+The same exact argument gives
+\begin{equation}\label{eq:reducedden}
+ |4+4r-3\sigma|\ge4-4\frac7{50}-3\frac7{50}=\frac{151}{50}.
+\end{equation}
+This is the reduced denominator margin used at derivative order six.
+
+\section{Contour localization and the coefficient theorem}\label{sec:coefficient}
+
+\begin{theorem}[Sectorial coefficient asymptotic]\label{thm:sector}
+Fix $\theta_0=1/400$ and $\theta_1=1/200$.  On the inner sector, the analytic
+continuation of the xi coefficient moment equals its explicit saddle main
+term times
+\[
+                  1+O\left(\frac{\log|M|}{|M|}\right),
+\]
+uniformly as $|M|\to\infty$.  The main term is the one obtained from
+\eqref{eq:factor8} and agrees, after the factor-eight normalization, with the
+printed GORZ main term.  It is nonzero on the inner sector.
+\end{theorem}
+
+\begin{proof}
+The leading $m=1$ Mellin integral is moved, in $u=\log t$, to the horizontal
+ray through the saddle supplied by Lemma~\ref{lem:saddle}.  The move stays in
+the principal-log domain.  For $|\arg s|\le1/100$, the logarithmic saddle
+equation and $\Re L_s\ge m(12)>7.29$ give $|\Im L_s|<1/20$.  Writing
+\[
+ K_s=\frac{s}{L_s}\left(1+\frac1{L_s}-\frac{3L_s}{4s}\right),
+\]
+the corresponding argument estimate gives
+$|\arg K_s|<1/20$ and
+$\Re K_s\ge\cos(1/20)|K_s|$.  This right-half-plane bound---not merely the
+nonvanishing consequence of \eqref{eq:Qbound}---controls the Gaussian and
+the strict concavity on the shifted ray.  The two endpoint connectors are
+$\mathcal A(s)O(e^{-c|s|\log\log|s|})$, where $\mathcal A(s)$ is the saddle
+main term.  Splitting into a central Gaussian window and two tails gives a
+relative error $O(|K_s|^{-1})$; the signed cubic Gaussian moment removes the
+otherwise larger absolute error.
+
+For $m\ge2$, the same contour is legal and the extra theta exponent is
+uniformly negative.  Summing the modes is therefore exponentially smaller
+than the first mode.  Sectorial Stirling, applied on fixed nested sectors,
+then yields the asserted main term and relative error.  The detailed
+connector, central-window, signed-cubic, tail, mode-summation, and Stirling
+estimates are expanded in the main paper and technical supplement.
+
+The proof just described is carried out with fixed sector/radius constants;
+there is no assertion that every later error constant is uniform for an
+arbitrary free $\theta\in(0,\pi/2)$.
+\end{proof}
+
+\section{Logarithmic derivatives through order six}\label{sec:deriv}
+
+Let $h(x)$ be the logarithm of the exact moment normalization on the positive
+axis and let $\cL_x=L_{2x-2}$.  Cauchy's inequality on proportional discs
+inside the two fixed sectors differentiates the relative error in
+Theorem~\ref{thm:sector}.  Total implicit differentiation of the explicit
+main term gives
+\begin{align}
+ h''(x)&=\frac{2}{x\cL_x}(1+O(\cL_x^{-1})),\nonumber\\
+ h^{(3)}(x)&=-\frac{2}{x^2\cL_x}(1+O(\cL_x^{-1})),\nonumber\\
+ h^{(4)}(x)&=\frac{4}{x^3\cL_x}(1+O(\cL_x^{-1})),\label{eq:tower}\\
+ h^{(5)}(x)&=-\frac{12}{x^4\cL_x}(1+O(\cL_x^{-1})),\nonumber\\
+ h^{(6)}(x)&=\frac{48}{x^5\cL_x}(1+O(\cL_x^{-1})).\nonumber
+\end{align}
+Only the bound in the last line is needed.  Before the chain rule $N=2x-2$,
+the exact sixth derivative has the form
+\[
+ G_0^{(6)}(N)=\frac{H_6(r,\sigma)}{N^5L_N},
+ \qquad \operatorname{den}H_6=(4+4r-3\sigma)^{12}.
+\]
+The numerator is a degree-thirteen polynomial with 82 terms.  An exact
+coefficientwise majorant on $|r|,|\sigma|\le7/50$, together with
+\eqref{eq:reducedden}, is less than $10^4$.  This gives the conservative
+uniform bound $|G_0^{(6)}(N)|\le 20000/(|N|^5\log|N|)$.
+
+The rational differentiation tower and its coefficientwise majorant are
+machine-checked artifacts.  We do not duplicate that decisive symbolic
+algebra here; Section~\ref{sec:mathematica} records its exact independent-CAS
+reconstruction and frozen evidence.
+
+\section{Six coefficient matches and the elementary map}\label{sec:model}
+
+Use positive parameters
+\[
+ A=\frac{\alpha}{xe},\quad B=\frac{t+we}{x},\quad
+ C=\frac{t}{x},\quad D=\frac{1+\delta e}{x},
+ \qquad x=n^{-1},\ e=\cL_n^{-1}.
+\]
+The compact box is
+\[
+ \alpha\in[5/2,7/2],\quad t\in[7/4,9/4],\quad
+ w\in[5,6],\quad\delta\in[1/4,5/12].
+\]
+
+For $f_k(U)=\log(U+k)-\log(U+k+1)$, the exact gamma half-shift is
+$-f_k(n+1/2)$.  Pairing that term before estimation avoids a spurious
+$\cL_n$ loss.  Repeated FTC gives, with $q=j+1$,
+\[
+ \Delta^jf_0(U)=(-1)^{j+1}j!
+ \int_{[0,1]^q}(U+u_1+\cdots+u_q)^{-q}\,\dd u.
+\]
+Writing
+\[
+ \Phi_q(s,z)=\int_{[0,1]^q}
+ (s+z\textstyle\sum u_i)^{-q}\,\dd u,
+\]
+one has, for $r=0,1,2$,
+\[
+ \partial_s^r\Phi_q(s,z)=(-1)^r(q)_r
+ \int_{[0,1]^q}(s+z\textstyle\sum u_i)^{-q-r}\,\dd u.
+\]
+If $s\ge s_0>0$ and $z\ge0$, the unit cube has volume one and hence
+\[
+ |\partial_s^r\Phi_q(s,z)|\le(q)_r s_0^{-q-r}.
+\]
+The mean-value theorem adds the explicit first-order error
+$(q)_r(q+r)qzs_0^{-q-r-1}$.
+
+With $(a_0,a_1,a_2,a_3)=(1,1/2,1,1)$, the normalized elementary term is
+\begin{align*}
+H_{n,j}=\frac{a_j}{e}\{&e^q\Phi_q(\alpha,xe)
+-\Phi_q(t+we,x)+\Phi_q(t,x)\\
+&-\Phi_q(1+\delta e,x)+\Phi_q(1+x/2,x)\}.
+\end{align*}
+The $B-C$ divided difference tends to $qw/t^{q+1}$; the paired $D$--gamma
+divided difference tends to $q\delta$; and the remote boundary contributes
+$1/\alpha$ only for $q=1$.  Values and first parameter derivatives converge
+uniformly, giving
+\[
+H^\infty=\left(
+\frac1\alpha+\frac w{t^2}+\delta,
+\frac w{t^3}+\delta,
+\frac{3w}{t^4}+3\delta,
+\frac{4w}{t^5}+4\delta\right)
+\]
+with error $O_K(e+x/e)$ in value and $O_K(e+x)$ in derivatives.
+Combining \eqref{eq:tower} with the exact scales gives the xi contribution
+$S^\infty=(-2,-1,-2,-2)$.
+
+\begin{lemma}[Quotient adapter]\label{lem:quotient}
+Let $(a_j)$ and $(b_j)$ be nonzero coefficients with compatible logarithm
+branches.  Equality of the four consecutive quotient coordinates is equality
+of the four second differences
+\[
+ (a_{k+2}-2a_{k+1}+a_k)=(b_{k+2}-2b_{k+1}+b_k),\quad0\le k\le3,
+\]
+in logarithmic coordinates.  Together with the two normalizations at indices
+$0$ and $1$, these equations imply equality at all six indices $0,\ldots,5$.
+\end{lemma}
+
+\begin{proof}
+For the difference $c_k=a_k-b_k$, the hypotheses say $c_0=c_1=0$ and
+$c_{k+2}=2c_{k+1}-c_k$.  Induction gives $c_2=\cdots=c_5=0$.
+\end{proof}
+
+\section{The positive parameter branch}\label{sec:branch}
+
+The limiting residual map $F=H^\infty+S^\infty$ has the positive zero
+\[
+ y_*=(\alpha,t,w,\delta)=(3,2,16/3,1/3).
+\]
+Exact elimination gives positive-orthant uniqueness.  Its Jacobian satisfies
+\[
+ \det DF(y_*)=-\frac1{144},\qquad
+ \|DF(y_*)^{-1}\|_\infty=\frac{304}{3}.
+\]
+On a smaller rational box $K_0$ around $y_*$, choose
+$P=DF(y_*)^{-1}$ so that $\|I-PDF\|_\infty\le1/4$.  The $C^1$ estimate in
+Section~\ref{sec:model} makes $T_n(y)=y-PG_n(y)$ a self-map and a contraction
+with constant at most $1/2$.  Thus there is a unique zero in $K_0$ and
+\[
+ y_n-y_*=O(\cL_n^{-1}).
+\]
+Uniqueness is asserted only in $K_0$, not globally.
+
+For $0<e\le1/12$ and $x>0$, exact endpoint arithmetic gives
+\[
+ \frac{\alpha}{e}\ge30>\frac{11}{4}\ge t+we,\qquad
+ t-1-\delta e\ge\frac{103}{144}>0.
+\]
+Consequently $A>B>C>D>0$ on the box.  The point $y_*$ has exact left/right
+margins $(1/2,1/2)$, $(1/4,1/4)$, $(1/3,2/3)$, and $(1/12,1/12)$.
+
+\section{Finite-free comparison and localization}\label{sec:finitefree}
+
+The comparison polynomial is
+\[
+ p_F(y)={}_3F_2\!\left(
+ \begin{matrix}-d,A,C\\B,D\end{matrix};\frac{D}{AC}y\right).
+\]
+In constant-term-one normalization it is the multiplicative finite-free
+convolution of two scaled Jacobi factors.  Reversal converts this identity to
+the monic descending convention in the finite-free literature.  To pin the
+convention, order positive roots as
+$\lambda_1\ge\cdots\ge\lambda_d>0$ and, following MMP Definition~2.16, put
+\[
+ \operatorname{lmesh}(p)=
+ \min_{1\le j<d}\frac{\lambda_j}{\lambda_{j+1}}\ge1.
+\]
+Each Jacobi factor has distinct positive roots, so its logarithmic mesh is
+strictly greater than one.  MMP Proposition~2.7(iii) preserves nonnegative
+real-rootedness, while Proposition~2.17 states in this convention that
+\[
+ \operatorname{lmesh}(p\boxtimes_dq)
+ \ge \operatorname{lmesh}(p).
+\]
+Thus the convolution is simple.  Since $p_F(0)=1$, zero is not a root.  The
+exact proposition text is pinned to the accessible arXiv v3; the paywalled
+journal PDF has not been byte-compared.
+
+For a Jacobi factor $q_{U,V}$, direct Gershgorin estimates on the transported
+Jacobi matrix give the ratio-free statement
+\[
+ U\ge V+d,\quad V\ge32d
+ \quad\Longrightarrow\quad
+ \operatorname{roots}(q_{U,V})\subset
+ [V-8\sqrt{Vd},V+8\sqrt{Vd}].
+\]
+Before deriving the product constant, the parameter branch and wedge give
+the non-circular coarse box
+\[
+ n\le B\le3n,\qquad \frac n2\le D\le2n,
+ \qquad A\ge8B,\qquad C\ge D+d,
+ \qquad B,D\ge256d.
+\]
+Thus both Jacobi lower endpoints are positive and $B/D\le6$.  The
+maximum-root product inequality is cited directly as MSS Theorem 1.6;
+applying it also to reciprocal polynomials supplies the lower endpoint.  If
+$u$ and $v$ denote the deviations of the two factor roots from $B$ and $1$,
+respectively, then
+\begin{align*}
+ |(B+u)(1+v)-B|
+ &\le8\sqrt{Bd}+8B\sqrt{d/D}
+       +64\sqrt{Bd}\sqrt{d/D}\\
+ &\le(12+8\sqrt6)\sqrt{Bd}.
+\end{align*}
+The resulting comparison roots satisfy
+\begin{equation}\label{eq:local}
+                    |y-B|\le C_{\rm loc}\sqrt{Bd},\qquad
+ C_{\rm loc}=12+8\sqrt6.
+\end{equation}
+Critical points satisfy the same interval by interlacing.  The elementary
+bound $\sqrt6<5/2$ gives $C_{\rm loc}<32$ and the exact rational sufficient
+choice $K_0=256\cdot32^2=262144$ for the strengthened box.
+
+This argument does not use Holland's assembled Lemma 7.3: its hypothesis on
+$(C-D)/D$ fails on the present branch.  It also corrects a theorem-number
+seam: the published MSS largest-root product inequality is Theorem 1.6.
+
+\section{The direct critical-point recurrence}\label{sec:recurrence}
+
+For the $m$th derivative, shift the hypergeometric parameters to
+$(m-d,A+m,C+m;B+m,D+m)$.  The coefficient ratio proves directly
+\[
+ \vartheta(\vartheta+B+m-1)(\vartheta+D+m-1)g_m
+ =\lambda y(\vartheta+m-d)(\vartheta+A+m)(\vartheta+C+m)g_m,
+\]
+Here
+\[
+ \vartheta=y\,\dd/\dd y,\qquad \lambda=D/(AC).
+\]
+Expanding the Euler operators gives, for
+$T_k=y^kp_F^{(k)}(y)/p_F(y)$,
+\[
+ P_{3,m}T_{m+3}+P_{2,m}T_{m+2}
+ +P_{1,m}T_{m+1}+P_{0,m}T_m=0.
+\]
+For a readable display of all four exact coefficients, set
+\begin{align*}
+ a&=1-y/A,&
+ b_m&=B+m-y+(d-1-2m)y/A,\\
+ c_m&=(d-m)(1+m/A)y,&
+ \epsilon_p&=(C-D)/C,\\
+ \beta_m&=A(2m+1-d)-d(2m+1)+3m^2+3m+1,&
+ \Gamma_m&=m(m-d)(m+A).
+\end{align*}
+Then
+\begin{align*}
+ P_{3,m}&=a+\epsilon_p\frac yA=\frac{AC-Dy}{AC},\\
+ P_{2,m}&=b_{m+1}+(D+m)a
+   +\epsilon_p\frac yA(A-d+3+3m),\\
+ P_{1,m}&=c_{m+1}+(D+m)b_m
+   +\epsilon_p\frac yA\beta_m,\\
+ P_{0,m}&=(D+m)c_m+\epsilon_p\frac yA\Gamma_m
+   =\frac{Dy(A+m)(C+m)(d-m)}{AC}.
+\end{align*}
+The expanded rational forms are also checked by Lean; the shifted
+hypergeometric ODE and these decompositions are checked by the exact
+symbolic producer.
+
+At a critical point, $T_0=1$ and $T_1=0$.  Localization
+\eqref{eq:local}, the wedge, and positivity of the non-perturbative
+$\epsilon_p=(C-D)/C$ term yield, uniformly for $0\le m\le d-2$,
+\[
+ P_{2,m}\ge n/8,\quad |P_{3,m}|\le2,\quad
+ |P_{1,m}|\ll n\sqrt{Bd}+nd,\quad 0\le P_{0,m}\ll n^2d.
+\]
+A maximum argument in the recurrence then gives the critical-point
+derivative radius
+\begin{equation}\label{eq:radius}
+ \max_{1\le k\le d}
+ \left|\frac{y^kp_F^{(k)}(y)}{p_F(y)}\right|^{1/k}
+ \le K_r\sqrt{Bd}
+\end{equation}
+with an absolute $K_r$; separately $T_0=1$.  This is the decisive replacement for a perturbative
+recurrence that is unavailable when $\epsilon_p\to1/2$.
+
+\section{Sixth-order residual}\label{sec:residual}
+
+Let $E_F(z)$ be the logarithm of the exact xi/model coefficient ratio along
+the positive branch.  Six differentiations give
+\begin{align*}
+E_F^{(6)}(z)={}&h^{(6)}(n+z)+\psi^{(5)}(B+z)
+-\psi^{(5)}(n+1/2+z)-\psi^{(5)}(A+z)\\
+&+\psi^{(5)}(D+z)-\psi^{(5)}(C+z).
+\end{align*}
+Pair the $B-C$ and $D-(n+1/2)$ terms.  On the thickened interpolation domain
+\[
+ \Omega=\{z:\operatorname{dist}(z,[0,d])\le2\rho\},\qquad
+ \rho=K_r\sqrt{Bd},
+\]
+the wedge gives $d+2\rho\le\eta n$ for a fixed small $\eta$.  Hence
+$n+\Omega$ remains in the nonvanishing coefficient sector, while every
+straight polygamma segment stays in $\Re z\ge cn$.  The absolutely convergent
+polygamma series and Section~\ref{sec:deriv} imply
+\begin{equation}\label{eq:E6}
+ \sup_{z\in\Omega}|E_F^{(6)}(z)|
+ \le \frac{C}{n^5\log(n+2)}.
+\end{equation}
+
+The complex Hermite--Genocchi formula is obtained by iterating the complex
+line-segment FTC over the standard six-simplex.  Its mass is $1/6!=1/720$.
+Since $E_F(0)=\cdots=E_F(5)=0$, Newton interpolation and
+\eqref{eq:E6} give, for the needed $z$,
+\begin{equation}\label{eq:HG}
+ |E_F(z)|\le \frac{C}{720n^5\log(n+2)}
+       \prod_{j=0}^{5}|z-j|.
+\end{equation}
+The wedge implies $\rho\ge d$ after increasing its absolute constant.  For
+$z\in\Omega$ and $0\le j\le5$, projection to $[0,d]$ then gives
+$|z-j|\le3\rho$.  Since $B\asymp n$,
+\[
+ \rho^6=K_r^6(Bd)^3\ll n^3d^3,
+\]
+and \eqref{eq:HG} yields the headline exponent calculation
+\begin{equation}\label{eq:exponent}
+ \sup_{z\in\Omega}|E_F(z)|
+ \ll\frac{\rho^6}{n^5\log(n+2)}
+ \ll\frac{d^3}{n^2\log(n+2)}\le\frac{C'}K.
+\end{equation}
+Choose the absolute wedge constant so that the last quantity is small enough
+that, for $c_F(z)=e^{E_F(z)}$,
+$\sup_\Omega|c_F-1|\le1$.  Exponentiation is legal on the same chosen
+logarithm branch.  At the integer nodes the exact coefficient ratios are
+positive real numbers, and the six matches give
+$c_F(0)=\cdots=c_F(5)=1$.
+
+\section{Sign transfer and proof of the main theorem}\label{sec:assembly}
+
+\begin{lemma}[Finite multiplier stability]\label{lem:stability}
+Let $d\ge5$, and let $p(y)=\sum_{j=0}^dp_jy^j$ be real with $d$ simple
+positive zeros and $p(0)\ne0$.  Put
+$\Omega_r=\{z:\operatorname{dist}(z,[0,d])\le2r\}$, and let $c$ be
+holomorphic on a neighborhood of $\Omega_r$.  Suppose that
+$c(0),\ldots,c(d)$ are real,
+$c(0)=\cdots=c(4)=1$, $c(d)>0$,
+$\sup_{\Omega_r}|c-1|\le\epsilon<16$, and, at every critical point $y$ of
+$p$,
+\[
+ \left|\frac{y^kp^{(k)}(y)}{p(y)}\right|\le r^k,
+ \qquad0\le k\le d.
+\]
+Then $P(y)=\sum_{j=0}^dp_jc(j)y^j$ has $d$ distinct positive real zeros.
+\end{lemma}
+
+\begin{proof}
+Newton interpolation and termwise differentiation give
+\[
+ \frac{P(y)}{p(y)}
+ =\sum_{k=0}^d\frac{\Delta^kc(0)}{k!}
+   \frac{y^kp^{(k)}(y)}{p(y)}.
+\]
+Cauchy's estimate on the radius-$2r$ discs in $\Omega_r$ gives
+$|\Delta^kc(0)|/k!\le\epsilon/(2r)^k$.  The five exact matches make the
+terms $1\le k\le4$ vanish, so at every critical point
+\[
+ \left|\frac{P(y)}{p(y)}-1\right|
+ \le\epsilon\sum_{k=5}^d2^{-k}<\epsilon/16<1.
+\]
+Thus $P$ and $p$ have the same signs at all critical points, at zero, and
+for large positive $y$.  Interlacing and the intermediate-value theorem put
+one simple sign-changing zero of $P$ in each of the $d$ intervening
+intervals.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The comparison polynomial has $d$ simple positive roots.  Between them lie
+$d-1$ critical points, and the two exterior sign tests complete the
+alternating pattern.  For $d\le5$, the six coefficient matches already cover
+the whole polynomial.  For $d\ge6$, apply Lemma~\ref{lem:stability} with
+$p=p_F$, $c=c_F$, and $r=\rho$.  Equations \eqref{eq:radius},
+\eqref{eq:exponent}, and the positivity of the integer coefficient ratios
+verify every hypothesis with $\epsilon\le1<16$.  The lemma therefore
+preserves every comparison sign, so the
+intermediate-value theorem supplies $d$ distinct positive roots of the
+transformed actual polynomial.
+
+The positive parameter branch has a positive scale and nonzero
+normalization.  Undoing $y=-SX$, with $S>0$, carries those roots to $d$
+distinct negative roots of $\J^{d,n}$.  This proves
+Theorem~\ref{thm:main}.  The low finite set below the eventual analytic
+threshold is absorbed by increasing the existential constant $K$; when the
+wedge is empty there is nothing to check.
+\end{proof}
+
+\section{Formal verification and trust boundary}\label{sec:formal}
+
+The Lean project contains no axiom asserting the xi asymptotic or the headline
+result.  It checks the complete concrete T1--T5 chain: the xi/theta/Mellin
+identity, quantitative saddle branch, legal leading contour, infinite
+higher-mode suppression, Gamma/Stirling assembly, sectorial coefficient
+theorem, and Cauchy transport through order six.  It also checks the rational
+leading system and Jacobian, quotient-to-six-coefficient adapter, cube
+calculus, exact xi branch and six matches, direct recurrence, multiplier sign
+transfer, concrete Jensen definition, and positive-to-negative scaling.
+
+The complex Hermite--Genocchi modules prove complex line-segment FTC, six
+repeated FTC steps, the exact Newton identity, convex-hull localization, the
+six-simplex mass $1/720$, and the local remainder bound.  The approved
+Phase-30 endpoint constructs the concrete xi multiplier, proves the first six
+node values and its strict unit bound, instantiates the complete
+Rolle-point interval certificate, and connects sign transfer to the actual
+transformed Jensen polynomial.  Classical Jacobi root/matrix facts, MMP
+log-mesh preservation, and the MSS product-root inequality remain narrow
+typed literature inputs.  These limitations are proof-surface disclosures,
+not hidden axioms.
+
+The literal T5 statements have been isolated in a locally verified Phase-29
+Palomar submission candidate.  Official Comparator and NanoDa replay remains
+pending, so no official Palomar result is claimed.
+
+The verifier scans for \texttt{sorry}, \texttt{admit}, custom axioms, and
+unsafe escape hatches, builds the headline target with the pinned toolchain,
+and audits selected theorem axioms.  Numerical contour and Mellin checks are
+regression evidence only.
+
+\section{Independent-CAS Mathematica reconstruction}\label{sec:mathematica}
+
+A user-executed Mathematica 15.0.1 reconstruction returned exact matches for
+M1--M4.  The user entered and executed cells supplied interactively by Codex;
+the notebook imported no repository JSON, Python, SymPy, Lean-generated
+expression, or frozen numerator.  Thus the run breaks the
+SymPy-versus-Mathematica CAS common mode, while remaining AI-assisted evidence
+rather than human or peer review.
+
+The exact terminal results were: the implicit saddle derivative identity and
+post-chain constants $(2,-2,4,-12,48)$; the shifted ${}_3F_2$ coefficient
+recurrence, four zero coefficient differences, and complete derivative-order
+tests at degrees $5,8,11$; the positive solution
+$(3,2,16/3,1/3)$, determinant $-1/144$, and inverse norm $304/3$; and the
+82-term degree-13 $H_6$ numerator with coefficientwise majorant
+\[
+ \frac{6422139805764931584036533551104}
+ {702576099728137594188684005}<10^4.
+\]
+All mathematical outputs are exact and contain no machine-real values.  The
+notebook, plain-text result ledger, visual PDF, and user checksum ledger are
+frozen in the Phase-24 evidence directory.  The canonical result-ledger
+SHA-256 is
+\texttt{1faea5fc\allowbreak b35b504b\allowbreak 5d0aad93\allowbreak
+91999a99\allowbreak e530373d\allowbreak ce36addb\allowbreak
+496eabb1\allowbreak 33fb04cc}.
+
+\section{Availability and review statement}
+
+The release candidate is designed to contain this source and rendered PDF,
+all proof notes needed to expand the compressed arguments, the Lean source
+and lockfiles, exact symbolic and interval certificates, verifier scripts,
+serial logs, primary-source hashes, and AI-review disclosures.  It is not
+made public by this build step.  Public posting, a DOI, arXiv submission, or
+third-party circulation requires a separate explicit authorization and, in
+the authors' judgment, should preferably follow human mathematical review.
+
+\begin{thebibliography}{9}
+\bibitem{GORZ}
+M. Griffin, K. Ono, L. Rolen, and D. Zagier,
+\emph{Jensen polynomials for the Riemann zeta function and other sequences},
+Proceedings of the National Academy of Sciences 116 (2019), 11103--11110.
+
+\bibitem{GORTTW}
+M. Griffin, K. Ono, L. Rolen, J. Thorner, Z. Tripp, and I. Wagner,
+\emph{Jensen polynomials for the Riemann xi-function},
+arXiv:1910.01227v3.
+
+\bibitem{Holland}
+J. Holland,
+\emph{A new hyperbolicity wedge and a joint semicircle limit for Jensen
+polynomials of Riemann's xi-function}, arXiv:2608.08682v1.
+
+\bibitem{MMP}
+A. Martinez-Finkelshtein, R. Morales, and D. Perales,
+\emph{Real roots of hypergeometric polynomials via finite free convolution},
+International Mathematics Research Notices 2024 (2024), 11642--11687;
+arXiv:2309.10970v3.
+
+\bibitem{MSS}
+A. Marcus, D. Spielman, and N. Srivastava,
+\emph{Finite free convolutions of polynomials},
+Probability Theory and Related Fields 182 (2022), 807--848.
+
+\bibitem{Szego}
+G. Szego, \emph{Orthogonal Polynomials}, fourth edition,
+American Mathematical Society Colloquium Publications 23, 1975.
+\end{thebibliography}
+
+\end{document}

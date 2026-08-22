@@ -1,0 +1,2665 @@
+'Zeta23.Research.JensenWedge.norm_evalBivariateTerms_le_majorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.h6_term_count' depends on axioms: [propext]
+'Zeta23.Research.JensenWedge.h6_total_degree_le_thirteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h6_has_total_degree_thirteen' depends on axioms: [propext, Quot.sound]
+'Zeta23.Research.JensenWedge.h6NumeratorMajorant_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h6DenominatorLower_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h6Majorant_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h6ReducedDenominator_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH6_norm_lt_tenThousand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleFiniteCertificate_of_mem_bidisc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaugeResidual_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaugeResidual_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaugeResidual_unique_in_inner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingResidualIntervalCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.canonicalRadiusThresholdStage_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.limitingBranch_jacobi_ordering' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3DensePolynomial_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4DensePolynomial_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5DensePolynomial_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h6GeneratedDensePolynomial_eq_frozen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.h2_term_count' depends on axioms: [propext]
+'Zeta23.Research.JensenWedge.completedRiemannZeta₀_eq_mellin_riemannThetaModifiedKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_of_one_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_of_mem_Ioo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_locallyIntegrableOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_isBigO_atTop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_isBigO_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_one_div' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedLogKernel_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedLogKernel_locallyIntegrableOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedLogKernel_isBigO_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedLogKernel_isBigO_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.mellin_iteratedLogKernel_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_mellin_eq_logMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_riemannThetaMellin_eq_logMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaMellin_differentiable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_completedRiemannZeta₀_eq_logMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasSum_nat_riemannThetaTail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaModifiedKernel_eq_two_mul_thetaTail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaTail_contDiffOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaTail_differentiableAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.deriv_riemannThetaTail_differentiableAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_thetaLogAmplitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_thetaLogAmplitude_first' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.thetaLogAmplitude_second_sub_quarter_eq_omega' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.thetaLogAmplitude_second_sub_quarter_eq_omega_concrete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.mellin_eq_logIntegral_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.completedRiemannZeta₀_eq_logIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.completedRiemannZeta₀_centered_eq_bilateralLaplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredModifiedThetaAmplitude_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredModifiedThetaAmplitude_eq_two_mul_thetaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.thetaLogAmplitude_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.deriv_thetaLogAmplitude_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaTail_eq_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_riemannThetaTail_eq_thetaTailD1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.deriv_riemannThetaTail_eq_thetaTailD1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_thetaTailD1_eq_thetaTailD2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_two_riemannThetaTail_eq_thetaTailD2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_thetaTailD1_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.summable_thetaTailD2_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannOmega_eq_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.deriv_thetaLogAmplitude_eq_thetaTailD1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_thetaModeMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hurwitzFNat_one_isBigO_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.thetaTailD1_eq_neg_pi_mul_FNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.thetaTailD2_eq_pi_sq_mul_FNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.thetaTailD1_isBigO_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.thetaTailD2_isBigO_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannThetaTail_eq_FNat_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exp_mul_hurwitzFNat_exp_two_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_half_mul_hurwitzFNat_exp_two_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_two_thetaLogAmplitude_eq_modeSums' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.thetaLogAmplitude_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.deriv_thetaLogAmplitude_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_two_thetaLogAmplitude_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.thetaLogAmplitude_contDiff_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.pow_mul_isBigO_exp_neg_half_of_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_pow_mul_of_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_pow_mul_zero_of_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_pow_mul_thetaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_pow_mul_deriv_thetaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_pow_mul_iteratedDeriv_two_thetaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_pow_mul_thetaLogAmplitude_atTop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_pow_mul_deriv_thetaLogAmplitude_atTop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.four_mul_omegaLogAmplitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_pow_mul_omegaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_iteratedDeriv_two_thetaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_pow_add_two_mul_iteratedDeriv_two_thetaLogAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrable_even_of_integrableOn_Ioi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_even_eq_two_mul_integral_Ioi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_completedRiemannZeta₀_center_eq_fullMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_centeredModifiedThetaAmplitude_evenMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_completedRiemannZeta₀_center_eq_four_thetaMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXi_eq_prefactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.centeredCompletedZeta_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXiPrefactor_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_centeredCompletedZeta_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_centeredXiPrefactor_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_centeredXi_zero_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.eight_mul_integral_omegaLogAmplitude_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.eight_mul_integral_pow_omegaLogAmplitude_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.halfLineMoment_omegaLogAmplitude_eq_ofReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_centeredXi_zero_eq_thetaMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_centeredXi_eq_eight_omegaMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXiCoefficient_eq_omegaMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddle_angles_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleParameterMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_sectorialSaddleEquation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddle_derivative_mul_eq_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddle_derivative_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.sectorialSaddleCurvature_eq_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.sectorialSaddleCurvature_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.sectorialSaddleCurvature_ne_zero_of_box' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleNewtonMap_fixed_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleNewtonMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.SaddleContractionFamily.existsUnique_root_in_disc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.contractedSaddleBranch_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.contractedSaddleBranch_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.contractedSaddleBranch_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.contractedSaddleBranch_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.SaddleQuantitativeInput.logParameter_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_saddleComparisonCenter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleComparisonCenter_residual_div' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleComparisonCenter_residual_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleNewton_derivative_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleNewton_derivative_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleNewton_lipschitzOn_disc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleNewton_maps_disc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddle_disc_scaled_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_scaled_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasStrictDerivAt_saddleParameterMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.isOpen_leanSaddleSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.continuousAt_saddleComparisonCenter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_dist_center_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_dist_center_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_quantitativeSaddleBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_differentiableOn_leanSector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSectorialSaddleCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingIntegrand_eq_exp_logIntegrand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalPoint_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalPoint_im' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingTopPoint_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingConnectorPoint_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingConnectorPoint_mem_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalPoint_mem_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingLogIntegrand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingLogD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingLogD2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingLogD3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingLogIntegrand_differentiableOn_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingIntegrand_differentiableOn_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingCurvature_eq_paper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingLogD1_at_saddle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingLogD2_at_saddle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingLogIntegrand_at_saddle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integrable_leadingGaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integral_leadingGaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingRectangle_subset_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leading_finite_rectangle_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingBottomSegment_eq_top_sub_right_add_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_log_re_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_log_im_abs_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_log_norm_le_re_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleComparisonCenter_re_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_re_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_log_arg_abs_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleComparisonCenter_im_abs_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_im_abs_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingCurvature_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_strong_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_log_horizontal_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_leadingIntegrand_right_le_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_leadingRightSegment_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_leadingRightSegment_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.continuousOn_leadingHorizontalRay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_leadingHorizontalRay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_leadingBottomRay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_leadingBottomSegment_ray' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_leadingTopSegment_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leading_infinite_rectangle_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_leadingGaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integrable_abs_pow_mul_exp_neg_mul_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_abs_pow_mul_exp_neg_mul_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrable_pow_mul_leadingGaussian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_norm_pow_mul_leadingGaussian_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_norm_fourth_mul_leadingGaussian_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_norm_sixth_mul_leadingGaussian_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaussianMoment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingGaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaussianMoment_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaussianMoment_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaussianMoment_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integral_cubic_mul_leadingGaussian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.cubicTaylorIntegralOnSegment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.cubicTaylorIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_cubicTaylorRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingHorizontalLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingHorizontalD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingHorizontalD2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingHorizontalD3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalLog_contDiffAt_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalLog_iteratedDeriv_tower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalLog_iteratedDeriv_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingLocalExpansion_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_leadingLocalRemainder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_ratio_norm_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_leadingLogD4_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_localExpansion_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_localRemainder_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_cubicCoefficient_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_localPerturbation_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_localFactorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_expPerturbation_sub_cubic_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_integrand_sub_cubicGaussian_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_norm_ge_fourThousand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralRadius_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralRadius_le_tenth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_mul_centralRadius_cube_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralWindow_conditions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralWindow_pointwise' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralWindow_integral_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingGaussian_tail_moment_le_higher' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrable_leadingCubicGaussianApproximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_leadingCubicGaussianApproximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingCubicGaussianApproximation_truncation_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_integral_leadingGaussian_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_leadingCubicCorrection_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integral_leadingCubicGaussianApproximation_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_norm_integral_leadingGaussian_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_cubicGaussian_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gamma_five_halves_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gamma_seven_halves_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gamma_nine_halves_le_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gamma_eleven_halves_le_sixty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integral_norm_pow_mul_leadingGaussian_le_scaled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fourthGaussianMoment_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_sixthGaussianMoment_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_eighthGaussianMoment_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_tenthGaussianMoment_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_localMomentLedger_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_cubicGaussian_truncation_scaled_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralWindow_scaled_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centralGaussian_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_parameter_component_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_parameter_im_abs_lt_re_div_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_rational_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_exponential_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontalLogD2_re_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingHorizontalRealLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_leadingHorizontalRealD1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingHorizontalRealLog_iteratedDeriv_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_strictConcaveOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_mul_centralRadius_ge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_boundary_phase_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_boundary_phase_gaps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_boundary_derivative_signs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.concaveOn_right_tangent_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.concaveOn_left_tangent_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_phase_tail_envelopes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_leadingIntegrand_horizontal_eq_exp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_norm_tail_envelopes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_exp_neg_mul_sub_Ioi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_tail_integral_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_amplitude_le_gaussianMain_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_tail_relative_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_re_lt_curvature_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingCentralRadius_square_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.pow_fifteen_mul_exp_neg_div_twenty_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_tail_coefficient_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_horizontal_tail_relative_inverse_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_re_gt_eightHundredThousand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_norm_le_parameter_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_log_re_gt_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_phase_re_gt_eight_parameter_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingConnectorPoint_phase_re_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_leftSegment_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_threeHalves_le_exp_two_parameterNorm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_leftSegment_relative_inverse_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingTopRay_eq_centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_quantitativeSaddleBranch_centeredRay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centeredRay_integral_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_leadingTopRay_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_leadingBottomRay_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaGap_ge_three_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaComplexFactor_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaScalarFactor_le_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_higherThetaScalarFactor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaScalarFactor_tsum_le_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_neg_three_mul_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaScalarFactor_tsum_le_two_exp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_eq_fullMode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.summable_higherThetaComplexFactor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_higherThetaMode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_tsum_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.thetaStrip_modeParameter_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaContourIntegrand_sub_leading_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.continuousOn_higherThetaHorizontalMode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.aestronglyMeasurable_higherThetaHorizontalMode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.aestronglyMeasurable_higherThetaHorizontalSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_horizontal_geometric_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_higherThetaHorizontalMode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_norm_higherThetaHorizontalMode_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_integral_norm_higherThetaHorizontalMode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integral_tsum_higherThetaHorizontalMode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaHorizontalSum_norm_le_leading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_higherThetaHorizontalSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaTopRay_eq_leading_add_higher' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaTopRay_eq_tsum_modeIntegrals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_modeParameter_at_saddle_ge_curvature_div_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_modeParameter_beyond_leftBoundary_ge_curvature_div_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.two_exp_modeFactor_le_curvature_sq_inv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_central_leading_norm_integral_le_two_amplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_central_higherThetaSum_norm_le_curvature_sq_inv_mul_leading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_quantitativeSaddleBranch_centeredHigherThetaRay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_central_higherTheta_norm_integral_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_central_higherTheta_norm_integral_relative_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaTopRay_eq_centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_centeredHigherThetaRay_integral_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_higherThetaTopRay_relative_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaTopRay_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_differentiableOn_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_finite_rectangle_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaModeBottomSegment_eq_top_sub_right_add_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_higherThetaMode_right_le_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_higherThetaModeRightSegment_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_higherThetaModeRightSegment_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_higherThetaModeBottomSegment_ray' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.tendsto_higherThetaModeTopSegment_ray' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_infinite_rectangle_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.continuous_higherThetaMode_connector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaMode_connector_geometric_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasSum_intervalIntegral_higherThetaMode_connector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaLeftSegment_eq_tsum_modeSegments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_higherThetaModeTopRay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.summable_higherThetaModeBottomRay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_higherThetaModeLeftSegment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaTopRay_eq_tsum_modeTopRays' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherThetaBottomRay_eq_tsum_modeBottomRays' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.higherTheta_infinite_rectangle_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaBottomRay_eq_topRay_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullTheta_infinite_rectangle_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_higherThetaLeftSegment_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_connector_relative_inverse_curvature_of_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_higherThetaLeftSegment_relative_inverse_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaLeftSegment_relative_inverse_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaBottomRay_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaContourIntegrand_low_norm_le_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.aestronglyMeasurable_fullThetaContourIntegrand_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_fullThetaContourIntegrand_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaLowInterval_norm_le_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaLowInterval_norm_le_exp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaLowInterval_relative_inverse_curvature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.integrableOn_fullThetaContourIntegrand_bottom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMoment_eq_low_add_bottom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_fullThetaMoment_relative_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaContourIntegrand_eq_thetaTail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaContourIntegrand_evenNat_two_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMoment_evenNat_eq_thetaMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXiCoefficient_succ_thetaMomentAssembly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXiCoefficient_succ_eq_thetaMomentAssembly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.twoShiftRelativeError_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.twoShiftAssembly_of_errors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.holomorphicRelativeError_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.holomorphicRelativeError_norm_le_of_sub_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentMain_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMoment_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMomentRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.twoShiftRelativeError_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaTwoShiftAssembly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaTwoShiftRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleCurvatureAlong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleCurvatureAlongD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleCurvatureAlong_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleCurvatureAlong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleLeadingLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleLeadingLogD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleLeadingLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentLogMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentMain_eq_exp_logMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentLogMainD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleMomentLogMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleMomentMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentMain_logarithmicDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.branchDeriv_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.branchDeriv_div_branch_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleScaledFactorAlong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleScaledFactorAlongD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleCurvatureAlongD1_div_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_parameterNorm_gt_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_parameterNorm_ge_fiveHundredBillion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleScaledFactorAlong_norm_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleScaledFactorAlongD1_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleScaledFactorAlong_logDeriv_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleCurvatureAlong_logDeriv_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentLogMainD1_sub_log_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleBranchLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleBranchLogD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleBranchLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleBranchLogD1_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_sub_le_mul_of_hasDerivAt_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanTwoShiftAdmissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanTwoShiftAdmissible_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleBranchLog_segment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMainTwoShiftLogError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMainTwoShiftLogError_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMainTwoShiftRelativeError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentMain_twoShift_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMainTwoShiftRelativeError_mul_parameterNorm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanCoefficientSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanCoefficientSector_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentMain_fixedSector_twoShift_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMainTwoShiftRelativeError_fixedSector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.log_stirlingSeq_sub_limit_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.factorialStirlingCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.one_le_factorialStirlingCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.factorialStirlingCorrection_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.abs_factorialStirlingCorrection_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.factorialRatioCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.abs_factorialRatioCorrection_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.factorialStirlingMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.factorialRatioElementaryMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hollandFactorialRatioMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.factorialStirlingMain_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.factorialRatioElementaryMain_eq_holland' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.factorial_ratio_eq_elementaryMain_mul_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.factorial_ratio_relative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.re_add_le_norm_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_eps_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_rho_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_eps_natp1_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.inv_norm_sq_le_telescope_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.sum_inv_norm_sq_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.tsum_inv_norm_sq_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_rho_le_re_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_eps_le_re_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.summable_rho_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.summable_eps_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.summable_norm_rho_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.summable_norm_eps_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_tsum_rho_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_tsum_eps_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.digamma_eq_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.norm_eps_zero_le_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.digamma_stirling_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.differentiableAt_digamma_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.StirlingRight.digamma_stirling_re_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatioLogMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatioMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatioCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.digammaStirlingResidual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioLogDerivError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatioMain_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_Gamma_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_complexFactorialRatioLogMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_complexFactorialRatioMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_complexFactorialRatio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_complexFactorialRatioCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_gammaRatioLogDerivError_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.factorialRatioElementaryMain_eq_exp_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatioMain_natCast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatioCorrection_natCast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPathD1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPoint_re_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_gammaRatioAnchorPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorRate_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_gammaRatioAnchorPathD1_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_gammaRatioAnchorPath_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPath_zero_sub_one_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPath_zero_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorRate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exp_gammaRatioAnchorRate_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_gammaRatioAnchorPath_le_five_halves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_gammaRatioAnchorPathD1_le_three_fortieth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gammaRatioAnchorPath_one_sub_zero_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_complexFactorialRatioCorrection_sub_one_le_of_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_relative_error_of_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanCoefficientSector_floor_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_relative_error_fixedSector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMellinParameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientDyadicScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMellinParameter_nat_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier_evenNat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientDyadicScale_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMoment_nat_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_norm_le_two_log_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_curvature_inv_le_log_div_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier_sub_saddle_sq_norm_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier_sub_saddle_sq_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanXiCoefficientSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiMomentRelativeError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_exact_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMoment_factorization_of_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_shift_curvature_inv_le_log_div_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMoment_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiMomentRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_complexFactorialRatioCorrection_sub_one_fixedSector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientErrorCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMain_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficient_sector_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMellinKernelReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMellinKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.continuous_fullThetaMellinKernelReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.continuous_fullThetaMellinKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.locallyIntegrableOn_fullThetaMellinKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMellinKernelReal_isBigO_exp_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMellinKernel_isBigO_atTop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMellinKernel_isBigO_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fullThetaMoment_eq_mellin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_fullThetaMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.isOpen_leanCoefficientSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.isOpen_leanXiCoefficientSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_coefficientMellinParameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiCoefficientMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiCoefficientMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientRelativeError_eq_holomorphicRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiCoefficientMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiCoefficientMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiCoefficientRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficient_sector_holomorphic_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCoefficientElementaryMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientReindexCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientGaussianCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientCancellationCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptMainCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentMain_eq_manuscriptSaddleMain_mul_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier_ne_zero_of_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialMain_mul_dyadic_mul_multiplier_eq_manuscript' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMain_eq_manuscript_mul_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientReindexLogError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientReindexCorrection_eq_exp_logError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientReindexLogError_eq_rational_eps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leanSaddleSector_norm_le_two_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientReindexLogError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientReindexCorrection_sub_one_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientGaussianCorrection_sub_one_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMomentMultiplier_norm_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientCancellationCorrection_sub_one_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptMainCorrection_sub_one_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientErrorCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMoment_manuscript_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientMain_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficient_manuscript_sector_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_coefficientReindexCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_coefficientGaussianCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_coefficientCancellationCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_manuscriptMainCorrection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptMainCorrection_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_manuscriptXiCoefficientMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_manuscriptXiCoefficientRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_manuscriptXiCoefficientMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_manuscriptXiCoefficientRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficient_manuscript_sector_holomorphic_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchyRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchyEpsilon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchy_large_properties' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchy_closedBall_subset_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchy_shifted_norm_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientRelativeError_eq_holomorphicRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchy_error_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientRelativeError_derivatives_through_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiAuxiliaryMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_ne_zero_of_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_ne_zero_of_mem_leanXiCoefficientSector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiCoefficientMoment_eq_factorialRatio_mul_auxiliary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_mul_auxiliary_nat_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment_manuscript_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiAuxiliaryMain_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiAuxiliaryMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_manuscriptXiAuxiliaryMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiAuxiliaryMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_manuscriptXiAuxiliaryMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment_manuscript_sector_holomorphic_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment_relativeError_derivatives_through_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiCoefficientReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_riemannXiCoefficientReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiCoefficientReal_taylor_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXiCoefficient_im_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_mul_auxiliary_nat_succ_eq_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensenPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensenPolynomial_eq_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.conditionalTwoThirdsWedge_riemannXi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.conditionalTwoThirdsWedge_riemannXi_of_analyticInputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientRelativeError_norm_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.one_add_manuscriptXiCoefficientRelativeError_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.one_add_manuscriptXiCoefficientRelativeError_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiLogRelativeError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exp_manuscriptXiLogRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_manuscriptXiLogRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_manuscriptXiLogRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiLogRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiLogRelativeError_derivatives_through_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptInteriorCauchyRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptInterior_closedBall_subset_manuscriptDisc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiLogRelativeError_derivatives_through_six_on_half_disc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.lineSegment_re_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.shiftedSeventhPowerTail_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.shiftedSeventhPowerTail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_pow_six_sub_pow_six_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_inv_sub_inv_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_inv_pow_six_sub_inv_pow_six_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.summable_invPowSix_rightOfNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.polygammaFiveSeries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.polygammaFiveSeries_pair_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.inversePowerTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.inversePowerTermDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.inversePowerSeries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_inversePowerTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.inversePowerTermDerivative_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.summable_inversePowerSeries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_inversePowerSeries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.analyticAt_digamma_rightHalfPlane' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.deriv_digamma_eq_inversePowerSeries_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_digamma_eq_inversePowerSeries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_five_digamma_eq_polygammaFiveSeries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_five_digamma_pair_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.shiftedSixthPowerTail_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.shiftedSixthPowerTail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.polygammaFiveSeries_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_five_digamma_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualValue_eq_paired' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualValue_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiSixthLogDecomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiSixthLogDecomposition_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualValue_of_xiDecomposition_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualValue_norm_le_separateA' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameterA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameterB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameterC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameterD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameters_eq_jacobiParameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ResidualParameterCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameterCertificate_of_outerBox' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_outerBox_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.residualParameterA_floor_anchor_of_outerBox' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleG0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMainSix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ManuscriptG0SixthIdentification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddle_scaled_coordinates_in_box' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_norm_lower_half_realLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleH6_norm_lt_tenThousand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMainSix_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_six_manuscriptSaddleG0_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptMomentSaddleMainSix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMellinParameter_mem_leanSaddleSector_of_innerDisc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientMellinParameter_norm_ge_center_of_innerDisc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptMomentSaddleMainSix_norm_le_on_innerDisc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_outerBox_reducedSaddle_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_outerBox_farA_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.real_log_le_two_mul_div_ten_pow_forty_of_large' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchyEpsilon_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptQuarterAnchor_ge_twelfth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptFarAnchor_ge_quarter_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualCauchyConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualBCConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualDConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualAConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidualRateConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscript_fifth_log_le_sixth_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_cauchy_term_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_BC_term_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_D_term_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_A_term_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSixthResidual_outerBox_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiCoefficientLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiHalfShiftLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactJacobiLogQuotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiQuotientResidual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiffs_zero_iff_values_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiParameterMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiParameterMap_eq_zero_iff_forwardDiffs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiParameterMap_eq_zero_iff_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiParameterMap_eq_zero_iff_fin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiParameterMap_six_log_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryComponentOrder' does not depend on any axioms
+'Zeta23.Research.JensenWedge.elementaryComponentCoefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryComponentCoefficient_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterComponent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryParameterMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingXiSaddleVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingXiParameterMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingXiSaddleVector_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingXiParameterMap_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingXiParameterMap_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingXiParameterMap_unique_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhi_div_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff0_logRatio_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff1_logRatio_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff2_logRatio_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.natForwardDiff3_logRatio_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryQuotientResidual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryTriangularParameterMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryQuotientResidual_forward0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryQuotientResidual_forward1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryQuotientResidual_forward2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryQuotientResidual_forward3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryTriangularParameterMap_eq_exactElementary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.reciprocalPower_add_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhiD1_base_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhiD2_base_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.abs_integral_Icc_zero_one_sub_const_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhiD1_average_base_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhi_paired_value_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhi_boundary_value_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryRemoteTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPairedTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryGammaBoundaryTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterComponent_eq_boundaryTerms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryRemoteTerm_alpha' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryRemoteTerm_alpha_q1_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPhiD2_average_base_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryPairedTerm_w' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPairedTerm_w_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryPairedTerm_t' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryPairedTerm_t_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryGammaBoundaryTerm_delta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryGammaBoundaryTerm_delta_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinateComponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinateComponent_eq_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialAlpha' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialDelta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryCoordinateComponent_alpha' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryCoordinateComponent_t' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryCoordinateComponent_w' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_elementaryCoordinateComponent_delta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryCoordinatePartialT' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryCoordinatePartialW' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryCoordinatePartialDelta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialT_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialW_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialDelta_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryRemoteLimit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryCoordinateComponent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryCoordinateComponent_eq_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryRemoteErrorBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryRemoteTerm_limit_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinateComponent_value_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryCoordinatePartialAlpha' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryRemoteDerivativeErrorBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinatePartialAlpha_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryJacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryJacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryCoordinateComponent_has_all_partials' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryJacobianEntryErrorBound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryJacobian_entry_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.elementaryScale_comparisons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterMap_outerBox_value_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryJacobian_outerBox_entry_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiAuxiliarySecondDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiSaddleParameterMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiHalfShiftLog_eq_neg_logRatio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiQuotientResidual_eq_elementary_add_saddle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiParameterMap_eq_elementary_add_saddle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.branchMatrixCLM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterMap_differentiableAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterMap_fderiv_single' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterMap_hasFDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.branchMatrixCLM_sub_norm_le_of_entrywise' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gaugeInverseCLM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gaugeInverseCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gaugeInverseCLM_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryJacobian_outerBox_operator_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.branchInnerBox_coordinate_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.reciprocalPower_center_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.mul_reciprocalPower_center_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryJacobian_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryJacobian_innerBox_entry_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingElementaryJacobian_innerBox_operator_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.gaugeJacobianInvReal_mul_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gaugeInverseCLM_comp_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryAffineMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryAffineMap_hasFDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fixedInverseNewtonMap_exactElementaryAffine_hasFDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fixedInverse_derivative_defect_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryJacobian_innerBox_center_operator_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.fixedInverseNewtonMap_exactElementaryAffine_fderiv_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryAffine_jacobianIntervalCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryParameterMap_center_error_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryAffineMap_center_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryAffine_residualIntervalCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactElementaryAffine_positiveParameterBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ExactXiSaddleIntervalCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ExactXiSaddleIntervalCertificate.norm_sub_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXi_positiveParameterBranch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannOmegaMode_pos_of_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.summable_riemannOmegaMode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannOmega_pos_of_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.omegaLogAmplitude_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiCoefficientReal_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiDiscreteCoefficientLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_exactXiCoefficientLog_eq_complex_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiSecondDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexNatForwardDiff0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexNatForwardDiff1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexNatForwardDiff2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexNatForwardDiff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_secondDiff_exactXiCoefficientLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_exactXi_secondDiff_forwardDiffs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexForwardDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_complexForwardDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.continuous_complexDerivativeTower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_complexForwardDiff_sub_constant_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexSegment_real_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexSegment_integral_deriv_of_uIcc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_complexForwardDiff_on_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.norm_complexForwardDiff_sub_constant_le_on_real_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptCauchy_large_tenThousand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiLogRelativeError_analyticOnNhd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_iteratedDeriv_manuscriptXiLogRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.nat_five_interval_mem_manuscriptInteriorDisc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiLogRelativeError_forwardDiff_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiFactorialRatioReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiFactorialRatioReal_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexFactorialRatio_nat_eq_ofReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiAuxiliaryMomentReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiAuxiliaryMomentReal_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment_nat_eq_ofReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiDiscreteAuxiliaryLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_log_riemannXiAuxiliaryMomentReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiCoefficientLog_eq_factorial_add_auxiliary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiFactorialRatioReal_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.secondDiff_log_xiFactorialRatioReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliarySecondDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_exactXiAuxiliarySecondDiff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_exactXiAuxiliarySecondDiff_forwardDiffs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryMain_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiAuxiliaryMoment_natural_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryRelativeError_eq_momentError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiNaturalAuxiliaryMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiNaturalAuxiliaryMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiNaturalAuxiliaryRelativeError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryRelativeError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptXiCoefficientErrorRate_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryRelativeError_norm_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.one_add_complexXiNaturalAuxiliaryRelativeError_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.one_add_complexXiNaturalAuxiliaryRelativeError_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_complexXiNaturalAuxiliaryLogError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiNaturalAuxiliaryLogError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiNaturalAuxiliaryLogError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.naturalXiCauchyEpsilon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryRelativeError_cauchy_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError_derivatives_through_six_on_half_disc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError_analyticOnNhd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_iteratedDeriv_complexXiNaturalAuxiliaryLogError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError_forwardDiff_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalTwoShiftLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientCancellationCorrection_norm_sub_one_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coefficientCancellationCorrection_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_complexXiNaturalTwoShiftLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_coefficientCancellationCorrection_comp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiNaturalTwoShiftLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_complexXiNaturalAuxiliaryLogMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_complexXiNaturalAuxiliaryLogMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiNaturalAuxiliaryLogMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exp_complexXiNaturalAuxiliaryLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_complexXiNaturalAuxiliaryLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleComparisonCenter_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleComparisonCenter_ofReal_conj' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.sectorialSaddleEquation_conj_ofReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_ofReal_conj' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_ofReal_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.quantitativeSaddleBranch_ofReal_eq_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleLeadingLog_ofReal_im' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleCurvatureAlong_ofReal_im' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleMomentLogMain_ofReal_im' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalTwoShiftLog_ofReal_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogMain_ofReal_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryMain_ofReal_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryMain_ofReal_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.one_add_complexXiNaturalAuxiliaryRelativeError_nat_eq_ofReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.one_add_complexXiNaturalAuxiliaryRelativeError_nat_re_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError_nat_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLog_nat_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLog_nat_eq_discrete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliarySecondDiff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliarySecondDiff_eq_discrete' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_exactXiAuxiliarySecondDiff_forwardDiffs_natural' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.nat_mem_leanXiCoefficientSector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.nat_six_samples_mem_leanXiCoefficientSector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexForwardDiff_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.complexForwardDiff_comp_forwardDiff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliarySecondDiff_eq_forwardDiff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ofReal_exactXiAuxiliarySecondDiff_forwardDiffs_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogError_certificate_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.h2Numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3Numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4Numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5Numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h2ReducedDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3ReducedDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4ReducedDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5ReducedDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH2_zero_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH3_zero_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH4_zero_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH5_zero_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h2NumeratorMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3NumeratorMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4NumeratorMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5NumeratorMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h2NumeratorMajorant_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3NumeratorMajorant_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4NumeratorMajorant_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5NumeratorMajorant_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h2Numerator_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3Numerator_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4Numerator_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5Numerator_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH2_norm_lt_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH3_norm_lt_nineteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH4_norm_lt_oneHundredThree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH5_norm_lt_eightHundredFortyThree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.h2LimitErrorTerms' does not depend on any axioms
+'Zeta23.Research.JensenWedge.h3LimitErrorTerms' does not depend on any axioms
+'Zeta23.Research.JensenWedge.h4LimitErrorTerms' does not depend on any axioms
+'Zeta23.Research.JensenWedge.h5LimitErrorTerms' does not depend on any axioms
+'Zeta23.Research.JensenWedge.h2LimitErrorNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3LimitErrorNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4LimitErrorNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5LimitErrorNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h2LimitErrorNumerator_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3LimitErrorNumerator_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4LimitErrorNumerator_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5LimitErrorNumerator_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleLowerLimitRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleLowerLimitError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedBase_norm_lower_of_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH2_sub_one_norm_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH3_add_one_norm_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH4_sub_two_norm_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH5_add_six_norm_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMainTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMainThree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMainFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleMainFive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.ManuscriptG0LowerIdentification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddle_scaled_coordinates_in_lowerLimitBox' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddle_lower_reduced_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_manuscriptSaddleG0_lower_normalized_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexXiNaturalAuxiliaryLogMain_analyticOnNhd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_iteratedDeriv_complexXiNaturalAuxiliaryLogMain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexForwardDiff_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleThree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleFive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionThree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionFive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMain_orderTwo_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMain_orderThree_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMain_orderFour_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMain_orderFive_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalMainLowerDerivativeBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalMainLowerPointwiseCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalMainLowerPointwiseCertificate.derivativeBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalMainLowerDerivativeBounds.forwardDiff_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleFinalLimitRadius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleFinalLimitError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH2_sub_one_norm_lt_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH3_add_one_norm_lt_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH4_sub_two_norm_lt_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleH5_add_six_norm_lt_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddle_scaled_coordinates_in_box_of_rates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddle_lower_reduced_limits_final' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleQ_eq_curvature_mul_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleQ_re_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleQ_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableAt_xiNaturalMainSaddleRemainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.differentiableOn_xiNaturalMainSaddleRemainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleRemainder_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.norm_log_le_abs_realLog_add_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleRemainder_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleRemainder_derivatives_through_five_on_half_disc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainSaddleRemainder_analyticOnNhd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleG0_analyticOnNhd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_iteratedDeriv_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_manuscriptSaddleG0_comp_coefficientMellinParameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_xiNaturalMainSaddleRemainder_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionTwo_eq_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionThree_eq_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionFour_eq_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMainCorrectionFive_eq_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalMellinCenter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSaddleScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSaddleRatioError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSaddleBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalCorrectionBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalCorrectionScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalLogErrorBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalLogErrorScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalCertificateBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.center_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.n_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.interval_mellin_mem_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.center_mellin_mem_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.interval_coefficient_mem_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.interval_reduced_rates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.saddleScale_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.saddleScale_cast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.saddle_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.correction_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.pointwiseCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.logError_scaled_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalSaddleIntervalConditions.exactCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalExplicitLogCutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalExplicitCutoffIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exp_explicitLogCutoff_lt_cutoffIndex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_explicitLogCutoff_lt_of_cutoffIndex_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.ten_pow_oneSixty_le_exp_explicitLogCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSaddleIntervalConditions_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleTermDerivR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleTermDerivSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleTermsDerivR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleTermsDerivSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_evalBivariateTerms_r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_evalBivariateTerms_sigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_evalBivariateTerms_comp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.movingSaddleNumeratorStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h2Numerator_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h3Numerator_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h4Numerator_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.h5Numerator_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleQ_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleB_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_manuscriptSaddleR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_manuscriptSaddleSigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMainDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_saddleReducedMain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_step_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_step_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_step_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_step_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptG0AuxNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptG0FirstDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptSaddleQFirstDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_manuscriptSaddleQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_manuscriptSaddleG0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_manuscriptG0AuxNumerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.hasDerivAt_manuscriptG0FirstDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_two_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_three_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_four_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_five_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.iteratedDeriv_six_manuscriptSaddleG0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_h2_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_h3_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_h4_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_h5_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.saddleReducedMain_h6_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptG0LowerIdentification_of_mem_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.manuscriptG0SixthIdentification_of_mem_sector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalLowerIdentificationCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalLowerIdentificationCertificate_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiSaddleIntervalCertificate_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.explicitLogCutoff_half_le_xiNaturalSaddleScale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.explicitCutoff_xiNatural_branch_scales' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiPositiveParameterBranch_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalFirstCoefficientRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalFirstCoefficientRatio_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonB_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalJensenScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalJensenScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalTransformedPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.continuous_xiNaturalTransformedPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalCoefficientEstimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonFunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.continuous_xiNaturalComparisonFunction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalActualLogCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogIncrement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.secondDiff_sum_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.secondDiff_xiNaturalActualLogCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.secondDiff_xiNaturalModelLogCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exactXiQuotientResidual_eq_logCoordinate_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalActualLogCoordinate_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogCoordinate_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogCoordinate_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalResidualParameters_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exp_xiNaturalModelLogIncrement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.alternatingChoose_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2Coefficient_eq_xiNaturalModel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalActualLogCoordinate_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSixLogCoordinates_match' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSixMultipliers_match' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalActualLogPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coeff_xiNaturalActualLogPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.coeff_xiNaturalModelLogPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogPolynomial_eq_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.eval_xiNaturalModelLogPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.exp_xiNaturalActualLogCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.eval_xiNaturalActualLogPolynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSixPolynomialCoefficients_match' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSixPolynomialCoefficients_match_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalLogPolynomials_eq_of_degree_le_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSixLogCoordinates_match_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.explicitCutoff_inverse_xiNaturalSaddleScale_le_twelve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalModelLogPolynomial_eq_comparison_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalSixPolynomialCoefficients_match_comparison_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorMagnitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorCoefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorMagnitude_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorMagnitude_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coeff_jacobiFactorPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorPolynomial_coeff_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorMagnitude_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.eval_jacobiFactorPolynomial_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.jacobiFactorCoefficient_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.coeff_finiteFree_jacobiFactors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2Coefficient_eq_jacobiMagnitudes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2Polynomial_eq_finiteFree_jacobiFactors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonPolynomial_eq_finiteFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonPolynomial_eq_finiteFree_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MSSFiniteFreeIntervalInput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.sqrt_mul_div_self_eq_sqrt_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.first_factor_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.second_scaled_factor_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_hasDistinctPositiveRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalFiniteFreeGeometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_root_product_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.sqrt_mul_sqrt_div_eq_mul_sqrt_div' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_root_localization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalFiniteFreeGeometry_of_n_ge_256d' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalFiniteFreeWedgeConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.twoThirdsWedge_n_ge_256_mul_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalFiniteFreeGeometry_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_root_localization_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.normalizedDerivativeJet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.normalizedDerivativeJet_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.normalizedDerivativeJet_le_one_of_contractive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.abs_le_radius_pow_of_normalizedDerivativeJet_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.FourTermCriticalRadiusCertificate.contractive_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.FourTermCriticalRadiusCertificate.derivative_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.polynomialDerivativeRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.polynomialEulerJet_derivative_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2_polynomialDerivativeRatio_fourTerm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2Polynomial_natDegree_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.polynomialDerivativeRatio_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.polynomialDerivativeRatio_one_of_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.polynomialDerivativeRatio_succ_degree_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2CriticalRadiusCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2_critical_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusCoefficientBounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2CriticalRadiusCertificate_of_coefficientBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2_critical_radius_of_coefficientBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry.basic_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry.cubic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry.constant_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry.center_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry.linear_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.CriticalRadiusParameterGeometry.coefficientBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2CriticalRadiusCertificate_of_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2_critical_radius_of_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalCriticalRadiusWedgeConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.twoThirdsWedge_n_ge_criticalRadius_mul_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.criticalRadiusScale_small_of_degree_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.polynomial_critical_mem_interval_of_complete_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_critical_localization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_critical_localization_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.criticalRadiusParameterGeometry_of_outerBox' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.criticalRadiusParameterGeometry_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparison_critical_radius_of_explicitCutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

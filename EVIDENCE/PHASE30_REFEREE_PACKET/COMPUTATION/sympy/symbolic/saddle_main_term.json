@@ -1,0 +1,35 @@
+{
+  "chain_rule_h_fifth_coefficient": "-12",
+  "implicit_derivative": "dL/dN = L / ((1+L)N - 3L^2/4)",
+  "rows": [
+    {
+      "checks": {
+        "leading_rational_identity": true,
+        "sigma_remainder_is_regular_at_zero": true
+      },
+      "derivative_order": 4,
+      "difference_is_sigma_times_rational": true,
+      "normalized_expression": "N^3*L*G0^(4)(N)",
+      "r_zero_limit": "2",
+      "sigma_zero_limit": "(2*r**4 + 10*r**3 + 20*r**2 + 11*r + 2)/(r + 1)**5"
+    },
+    {
+      "checks": {
+        "leading_rational_identity": true,
+        "sigma_remainder_is_regular_at_zero": true
+      },
+      "derivative_order": 5,
+      "difference_is_sigma_times_rational": true,
+      "normalized_expression": "N^4*L*G0^(5)(N)",
+      "r_zero_limit": "-6",
+      "sigma_zero_limit": "-(6*r**6 + 42*r**5 + 126*r**4 + 210*r**3 + 146*r**2 + 47*r + 6)/(r + 1)**7"
+    }
+  ],
+  "scale_variables": {
+    "r": "1/L",
+    "sigma": "L/N"
+  },
+  "scope": "Exact differentiation of the explicit G0 main term. The sectorial remainder, explicit normalization terms, and uniformity are not proved by this symbolic calculation.",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

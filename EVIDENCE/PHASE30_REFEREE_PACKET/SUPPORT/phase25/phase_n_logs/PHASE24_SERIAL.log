@@ -1,0 +1,149 @@
+PASS phase24 exact interval certificates
+PASS Mathematica M1--M4 evidence: exact hashes, exact ledger, no external-input operations
+PASS phase24 release-source checks
+PASS mutation rejected: wedge exponent
+PASS mutation rejected: review overclaim
+PASS mutation rejected: factor-eight factorial
+PASS mutation rejected: factor-eight kernel weight
+PASS mutation rejected: critical-point radius
+PASS mutation rejected: Hermite--Genocchi Lean scope
+PASS mutation rejected: effectivity overclaim
+PASS mutation rejected: log-mesh convention reversal
+PASS mutation rejected: missing P1 recurrence display
+PASS mutation rejected: Lean proof escape
+PASS mutation rejected: missing headline import
+PASS mutation rejected: malformed source hash
+PASS mutation rejected: CAS clean-room rule
+PASS mutation rejected: Mathematica M4 completion
+PASS mutation rejected: branch-box point
+PASS mutation rejected: H6 majorant certificate
+PASS all phase24 mutation tests
+PASS manuscript factor-eight equation regression (n=0..4, max relative error 2.3963e-37)
+PASS manuscript critical-point radius regression (correct K_r=0.880246, stale-scale ratio=14681.5)
+PASS all Phase-24 manuscript equation regressions
+⚠ [8708/8719] Replayed Zeta23.Research.JensenWedge.HermiteGenocchiCube
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:71: This simp argument is unused:
+  I₃
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:64: This simp argument is unused:
+  I₂
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:57: This simp argument is unused:
+  I₁
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:157:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:180:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8709/8719] Replayed Zeta23.Research.JensenWedge.HermiteGenocchiFTC
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:40:33: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:111:14: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hermiteGenocchiTriangleMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:127:19: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hermiteGenocchiTriangleMass, C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8710/8719] Replayed Zeta23.Research.JensenWedge.ComplexHermiteGenocchi
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:150:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:195:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8712/8719] Replayed Zeta23.Research.JensenWedge.ElementaryCubeCalculus
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:128:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8717/8719] Replayed Zeta23.Research.JensenWedge.FiniteFreeAdapters
+warning: Zeta23/Research/JensenWedge/FiniteFreeAdapters.lean:104:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (8719 jobs).
+PASS Phase 24 formalization, interval, and mutation gates

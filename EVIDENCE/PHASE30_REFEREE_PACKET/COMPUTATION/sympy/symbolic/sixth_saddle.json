@@ -1,0 +1,26 @@
+{
+  "chain_rule_h_sixth_coefficient": "48",
+  "checks": {
+    "denominator_nonzero_at_origin": true,
+    "leading_rational_identity": true,
+    "normalized_main_limit_is_24": true,
+    "normalized_value_at_origin_is_24": true,
+    "reduced_denominator_identity": true,
+    "sigma_remainder_is_regular_at_zero": true
+  },
+  "denominator_value_at_origin": "16777216",
+  "difference_is_sigma_times_rational": true,
+  "implicit_derivative": "dL/dN = L / ((1+L)N - 3L^2/4)",
+  "normalized_expression": "N^5*L*G0^(6)(N)",
+  "numerator_term_count": 82,
+  "r_zero_limit": "24",
+  "reduced_denominator": "(4*r - 3*sigma + 4)**12",
+  "scale_variables": {
+    "r": "1/L",
+    "sigma": "L/N"
+  },
+  "scope": "Exact differentiation of the explicit G0 main term only. The extension of Holland's sectorial remainder estimate to derivative six and the residual-multiplier argument are paper steps.",
+  "sigma_zero_limit": "(24*r**8 + 216*r**7 + 864*r**6 + 2016*r**5 + 3024*r**4 + 2399*r**3 + 1042*r**2 + 242*r + 24)/(r + 1)**9",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

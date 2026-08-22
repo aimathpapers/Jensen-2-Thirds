@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+phase14_dir="$(cd "$(dirname "$0")" && pwd)"
+workspace_root="$(cd "$phase14_dir/../.." && pwd)"
+lean_root="$workspace_root/Kimi_Agent_Riemann Lean Exploration/zeta-23-lean"
+elan_root="${ELAN_HOME:-$workspace_root/Kimi_Agent_Riemann Lean Exploration/.elan}"
+lake_bin="$elan_root/bin/lake"
+
+if [[ ! -x "$lake_bin" ]]; then
+  echo "missing pinned Lake proxy: $lake_bin" >&2
+  exit 2
+fi
+
+(
+  cd "$lean_root"
+  env ELAN_HOME="$elan_root" "$lake_bin" build Zeta23.Research.JensenWedge
+  env ELAN_HOME="$elan_root" "$lake_bin" env leanchecker Zeta23.Research.JensenWedge
+  env ELAN_HOME="$elan_root" "$lake_bin" env lean "$phase14_dir/Phase14Axioms.lean"
+
+  if rg -n '\b(sorry|admit|axiom|unsafe|native_decide|implemented_by)\b' \
+      Zeta23/Research/JensenWedge.lean \
+      Zeta23/Research/JensenWedge; then
+    echo "escape scan failed" >&2
+    exit 3
+  fi
+)
+
+echo "Phase 14 verification PASS"
+echo "  finite-difference signs and normalization weights kernel-checked"
+echo "  elementary/gamma C1 proof recorded at paper level"
+echo "  xi-side value assembly and contraction remain open"
+

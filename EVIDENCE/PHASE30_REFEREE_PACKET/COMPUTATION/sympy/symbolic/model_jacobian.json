@@ -1,0 +1,40 @@
+{
+  "all_entries_divisible_by_x": true,
+  "all_entries_free_of_inverse_e": true,
+  "displayed_alpha_error_column_zero": true,
+  "jacobian_deviation_rows": [
+    [
+      "0",
+      "3*w*x/t**4 - 4*w*x**2/t**5 + 5*w*x**3/t**6 - 6*w*x**4/t**7",
+      "-x/t**3 + x**2/t**4 - x**3/t**5 + x**4/t**6",
+      "x**4 - x**3 + x**2 - x"
+    ],
+    [
+      "0",
+      "12*w*x/t**5 - 35*w*x**2/t**6 + 90*w*x**3/t**7",
+      "-3*x/t**4 + 7*x**2/t**5 - 15*x**3/t**6",
+      "-15*x**3 + 7*x**2 - 3*x"
+    ],
+    [
+      "0",
+      "90*w*x/t**6 - 450*w*x**2/t**7",
+      "-18*x/t**5 + 75*x**2/t**6",
+      "75*x**2 - 18*x"
+    ],
+    [
+      "0",
+      "240*w*x/t**7",
+      "-40*x/t**6",
+      "-40*x"
+    ]
+  ],
+  "scope": "Exact algebra for the same first-order-in-e, fifth-order-in-x truncated series as Phase 8. Uniform bounds for omitted terms are a separate paper argument.",
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "variable_order": [
+    "alpha",
+    "t",
+    "w",
+    "delta"
+  ]
+}

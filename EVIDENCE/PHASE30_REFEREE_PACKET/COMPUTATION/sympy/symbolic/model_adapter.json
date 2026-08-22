@@ -1,0 +1,32 @@
+{
+  "coordinates": {
+    "A": "alpha/(x*e)",
+    "B": "(t+w*e)/x",
+    "C": "t/x",
+    "D": "(1+delta*e)/x",
+    "e": "1/L_n",
+    "x": "1/n"
+  },
+  "displayed_deviations": [
+    "x**4*(delta + w/t**6 + 21/(16*e)) + x**3*(-delta + 3 - w/t**5 - 1/e) + x**2*(delta - 7/3 + w/t**4 + 3/(4*e)) + x*(-delta + 2 - w/t**3 - 1/(2*e))",
+    "x**3*(-15*delta - 15*w/t**6 - 21/(4*e)) + x**2*(7*delta - 15/2 + 7*w/t**5 + 15/(8*e)) + x*(-3*delta + 3 - 3*w/t**4 - 1/(2*e))",
+    "x**2*(75*delta + 75*w/t**6 + 21/(2*e)) + x*(-18*delta + 12 - 18*w/t**5 - 3/(2*e))",
+    "x*(-40*delta - 40*w/t**6 - 2/e)"
+  ],
+  "exact_decomposition_checks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "normalized_component_limits": [
+    "delta - 2 + w/t**2 + 1/alpha",
+    "delta - 1 + w/t**3",
+    "3*delta - 2 + 3*w/t**4",
+    "4*delta - 2 + 4*w/t**5"
+  ],
+  "rate_diagnostic": "displayed terms are O(x/e+x); omitted formal terms are expected O(e+x/e)",
+  "scope": "Exact algebra for a series truncated at first order in e and fifth order in x. This does not bound the omitted terms, prove the xi saddle expansion, or establish C1 convergence.",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

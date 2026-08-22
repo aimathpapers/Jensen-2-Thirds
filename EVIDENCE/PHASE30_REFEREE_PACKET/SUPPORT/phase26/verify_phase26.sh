@@ -1,0 +1,318 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+PYTHON="${C48_PYTHON:-$ROOT/.venv/bin/python}"
+LEAN_ROOT="$ROOT/Kimi_Agent_Riemann Lean Exploration/zeta-23-lean"
+TMP_DIR="$(mktemp -d)"
+trap 'rm -rf "$TMP_DIR"' EXIT
+
+"$PYTHON" "$ROOT/ground_zero_work/phase26/verify_phase26_plan.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/saddle_order_six_certificate.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/canonical_certificates_semantic_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t1_semantic_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t2_semantic_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_semantic_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_gaussian_moment_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_local_expansion_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_exponential_perturbation_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_central_window_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_gaussian_truncation_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_gaussian_relative_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_moment_scale_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_central_relative_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_horizontal_concavity_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_horizontal_boundary_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_horizontal_tail_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_horizontal_relative_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_horizontal_scale_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_endpoint_connector_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t3_assembly_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t4_mode_factor_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t4_integral_exchange_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t4_curvature_scale_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t4_three_region_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t4_full_contour_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_low_interval_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_theta_assembly_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_two_shift_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_saddle_main_differential_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_saddle_main_ratio_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_factorial_stirling_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_right_halfplane_stirling_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_gamma_ratio_stirling_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_coefficient_assembly_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_full_theta_holomorphic_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_manuscript_main_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_manuscript_correction_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t5_manuscript_theorem_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_manuscript_cauchy_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_auxiliary_moment_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_riemann_xi_target_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_log_error_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_polygamma_pairing_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_polygamma_derivative_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_sixth_residual_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_residual_parameter_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_moving_saddle_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_moment_saddle_residual_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_far_a_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_residual_rate_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_exact_parameter_map_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_parameter_map_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_parameter_identity_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_boundary_estimate_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_parameter_derivative_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_component_differential_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_component_value_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_alpha_differential_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_jacobian_assembly_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_c1_box_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_exact_parameter_decomposition_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_frechet_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_jacobian_operator_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_leading_jacobian_variation_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_contraction_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_elementary_residual_branch_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_exact_xi_branch_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_coefficient_positivity_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_coefficient_log_bridge_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_forward_difference_calculus_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_local_forward_difference_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_log_forward_difference_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_auxiliary_log_bridge_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_auxiliary_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_log_error_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_log_forward_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_log_main_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_integer_bridge_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_certificate_decomposition_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_main_lower_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_interval_budget_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_moving_saddle_derivative_identification_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_explicit_branch_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_six_match_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_finite_free_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_critical_radius_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_terminating_critical_radius_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_critical_radius_coefficient_mutations.py"
+"$PYTHON" "$ROOT/ground_zero_work/phase26/t6_xi_natural_critical_radius_mutations.py"
+
+(
+  cd "$LEAN_ROOT"
+  lake build Zeta23.Research.JensenWedge.SaddleOrderSix \
+    Zeta23.GammaFacts.StirlingRight \
+    Zeta23.Research.JensenWedge.SaddleOrderSixAlgebra \
+    Zeta23.Research.JensenWedge.CanonicalCertificates \
+    Zeta23.Research.JensenWedge.XiMellin \
+    Zeta23.Research.JensenWedge.MellinLogMoments \
+    Zeta23.Research.JensenWedge.ThetaOmega \
+    Zeta23.Research.JensenWedge.XiOmegaIntegral \
+    Zeta23.Research.JensenWedge.ThetaOmegaDecay \
+    Zeta23.Research.JensenWedge.ThetaOmegaMoments \
+    Zeta23.Research.JensenWedge.XiOmegaCoefficients \
+    Zeta23.Research.JensenWedge.SectorialSaddle \
+    Zeta23.Research.JensenWedge.LeadingSaddleContour \
+    Zeta23.Research.JensenWedge.LeadingLocalExpansion \
+    Zeta23.Research.JensenWedge.LeadingHorizontalConcavity \
+    Zeta23.Research.JensenWedge.LeadingHorizontalBoundary \
+    Zeta23.Research.JensenWedge.LeadingHorizontalTails \
+    Zeta23.Research.JensenWedge.LeadingHorizontalRelative \
+    Zeta23.Research.JensenWedge.LeadingHorizontalScale \
+    Zeta23.Research.JensenWedge.LeadingEndpointConnector \
+    Zeta23.Research.JensenWedge.LeadingT3Assembly \
+    Zeta23.Research.JensenWedge.HigherThetaModes \
+    Zeta23.Research.JensenWedge.HigherThetaIntegral \
+    Zeta23.Research.JensenWedge.HigherThetaScale \
+    Zeta23.Research.JensenWedge.HigherThetaSuppression \
+    Zeta23.Research.JensenWedge.HigherThetaContour \
+    Zeta23.Research.JensenWedge.FullThetaMoment \
+    Zeta23.Research.JensenWedge.ThetaMomentAssembly \
+    Zeta23.Research.JensenWedge.TwoShiftCoefficient \
+    Zeta23.Research.JensenWedge.SaddleMainDifferential \
+    Zeta23.Research.JensenWedge.SaddleMainRatio \
+    Zeta23.Research.JensenWedge.FactorialRatioStirling \
+    Zeta23.Research.JensenWedge.GammaRatioStirling \
+    Zeta23.Research.JensenWedge.CoefficientAssembly \
+    Zeta23.Research.JensenWedge.FullThetaHolomorphic \
+    Zeta23.Research.JensenWedge.ManuscriptCoefficientMain \
+    Zeta23.Research.JensenWedge.ManuscriptCorrectionBounds \
+    Zeta23.Research.JensenWedge.ManuscriptCoefficientTheorem \
+    Zeta23.Research.JensenWedge.ManuscriptCauchyTransport \
+    Zeta23.Research.JensenWedge.XiAuxiliaryMoment \
+    Zeta23.Research.JensenWedge.RiemannXiJensen \
+    Zeta23.Research.JensenWedge.XiLogError \
+    Zeta23.Research.JensenWedge.PolygammaPairing \
+    Zeta23.Research.JensenWedge.PolygammaDerivative \
+    Zeta23.Research.JensenWedge.SixthResidualAssembly \
+    Zeta23.Research.JensenWedge.ResidualParameterGeometry \
+    Zeta23.Research.JensenWedge.MovingSaddleSixth \
+    Zeta23.Research.JensenWedge.MomentSaddleResidual \
+    Zeta23.Research.JensenWedge.SixthResidualRate \
+    Zeta23.Research.JensenWedge.ExactParameterMap \
+    Zeta23.Research.JensenWedge.ElementaryParameterMap \
+    Zeta23.Research.JensenWedge.ElementaryParameterIdentity \
+    Zeta23.Research.JensenWedge.ElementaryBoundaryEstimates \
+    Zeta23.Research.JensenWedge.ElementaryParameterDerivatives \
+    Zeta23.Research.JensenWedge.ElementaryComponentDifferential \
+    Zeta23.Research.JensenWedge.ElementaryComponentValue \
+    Zeta23.Research.JensenWedge.ElementaryAlphaDifferential \
+    Zeta23.Research.JensenWedge.ElementaryJacobianAssembly \
+    Zeta23.Research.JensenWedge.ElementaryC1Box \
+    Zeta23.Research.JensenWedge.ExactParameterDecomposition \
+    Zeta23.Research.JensenWedge.ElementaryFrechet \
+    Zeta23.Research.JensenWedge.ElementaryJacobianOperator \
+    Zeta23.Research.JensenWedge.LeadingJacobianVariation \
+    Zeta23.Research.JensenWedge.ElementaryContraction \
+    Zeta23.Research.JensenWedge.ElementaryResidualBranch \
+    Zeta23.Research.JensenWedge.ExactXiBranch \
+    Zeta23.Research.JensenWedge.XiCoefficientPositivity \
+    Zeta23.Research.JensenWedge.XiCoefficientLogBridge \
+    Zeta23.Research.JensenWedge.ForwardDifferenceCalculus \
+    Zeta23.Research.JensenWedge.LocalForwardDifferenceCalculus \
+    Zeta23.Research.JensenWedge.XiLogErrorForwardDifferences \
+    Zeta23.Research.JensenWedge.XiAuxiliaryLogBridge \
+    Zeta23.Research.JensenWedge.XiNaturalAuxiliaryFactorization \
+    Zeta23.Research.JensenWedge.XiNaturalLogError \
+    Zeta23.Research.JensenWedge.XiNaturalLogErrorForwardDifferences \
+    Zeta23.Research.JensenWedge.XiNaturalLogMain \
+    Zeta23.Research.JensenWedge.PositiveRealSaddle \
+    Zeta23.Research.JensenWedge.XiNaturalLogIntegerBridge \
+    Zeta23.Research.JensenWedge.XiNaturalLogCertificateDecomposition \
+    Zeta23.Research.JensenWedge.SaddleLowerOrders \
+    Zeta23.Research.JensenWedge.SaddleLowerOrderLimits \
+    Zeta23.Research.JensenWedge.MovingSaddleLowerOrders \
+    Zeta23.Research.JensenWedge.XiNaturalMainLowerForwardDifferences \
+    Zeta23.Research.JensenWedge.XiNaturalMainCorrectionBounds \
+    Zeta23.Research.JensenWedge.MovingSaddleDerivativeIdentification \
+    Zeta23.Research.JensenWedge.XiNaturalMainIntervalBudgets \
+    Zeta23.Research.JensenWedge.XiNaturalExplicitBranch \
+    Zeta23.Research.JensenWedge.XiNaturalTransformedPolynomial \
+    Zeta23.Research.JensenWedge.XiNaturalSixCoefficientMatch \
+    Zeta23.Research.JensenWedge.XiNaturalFiniteFreeSpecialization \
+    Zeta23.Research.JensenWedge.CriticalRadiusRecurrence \
+    Zeta23.Research.JensenWedge.Terminating3F2CriticalRadius \
+    Zeta23.Research.JensenWedge.CriticalRadiusCoefficientBounds \
+    Zeta23.Research.JensenWedge.XiNaturalCriticalRadius \
+    Zeta23.Research.JensenWedge.LeadingExponentialPerturbation \
+    Zeta23.Research.JensenWedge.LeadingCentralWindow \
+    Zeta23.Research.JensenWedge.LeadingGaussianTruncation \
+    Zeta23.Research.JensenWedge.LeadingGaussianRelative \
+    Zeta23.Research.JensenWedge.LeadingMomentScale \
+    Zeta23.Research.JensenWedge.LeadingCentralRelative \
+    Zeta23.Research.JensenWedge
+  lake env lean "$ROOT/ground_zero_work/phase26/Phase26Axioms.lean" \
+    > "$TMP_DIR/PHASE26_AXIOM_AUDIT.txt"
+)
+
+"$PYTHON" "$ROOT/ground_zero_work/phase26/verify_phase26_axioms.py" \
+  --output "$TMP_DIR/PHASE26_AXIOM_AUDIT.txt"
+
+if rg -n '^\s*(sorry|admit|axiom|unsafe)\b' \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SaddleOrderSix.lean" \
+  "$LEAN_ROOT/Zeta23/GammaFacts/StirlingRight.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SaddleOrderSixAlgebra.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/CanonicalCertificates.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiMellin.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/MellinLogMoments.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ThetaOmega.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiOmegaIntegral.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ThetaOmegaDecay.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ThetaOmegaMoments.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiOmegaCoefficients.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SectorialSaddle.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingSaddleContour.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingGaussianMoments.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingLocalExpansion.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingHorizontalConcavity.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingHorizontalBoundary.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingHorizontalTails.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingHorizontalRelative.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingHorizontalScale.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingEndpointConnector.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingT3Assembly.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/HigherThetaModes.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/HigherThetaIntegral.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/HigherThetaScale.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/HigherThetaSuppression.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/HigherThetaContour.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/FullThetaMoment.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ThetaMomentAssembly.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/TwoShiftCoefficient.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SaddleMainDifferential.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SaddleMainRatio.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/FactorialRatioStirling.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/GammaRatioStirling.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/CoefficientAssembly.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/FullThetaHolomorphic.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ManuscriptCoefficientMain.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ManuscriptCorrectionBounds.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ManuscriptCoefficientTheorem.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ManuscriptCauchyTransport.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiAuxiliaryMoment.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/RiemannXiJensen.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiLogError.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/PolygammaPairing.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/PolygammaDerivative.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SixthResidualAssembly.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ResidualParameterGeometry.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/MovingSaddleSixth.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/MomentSaddleResidual.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SixthResidualRate.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ExactParameterMap.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryParameterMap.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryParameterIdentity.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryBoundaryEstimates.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryParameterDerivatives.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryComponentDifferential.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryComponentValue.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryAlphaDifferential.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryJacobianAssembly.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryC1Box.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ExactParameterDecomposition.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryFrechet.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryJacobianOperator.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingJacobianVariation.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryContraction.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ElementaryResidualBranch.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ExactXiBranch.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiCoefficientPositivity.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiCoefficientLogBridge.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/ForwardDifferenceCalculus.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LocalForwardDifferenceCalculus.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiLogErrorForwardDifferences.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiAuxiliaryLogBridge.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalAuxiliaryFactorization.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalLogError.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalLogErrorForwardDifferences.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalLogMain.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/PositiveRealSaddle.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalLogIntegerBridge.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalLogCertificateDecomposition.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SaddleLowerOrders.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/SaddleLowerOrderLimits.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/MovingSaddleLowerOrders.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalMainLowerForwardDifferences.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalMainCorrectionBounds.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/MovingSaddleDerivativeIdentification.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalMainIntervalBudgets.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalExplicitBranch.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalTransformedPolynomial.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalSixCoefficientMatch.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalFiniteFreeSpecialization.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/CriticalRadiusRecurrence.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/Terminating3F2CriticalRadius.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/CriticalRadiusCoefficientBounds.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/XiNaturalCriticalRadius.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingExponentialPerturbation.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingCentralWindow.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingGaussianTruncation.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingGaussianRelative.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingMomentScale.lean" \
+  "$LEAN_ROOT/Zeta23/Research/JensenWedge/LeadingCentralRelative.lean"
+then
+  printf '%s\n' 'FAIL: proof escape in Phase 26 formal sources' >&2
+  exit 1
+fi
+
+echo "PASS Phase 26 exact algebra and concrete certificate gates"

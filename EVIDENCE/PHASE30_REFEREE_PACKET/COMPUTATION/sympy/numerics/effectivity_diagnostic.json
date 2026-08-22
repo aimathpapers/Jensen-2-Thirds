@@ -1,0 +1,19 @@
+{
+  "c3_sufficient_raw_error_cap": "3/1216",
+  "formal_status": "illustrative only",
+  "gauge_inverse_infinity_norm": "304/3",
+  "gauge_inverse_row_sums": [
+    "87",
+    "15",
+    "304/3",
+    "10/3"
+  ],
+  "illustrative_log10_K_scale": 3778.432952959241,
+  "illustrative_log10_n": 1887.397436954795,
+  "illustrative_required_L_n": 4337.066666666667,
+  "interpretation": "If the externally reported 10.7/L_n diagnostic were a rigorous global bound with no lower-order loss, the unweighted contraction would not reach its sufficient C3 threshold until n was around 10^1887. This does not provide an explicit theorem threshold.",
+  "matrix_arithmetic": "exact rational",
+  "reported_asymptotic_error_coefficient": 10.7,
+  "rescaling_status": "A diagonal rescaling cannot be certified from one aggregate norm coefficient; componentwise value and Jacobian error constants are required before optimizing a weighted norm.",
+  "status": "PASS"
+}

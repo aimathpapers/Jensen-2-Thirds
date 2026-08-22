@@ -1,0 +1,24 @@
+PASS phase24 exact interval certificates
+PASS Mathematica M1--M4 evidence: exact hashes, exact ledger, no external-input operations
+PASS phase24 release-source checks
+PASS mutation rejected: wedge exponent
+PASS mutation rejected: review overclaim
+PASS mutation rejected: factor-eight factorial
+PASS mutation rejected: factor-eight kernel weight
+PASS mutation rejected: critical-point radius
+PASS mutation rejected: effectivity overclaim
+PASS mutation rejected: log-mesh convention reversal
+PASS mutation rejected: missing P1 recurrence display
+PASS mutation rejected: Lean proof escape
+PASS mutation rejected: missing headline import
+PASS mutation rejected: malformed source hash
+PASS mutation rejected: CAS clean-room rule
+PASS mutation rejected: Mathematica M4 completion
+PASS mutation rejected: branch-box point
+PASS mutation rejected: H6 majorant certificate
+PASS all phase24 mutation tests
+PASS manuscript factor-eight equation regression (n=0..4, max relative error 2.3963e-37)
+PASS manuscript critical-point radius regression (correct K_r=0.880246, stale-scale ratio=14681.5)
+PASS all Phase-24 manuscript equation regressions
+Build completed successfully (8710 jobs).
+PASS Phase 24 formalization, interval, and mutation gates

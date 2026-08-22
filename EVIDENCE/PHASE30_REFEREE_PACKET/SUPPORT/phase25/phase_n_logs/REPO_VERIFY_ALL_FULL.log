@@ -1,0 +1,551 @@
+PASS Phase-25 metadata: baseline ancestry/logs, T1--T18 assurance, acyclic dependencies, Lean declarations, normalizations, and asymptotic-language inventory
+PASS semantic mutation rejected: missing T15 -> T16 seam
+PASS semantic mutation rejected: T2/T18 dependency cycle
+PASS semantic mutation rejected: unsupported green T1 classification
+PASS semantic mutation rejected: hidden MMP input
+PASS semantic mutation rejected: stale external HG dependency
+PASS semantic mutation rejected: fifth-for-sixth wedge exponent
+PASS semantic mutation rejected: factor-eight factorial transposition
+PASS semantic mutation rejected: positive branch point
+PASS semantic mutation rejected: H6 coefficientwise majorant
+PASS all Phase-25 semantic baseline mutations
+PASS phase24 exact interval certificates
+PASS Mathematica M1--M4 evidence: exact hashes, exact ledger, no external-input operations
+PASS Phase H effectivity ledger: exact DAG, explicit geometry K, symbolic final K, and honest analytic boundary
+PASS expanded manuscript sources, equations, references, review language, and PDFs
+PASS behavioral mutation rejected: sector nesting
+PASS behavioral mutation rejected: simplex mass 1/120
+PASS behavioral mutation rejected: factor-eight factorial
+PASS behavioral mutation rejected: branch coordinate permutation
+PASS behavioral mutation rejected: center-only contraction certificate
+PASS behavioral mutation rejected: hypergeometric recurrence sign
+PASS behavioral mutation rejected: Jacobi squared threshold
+PASS behavioral mutation rejected: fifth-for-sixth wedge exponent
+PASS behavioral mutation rejected: review overclaim
+PASS behavioral mutation rejected: branch interval endpoint
+PASS behavioral mutation rejected: vertical contour Gaussian sign
+PASS behavioral mutation rejected: log-gamma versus log-M bridge
+PASS behavioral mutation rejected: stale limiting-system elimination
+PASS behavioral mutation rejected: first-failure higher-neighbor inference
+PASS all Phase-K behavioral mutations fail for mathematical reasons
+PASS reproducibility inventory: platform/toolchain pins, Mathlib commit, Python artifact hashes, immutable CI actions, checkpoint ancestry, and Mathematica hashes
+PASS deterministic Git bundle: two byte-identical builds, exact HEAD, required-checkpoint ancestry, and clean reconstruction
+PASS VERIFY_ALL quick
+PASS Phase-25 metadata: baseline ancestry/logs, T1--T18 assurance, acyclic dependencies, Lean declarations, normalizations, and asymptotic-language inventory
+PASS semantic mutation rejected: missing T15 -> T16 seam
+PASS semantic mutation rejected: T2/T18 dependency cycle
+PASS semantic mutation rejected: unsupported green T1 classification
+PASS semantic mutation rejected: hidden MMP input
+PASS semantic mutation rejected: stale external HG dependency
+PASS semantic mutation rejected: fifth-for-sixth wedge exponent
+PASS semantic mutation rejected: factor-eight factorial transposition
+PASS semantic mutation rejected: positive branch point
+PASS semantic mutation rejected: H6 coefficientwise majorant
+PASS all Phase-25 semantic baseline mutations
+PASS Hermite--Genocchi source contract
+PASS Hermite--Genocchi mutation rejected: simplex mass 1/120
+PASS Hermite--Genocchi mutation rejected: outer Jacobian exponent 4
+PASS Hermite--Genocchi mutation rejected: fifth derivative substituted
+PASS Hermite--Genocchi mutation rejected: repeated-FTC identity disconnected
+PASS Hermite--Genocchi mutation rejected: sixth node transposed
+PASS Hermite--Genocchi mutation rejected: localized repeated-FTC identity disconnected
+PASS Hermite--Genocchi mutation rejected: Newton premise restored
+PASS all Hermite--Genocchi semantic mutations
+PASS elementary cube source contract
+PASS elementary mutation rejected: reverse forward difference
+PASS elementary mutation rejected: q3 loses factorial
+PASS elementary mutation rejected: q4 sign flip
+PASS elementary mutation rejected: scale exponent shift
+PASS elementary mutation rejected: remote product dropped
+PASS elementary mutation rejected: half shift doubled
+PASS elementary mutation rejected: x/e term inverted
+PASS all elementary cube semantic mutations
+PASS exact terminating 3F2 properties: 27 tuples, 2355 identities
+PASS terminating 3F2 source contract
+PASS hypergeometric mutation rejected: lambda scale transposed
+PASS hypergeometric mutation rejected: derivative degree unshifted
+PASS hypergeometric mutation rejected: Euler constant dropped
+PASS hypergeometric mutation rejected: zeroth sign flipped
+PASS hypergeometric mutation rejected: finite producer disconnected
+PASS all terminating 3F2 semantic mutations
+PASS exact branch intervals: margins, inner inclusion, inverse norm, ordering extrema, half-radius factor, and K_pre -> C_loc -> K_0
+PASS quantitative branch source contract
+PASS branch mutation rejected: coordinate permutation
+PASS branch mutation rejected: inverse norm weakened
+PASS branch mutation rejected: center residual doubled
+PASS branch mutation rejected: center-only Jacobian
+PASS branch mutation rejected: contraction removed
+PASS branch mutation rejected: C_loc transposed
+PASS branch mutation rejected: threshold regressed
+PASS branch mutation rejected: typed builder disconnected
+PASS all quantitative branch semantic mutations
+PASS 909 exact finite-free/Jacobi adapter checks: reflection, diagonal displacement, reciprocal/product endpoints, and localization
+PASS finite-free/Jacobi source contract
+PASS finite-free mutation rejected: ascending sign
+PASS finite-free mutation rejected: descending exponent
+PASS finite-free mutation rejected: binomial removed
+PASS finite-free mutation rejected: reflection disconnected
+PASS finite-free mutation rejected: Gershgorin constant
+PASS finite-free mutation rejected: root-eigenvalue source hidden
+PASS finite-free mutation rejected: reciprocal MSS half removed
+PASS finite-free mutation rejected: localization constant disconnected
+PASS finite-free mutation rejected: mesh not strict
+PASS finite-free mutation rejected: MMP seam hidden
+PASS all finite-free/Jacobi semantic mutations
+PASS phase24 exact interval certificates
+PASS Mathematica M1--M4 evidence: exact hashes, exact ledger, no external-input operations
+PASS Arb/ACB source contract
+PASS Arb/ACB mutation rejected: omega factor transposed
+PASS Arb/ACB mutation rejected: factor eight dropped
+PASS Arb/ACB mutation rejected: k tail deleted
+PASS Arb/ACB mutation rejected: Rouche remainder deleted
+PASS Arb/ACB mutation rejected: Rouche strictness weakened
+PASS Arb/ACB mutation rejected: Q check deleted
+PASS Arb/ACB mutation rejected: connector loosened
+PASS Arb/ACB mutation rejected: higher modes deleted
+PASS Arb/ACB mutation rejected: root separation deleted
+PASS Arb/ACB mutation rejected: uniformity overclaimed
+PASS Arb/ACB mutation rejected: human review overclaimed
+PASS all Arb/ACB semantic mutations
+PASS Phase H effectivity ledger: exact DAG, explicit geometry K, symbolic final K, and honest analytic boundary
+PASS effectivity source contract
+PASS effectivity mutation rejected: C_loc transposed
+PASS effectivity mutation rejected: K_pre regressed
+PASS effectivity mutation rejected: C0 hidden
+PASS effectivity mutation rejected: C1 hidden
+PASS effectivity mutation rejected: K_r chosen before bounds
+PASS effectivity mutation rejected: neighbor margin removed
+PASS effectivity mutation rejected: domain cap removed
+PASS effectivity mutation rejected: C_B6 fabricated
+PASS effectivity mutation rejected: analytic threshold fabricated
+PASS effectivity mutation rejected: finite range omitted
+PASS effectivity mutation rejected: analytic constant omitted from K
+PASS effectivity mutation rejected: diagnostic promoted
+PASS all effectivity semantic mutations
+PASS analytic-adapter source contract
+PASS analytic-adapter mutation rejected: center moved from one half
+PASS analytic-adapter mutation rejected: odd derivative used
+PASS analytic-adapter mutation rejected: factor eight dropped
+PASS analytic-adapter mutation rejected: factorial omitted
+PASS analytic-adapter mutation rejected: order five substituted
+PASS analytic-adapter mutation rejected: curvature seam deleted
+PASS all analytic-adapter semantic mutations
+PASS manuscript factor-eight equation regression (n=0..4, max relative error 2.3963e-37)
+PASS manuscript critical-point radius regression (correct K_r=0.880246, stale-scale ratio=14681.5)
+PASS all Phase-24 manuscript equation regressions
+PASS manuscript semantic mutation rejected: factor eight changed to four
+PASS manuscript semantic mutation rejected: horizontal contour made vertical
+PASS manuscript semantic mutation rejected: legal shifted ray changed to a full line
+PASS manuscript semantic mutation rejected: phase absorbs the Jacobian and loses the saddle
+PASS manuscript semantic mutation rejected: leading contour alias is disconnected
+PASS manuscript semantic mutation rejected: auxiliary moment changed to gamma
+PASS manuscript semantic mutation rejected: global maximum changed to first failure
+PASS manuscript semantic mutation rejected: leading-system elimination transposed
+PASS manuscript semantic mutation rejected: branch evidence overclaimed
+PASS manuscript semantic mutation rejected: gamma-factor subtraction omitted
+PASS manuscript semantic mutation rejected: horizontal tail variable made stale
+PASS manuscript semantic mutation rejected: expanded recurrence gains an extra m
+PASS manuscript semantic mutation rejected: effectivity threshold name made undefined
+PASS manuscript semantic mutation rejected: complete axiom audit changed to incomplete predecessor
+PASS all manuscript semantic mutations fail on production source
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on JENSEN_TWO_THIRDS_MAIN.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "JENSEN_TWO_THIRDS_MAIN.toc" changed ...
+note: Running xdvipdfmx ...
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_MAIN.toc` (4.45703125 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_MAIN.log` (8.123046875 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_MAIN.bbl` (1.421875 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_MAIN.blg` (209 B)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_MAIN.aux` (12.384765625 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_MAIN.pdf` (210.5322265625 KiB)
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.toc" changed ...
+note: Running xdvipdfmx ...
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.blg` (225 B)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.toc` (1.41796875 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.log` (8.0751953125 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.pdf` (121.0380859375 KiB)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.bbl` (268 B)
+note: Writing `/var/folders/ds/md_mvnqx0tzgpl52nxkx1kz40000gn/T/tmp.VBLzvxBy52/manuscript/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.aux` (3.7861328125 KiB)
+PASS expanded manuscript sources, equations, references, review language, and PDFs
+PASS behavioral mutation rejected: sector nesting
+PASS behavioral mutation rejected: simplex mass 1/120
+PASS behavioral mutation rejected: factor-eight factorial
+PASS behavioral mutation rejected: branch coordinate permutation
+PASS behavioral mutation rejected: center-only contraction certificate
+PASS behavioral mutation rejected: hypergeometric recurrence sign
+PASS behavioral mutation rejected: Jacobi squared threshold
+PASS behavioral mutation rejected: fifth-for-sixth wedge exponent
+PASS behavioral mutation rejected: review overclaim
+PASS behavioral mutation rejected: branch interval endpoint
+PASS behavioral mutation rejected: vertical contour Gaussian sign
+PASS behavioral mutation rejected: log-gamma versus log-M bridge
+PASS behavioral mutation rejected: stale limiting-system elimination
+PASS behavioral mutation rejected: first-failure higher-neighbor inference
+PASS all Phase-K behavioral mutations fail for mathematical reasons
+PASS reproducibility inventory: platform/toolchain pins, Mathlib commit, Python artifact hashes, immutable CI actions, checkpoint ancestry, and Mathematica hashes
+⚠ [8700/8711] Replayed Zeta23.Research.JensenWedge.HermiteGenocchiCube
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:71: This simp argument is unused:
+  I₃
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:64: This simp argument is unused:
+  I₂
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:57: This simp argument is unused:
+  I₁
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:157:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:180:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8701/8711] Replayed Zeta23.Research.JensenWedge.HermiteGenocchiFTC
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:40:33: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:111:14: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hermiteGenocchiTriangleMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:127:19: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hermiteGenocchiTriangleMass, C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8702/8711] Replayed Zeta23.Research.JensenWedge.ComplexHermiteGenocchi
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:150:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:195:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8704/8711] Replayed Zeta23.Research.JensenWedge.ElementaryCubeCalculus
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:128:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8711/8711] Replayed Zeta23.Research.JensenWedge.FiniteFreeAdapters
+warning: Zeta23/Research/JensenWedge/FiniteFreeAdapters.lean:104:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (8711 jobs).
+PASS complete Phase-25 axiom surface: 66 declarations, only accepted foundational axioms
+PASS Phase 25 formal, exact, interval, effectivity, manuscript, reproducibility, and semantic gates
+PASS: factor-eight normalization
+PASS: saddle equation
+PASS: curvature K and Q=L^2 K
+PASS: saddle leading amplitude
+PASS: Milestone 1 exact symbolic regression
+radius=200 angle=0.0 ImL=0.0 |K|=86.9435180731 ratio=(1.00189262647275127 + 0.0j) |ratio-1|=0.001892626473 scaled=0.1645516039
+radius=200 angle=0.005 ImL=0.00379257134 |K|=86.9434433742 ratio=(1.00189261048013867 - 7.88594428293867946e-6j) |ratio-1|=0.001892626909 scaled=0.1645515005
+radius=200 angle=0.01 ImL=0.007585144297 |K|=86.9432192781 ratio=(1.00189256250253493 - 0.0000157717632430512939j) |ratio-1|=0.001892628219 scaled=0.1645511902
+radius=800 angle=0.0 ImL=0.0 |K|=240.545619475 ratio=(1.00058632992565607 + 0.0j) |ratio-1|=0.0005863299257 scaled=0.1410390952
+radius=800 angle=0.005 ImL=0.004036006792 |K|=240.545493754 ratio=(1.00058632465988661 - 2.51098086884954651e-6j) |ratio-1|=0.0005863300366 scaled=0.1410390482
+radius=800 angle=0.01 ImL=0.008072014508 |K|=240.54511659 ratio=(1.00058630886266337 - 5.02191869305128655e-6j) |ratio-1|=0.0005863303694 scaled=0.1410389071
+PASS: leading contour ratios converge with bounded |K|-scaled error
+radius=200 angle=0.1 ImL=0.07585357775 |K|=86.9136492492 ratio=(1.0018862325404363 - 0.000157552248941433872j) |ratio-1|=0.001892801075 scaled=0.1645102487
+radius=200 angle=0.3 ImL=0.227612418 |K|=86.6754730035 ratio=(1.00183530548612578 - 0.000468656762986949662j) |ratio-1|=0.001894197822 scaled=0.1641804922
+radius=200 angle=0.6 ImL=0.4555719347 |K|=85.8816772169 ratio=(1.00166635756828907 - 0.00091055797999448399j) |ratio-1|=0.001898911104 scaled=0.1630816705
+radius=200 angle=1.0 ImL=0.7606397229 |K|=84.0601264242 ratio=(1.00128370542358297 - 0.00141439401001166393j) |ratio-1|=0.001910081158 scaled=0.1605616636
+radius=200 angle=1.4 ImL=1.067671464 |K|=81.477129464 ratio=(1.00075547653300993 - 0.00177256322324468221j) |ratio-1|=0.001926843318 scaled=0.1569936625
+radius=800 angle=1.4 ImL=1.133408548 |K|=231.11236641 ratio=(1.00021558140113577 - 0.000554652022274950827j) |ratio-1|=0.0005950749586 scaled=0.1375291819
+radius=3200 angle=1.4 ImL=1.179855578 |K|=703.516379718 ratio=(1.00006025660763394 - 0.000168091915676929452j) |ratio-1|=0.0001785658167 scaled=0.1256239769
+PASS: wide-angle contour robustness diagnostic through 1.4 radians
+PASS: direct Im(L) bootstrap is below 0.012 at log|s| = 12
+PASS: 32*binom(n+2,2)=16(n+2)(n+1)
+PASS: exact logarithmic-derivative cancellation
+PASS: log Stirling correction series -x**2/6 + x**3/3 + O(x**4)
+PASS: Phase 21 xi-coefficient assembly algebra
+PASS: Phase 21 repaired note statements and display delimiters
+PASS: Phase 21 complete direct-sector proof-surface checks
+⚠ [8708/8719] Replayed Zeta23.Research.JensenWedge.HermiteGenocchiCube
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:71: This simp argument is unused:
+  I₃
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:64: This simp argument is unused:
+  I₂
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:57: This simp argument is unused:
+  I₁
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:157:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:165:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:172:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:177:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiCube.lean:180:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8709/8719] Replayed Zeta23.Research.JensenWedge.HermiteGenocchiFTC
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:40:33: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:111:14: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hermiteGenocchiTriangleMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:127:19: This simp argument is unused:
+  hermiteGenocchiTriangle
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hermiteGenocchiTriangleMass, C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:239:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:78: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/HermiteGenocchiFTC.lean:343:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8710/8719] Replayed Zeta23.Research.JensenWedge.ComplexHermiteGenocchi
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:150:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Zeta23/Research/JensenWedge/ComplexHermiteGenocchi.lean:195:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8712/8719] Replayed Zeta23.Research.JensenWedge.ElementaryCubeCalculus
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Zeta23/Research/JensenWedge/ElementaryCubeCalculus.lean:128:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8717/8719] Replayed Zeta23.Research.JensenWedge.FiniteFreeAdapters
+warning: Zeta23/Research/JensenWedge/FiniteFreeAdapters.lean:104:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (8719 jobs).
+'Zeta23.Research.JensenWedge.sixthOrderLeadingSystem_unique_of_t_w_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingJacobian_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingJacobian_mul_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingJacobian_inv_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.forwardDiff_newtonCubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.triangularReadout_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP3_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP2_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP1_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP0_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.dominantMaximum_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.sixthOrderTail_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fifthOrderTail_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fifthOrderTail_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fifthOrderGeometricError_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.finiteMultiplierError_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.mul_pos_of_relativeError_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exists_root_Ioo_of_mul_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDistinctPositiveRoots_of_signChangingIntervals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MultiplierIntervalCertificate.actual_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MultiplierIntervalCertificate.actual_hasDistinctPositiveRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.JensenWedgeCertificate.target_hasDistinctNegativeRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.conditionalTwoThirdsWedge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.gaugeInverseAction_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fourDimensionalBranch_existsUnique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.PositiveParameterBranch.jacobi_ordering' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.localization_controls_squared_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.JensenWedgeAnalyticInputs.target_hasDistinctNegativeRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.reflect_finiteFreeAscending' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.eval_reflect_reciprocal_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.eigenvalue_mem_jacobi_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.transportedJacobiDiagonal_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.RatioFreeJacobiInput.root_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MSSProductRootInput.product_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.productDeviation_le_localizationConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MMPLogMeshInput.hasDistinctPositiveRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXi_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.centeredXiCoefficient_eq_factorEightMoment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.complexClosedBall_existsUnique_fixedPoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.relativeError_derivatives_through_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Phase 20 verification PASS
+  Holland headline theorem excluded from the logical premises
+  saddle-variable endpoint and exact H6 coefficient bound reproduced
+  multiplier/sign/conditional firewall kernel-checked
+  former GORTTW sectorial premise has a direct Phase-21 paper proof
+  separated analytic AI pre-review passed; human review is not claimed
+PASS VERIFY_ALL full

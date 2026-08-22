@@ -1,0 +1,43 @@
+{
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.3)",
+  "date": "2026-08-17",
+  "git": "2.55.0",
+  "github_actions": {
+    "checkout_action": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+    "lean_action": "leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9",
+    "runner": "ubuntu-24.04",
+    "setup_python_action": "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+    "scope": "independent Linux Lean build and Python mathematical gates; local macOS remains the release build"
+  },
+  "lean": {
+    "lake": "5.0.0-src+d8b1897",
+    "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129",
+    "toolchain": "leanprover/lean4:v4.33.0-rc2",
+    "version": "4.33.0-rc2 d8b18978322de05a8f3dba51ef03cf5461676c17"
+  },
+  "local_platform": {
+    "architecture": "arm64",
+    "kernel": "Darwin 24.4.0",
+    "macos_build": "24E248",
+    "macos_version": "15.4"
+  },
+  "manuscript_commit": "2b1a5c5",
+  "mathematica": {
+    "artifacts": {
+      "C48_Mathematica_CleanRoom.pdf": "f2e428bdd5d1caf03243b81dbc65794950abc2c8a4c13195395eca415d7a373c",
+      "C48_Mathematica_CleanRoom_2.nb": "f79359ce48fe5e5015bceb88b5de82b87145da22e235688dfe3989526772dc7a",
+      "C48_Mathematica_Result_Ledger.txt": "1faea5fcb35b504b5d0aad9391999a99e530373dce36addb496eabb133fb04cc"
+    },
+    "version": "15.0.1",
+    "workstation": "user-executed clean-room run; not human or peer review"
+  },
+  "python": {
+    "mpmath": "1.3.0",
+    "python": "3.11.16",
+    "python_flint": "0.6.0",
+    "sympy": "1.14.0"
+  },
+  "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
+  "tectonic": "0.17.0",
+  "version": 1
+}

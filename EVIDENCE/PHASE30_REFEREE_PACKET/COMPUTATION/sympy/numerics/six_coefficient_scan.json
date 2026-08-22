@@ -1,0 +1,214 @@
+{
+  "claim_scope": "non-rigorous positivity/sign gate only",
+  "formal_status": "not proved",
+  "interpretation": "Both independent quadratures find positive two-Jacobi parameters matching q0..q3 throughout the scan.  This supports, but does not prove, an R0..R5 comparison model and a sixth-order residual campaign.",
+  "matched_coefficients": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "matched_quotients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "maximum_logq_residual": 6.938893903907228e-18,
+  "maximum_scaled_parameter_disagreement": 0.006936482459781956,
+  "method_comparisons": [
+    {
+      "max_scaled_parameter_disagreement": 4.949220819838729e-06,
+      "minimum_positive_gap_over_n": 0.403007011035728,
+      "n": 20
+    },
+    {
+      "max_scaled_parameter_disagreement": 3.8625944101866594e-05,
+      "minimum_positive_gap_over_n": 0.40339868695356196,
+      "n": 30
+    },
+    {
+      "max_scaled_parameter_disagreement": 0.0001258977926852367,
+      "minimum_positive_gap_over_n": 0.414050952249813,
+      "n": 50
+    },
+    {
+      "max_scaled_parameter_disagreement": 0.001355160253675436,
+      "minimum_positive_gap_over_n": 0.42994124735346756,
+      "n": 80
+    },
+    {
+      "max_scaled_parameter_disagreement": 0.006936482459781956,
+      "minimum_positive_gap_over_n": 0.43810065812334514,
+      "n": 100
+    },
+    {
+      "max_scaled_parameter_disagreement": 0.005929873825309073,
+      "minimum_positive_gap_over_n": 0.44484819443812296,
+      "n": 150
+    }
+  ],
+  "methods": [
+    "adaptive",
+    "gauss1024"
+  ],
+  "minimum_positive_gap_over_n": 0.403007011035728,
+  "n_values": [
+    20,
+    30,
+    50,
+    80,
+    100,
+    150
+  ],
+  "solutions": [
+    {
+      "gap1_over_n": 15.579946791885709,
+      "gap2_over_n": 0.40300714858250436,
+      "jacobian_condition": 629014.0544821295,
+      "lower1_over_n": 3.8170064786934246,
+      "lower2_over_n": 1.4552072709282535,
+      "max_abs_logq_residual": 6.938893903907228e-18,
+      "method": "adaptive",
+      "n": 20,
+      "upper1_over_lower1": 5.0817187182817625,
+      "upper2_over_lower2": 1.276941406652973
+    },
+    {
+      "gap1_over_n": 15.270935448193097,
+      "gap2_over_n": 0.40339868695356196,
+      "jacobian_condition": 1740889.165056506,
+      "lower1_over_n": 3.4599360984527174,
+      "lower2_over_n": 1.3628450027447805,
+      "max_abs_logq_residual": 3.469446951953614e-18,
+      "method": "adaptive",
+      "n": 30,
+      "upper1_over_lower1": 5.413646672556252,
+      "upper2_over_lower2": 1.2959974803745942
+    },
+    {
+      "gap1_over_n": 15.35807077407826,
+      "gap2_over_n": 0.41405440967547724,
+      "jacobian_condition": 6855955.741645241,
+      "lower1_over_n": 3.1454430398497055,
+      "lower2_over_n": 1.2818461757629662,
+      "max_abs_logq_residual": 0.0,
+      "method": "adaptive",
+      "n": 50,
+      "upper1_over_lower1": 5.882641516475242,
+      "upper2_over_lower2": 1.3230141162835145
+    },
+    {
+      "gap1_over_n": 15.76460869555404,
+      "gap2_over_n": 0.42997885748440784,
+      "jacobian_condition": 26320160.57800029,
+      "lower1_over_n": 2.943041169062,
+      "lower2_over_n": 1.2297718832492508,
+      "max_abs_logq_residual": 8.673617379884035e-19,
+      "method": "adaptive",
+      "n": 80,
+      "upper1_over_lower1": 6.356570904027993,
+      "upper2_over_lower2": 1.3496411516161322
+    },
+    {
+      "gap1_over_n": 16.01979954590597,
+      "gap2_over_n": 0.4382929722704783,
+      "jacobian_condition": 49944357.53746601,
+      "lower1_over_n": 2.8655904122683062,
+      "lower2_over_n": 1.2101129402942492,
+      "max_abs_logq_residual": 8.673617379884035e-19,
+      "method": "adaptive",
+      "n": 100,
+      "upper1_over_lower1": 6.590401013808958,
+      "upper2_over_lower2": 1.3621917902670337
+    },
+    {
+      "gap1_over_n": 16.23549436710638,
+      "gap2_over_n": 0.44484819443812296,
+      "jacobian_condition": 151562280.34080613,
+      "lower1_over_n": 2.7203349210650867,
+      "lower2_over_n": 1.1783711603413418,
+      "max_abs_logq_residual": 4.336808689942018e-19,
+      "method": "adaptive",
+      "n": 150,
+      "upper1_over_lower1": 6.968196872151953,
+      "upper2_over_lower2": 1.3775111012639367
+    },
+    {
+      "gap1_over_n": 15.579941842664889,
+      "gap2_over_n": 0.403007011035728,
+      "jacobian_condition": 627681.3889072513,
+      "lower1_over_n": 3.8170058575068295,
+      "lower2_over_n": 1.4552072051852636,
+      "max_abs_logq_residual": 3.469446951953614e-18,
+      "method": "gauss1024",
+      "n": 20,
+      "upper1_over_lower1": 5.08171808592437,
+      "upper2_over_lower2": 1.2769413246441568
+    },
+    {
+      "gap1_over_n": 15.270974074137198,
+      "gap2_over_n": 0.4033997449360884,
+      "jacobian_condition": 1742073.908793258,
+      "lower1_over_n": 3.4599404961720563,
+      "lower2_over_n": 1.3628454361146956,
+      "max_abs_logq_residual": 3.469446951953614e-18,
+      "method": "gauss1024",
+      "n": 30,
+      "upper1_over_lower1": 5.41365222639881,
+      "upper2_over_lower2": 1.2959981625547585
+    },
+    {
+      "gap1_over_n": 15.357944876285575,
+      "gap2_over_n": 0.414050952249813,
+      "jacobian_condition": 6849998.394334946,
+      "lower1_over_n": 3.145430175357788,
+      "lower2_over_n": 1.2818449984238962,
+      "max_abs_logq_residual": 1.734723475976807e-18,
+      "method": "gauss1024",
+      "n": 50,
+      "upper1_over_lower1": 5.88262146036627,
+      "upper2_over_lower2": 1.3230117157370143
+    },
+    {
+      "gap1_over_n": 15.763253535300365,
+      "gap2_over_n": 0.42994124735346756,
+      "jacobian_condition": 25096069.85079317,
+      "lower1_over_n": 2.9429144418904194,
+      "lower2_over_n": 1.2297609650299683,
+      "max_abs_logq_residual": 1.734723475976807e-18,
+      "method": "gauss1024",
+      "n": 80,
+      "upper1_over_lower1": 6.356341085191262,
+      "upper2_over_lower2": 1.3496136725587076
+    },
+    {
+      "gap1_over_n": 16.012863063446186,
+      "gap2_over_n": 0.43810065812334514,
+      "jacobian_condition": 50985577.90552767,
+      "lower1_over_n": 2.8649690840066238,
+      "lower2_over_n": 1.210061154957596,
+      "max_abs_logq_residual": 8.673617379884035e-19,
+      "method": "gauss1024",
+      "n": 100,
+      "upper1_over_lower1": 6.58919227185949,
+      "upper2_over_lower2": 1.3620483612158407
+    },
+    {
+      "gap1_over_n": 16.24142424093169,
+      "gap2_over_n": 0.4450166598440604,
+      "jacobian_condition": 155897864.34721187,
+      "lower1_over_n": 2.7208380621260075,
+      "lower2_over_n": 1.1784118130893801,
+      "max_abs_logq_residual": 4.336808689942018e-19,
+      "method": "gauss1024",
+      "n": 150,
+      "upper1_over_lower1": 6.969272654264829,
+      "upper2_over_lower2": 1.3776410376245158
+    }
+  ],
+  "source": "Holland arXiv:2608.08682v1 equations (10), (49), and (52)",
+  "status": "PASS"
+}

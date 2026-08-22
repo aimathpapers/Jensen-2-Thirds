@@ -1,0 +1,752 @@
+\section{Normalization and domain audit}\label{app:normalization}
+
+This appendix expands the interfaces that are especially vulnerable to a
+factor, sign, or domain error.  It is part of the proof, rather than a report
+about the accompanying computations.  The technical supplement records the
+machine implementations of the same interfaces.
+
+\subsection{The entire completed function}
+
+Let $\Lambda_0$ denote the pole-removed entire completion used in the formal
+library.  Its relation to the meromorphic completion is
+\[
+ \Lambda(s)=\Lambda_0(s)-\frac1s-\frac1{1-s}.
+\]
+The entire function in this paper is therefore
+\begin{equation}\label{app:xi-entire}
+ \xi(s)=\frac{s(s-1)}2\Lambda_0(s)+\frac12.
+\end{equation}
+For $s\ne0,1$, substitution of the preceding identity in
+\eqref{app:xi-entire} cancels the two polar terms and gives the usual
+$s(s-1)\Lambda(s)/2$.  Both sides are entire, so the equality extends across
+$0$ and $1$.  The functional equation $\Lambda_0(1-s)=\Lambda_0(s)$ then
+gives
+\[
+ \xi(1-s)=\xi(s).
+\]
+Consequently $w\mapsto\xi(1/2+w)$ is even and its odd derivatives at zero
+vanish.
+
+The coefficient convention is worth checking at the derivative level.  From
+\[
+ \xi(1/2+w)=\sum_{n\ge0}\frac{\gamma(n)}{n!}w^{2n}
+\]
+one obtains exactly
+\begin{equation}\label{app:gamma-derivative}
+ \gamma(n)=\frac{n!}{(2n)!}
+ \left.\frac{\dd^{,2n}}{\dd w^{2n}}\xi(1/2+w)\right|_{w=0}.
+\end{equation}
+There is no factor $2^{2n}$ in \eqref{app:gamma-derivative}.  This explicit
+derivative check is also an equation-regression gate in the release package.
+
+\subsection{The factor-eight calculation}
+
+Riemann's theta-kernel identity, after the substitution $t=e^{2u}$ and
+symmetrization about the critical line, gives
+\begin{equation}\label{app:factor-eight-derivative}
+ \left.\frac{\dd^{,2n}}{\dd w^{2n}}\xi(1/2+w)\right|_{w=0}
+ =8\int_0^\infty\omega(e^{2u})e^{u/2}u^{2n}\,\dd u.
+\end{equation}
+Combining \eqref{app:gamma-derivative} and
+\eqref{app:factor-eight-derivative} gives the moment formula used in
+Section~\ref{sec:mellin}.  The factor $e^{u/2}$ is the Jacobian and centered
+power contribution after $t=e^{2u}$; replacing it by $e^u$ would change even
+the zeroth moment.  The release regression evaluates the two sides
+independently at low orders precisely to detect either transcription error.
+
+For the later saddle calculation it is convenient to integrate by parts and
+write
+\[
+ F(s)=\int_0^\infty\mathcal K(t)t^s\,\dd t.
+\]
+The boundary terms vanish because the theta kernel decays exponentially at
+infinity and its modular transform supplies the corresponding decay at
+zero.  Two integrations give
+\begin{equation}\label{app:moment-assembly}
+ \gamma(M)=\frac{\Gamma(M+1)}{\Gamma(2M+1)}2^{-2M-2}
+ \left(32\binom{2M}{2}F(2M-2)-F(2M)\right).
+\end{equation}
+The two Mellin arguments in \eqref{app:moment-assembly} explain the shift
+$N=2M-2$ used throughout the saddle analysis.
+Define
+\[
+ M_z=2^{-2z-2}\left(32\binom{2z}{2}F(2z-2)-F(2z)\right),
+\]
+so that $\gamma(z)=\Gamma(z+1)M_z/\Gamma(2z+1)$ exactly.
+
+\subsection{Nested sectors and proportional discs}
+
+Fix
+\[
+ \mathcal S_1(R)=\{M:|M|>R,\ |\arg M|<1/200\},\qquad
+ \overline{\mathcal S}_0(R)
+ =\{M:|M|\ge R,\ |\arg M|\le1/400\}.
+\]
+All logarithms and square roots are continued from the positive axis in
+$\mathcal S_1(R)$.  There is an $\eta_0>0$, depending only on the difference
+between the two displayed angles, such that
+\begin{equation}\label{app:sector-disc}
+ M\in\overline{\mathcal S}_0(R),\quad |z-M|\le\eta_0|M|
+ \quad\Longrightarrow\quad z\in\mathcal S_1(R/2).
+\end{equation}
+Indeed, $|z|\ge(1-\eta_0)|M|$, while the angular displacement is at most
+$\arcsin(\eta_0/(1-\eta_0))$.  Choose $\eta_0$ so this is below $1/400$.
+This elementary separation is the geometric input that permits Cauchy
+differentiation of the relative error.  It also explains why the main-term
+estimate may be stated on a wider sector than the final uniform error.
+
+\section{Detailed saddle estimates}\label{app:saddle-details}
+
+\subsection{Legality of the logarithmic equation}
+
+Put $\ell=\log|N|$ and
+\[
+ L_0=\log N-\log\log N-\log\pi.
+\]
+On the closed disc $D_N=\{L:|L-L_0|\le1\}$ define
+\begin{align*}
+ m(\ell)&=\ell-\log(\ell+1)-\log\pi-1,\\
+ M_\theta(\ell)&=\ell+2+\log(\ell+1)+\theta/\ell+\log\pi.
+\end{align*}
+For $\ell\ge12$ and $|\arg N|\le\theta$ the triangle inequality gives
+\begin{equation}\label{app:disc-geometry}
+ \Re L\ge m(\ell)>0,\qquad |L|\le M_\theta(\ell).
+\end{equation}
+Thus the principal logarithm of $L$ is legal on the whole disc.  Moreover,
+\begin{equation}\label{app:saddle-small-term}
+ \left|\frac{3L}{4N}\right|
+ \le\frac{3M_\theta(\ell)}{4e^\ell}<10^{-4},
+\end{equation}
+so the correction logarithm is legal there as well.
+
+For $|z|\le1/2$, integration along the segment from $0$ to $z$ gives
+\[
+ \log(1+z)=\int_0^1\frac{z}{1+tz}\,\dd t,
+ \qquad |\log(1+z)|\le2|z|.
+\]
+Apply this first to $L/L_0-1$ and then to $-3L/(4N)$.  Since
+$|L_0|\ge\ell/2$, the comparison function in the proof of
+Lemma~\ref{lem:saddle} satisfies
+\begin{align}
+ \sup_{\partial D_N}|G_N(L)-(L-L_0)|
+ &\le
+ 2\frac{\log(\ell+1)+\theta/\ell+\log\pi+1}{\ell}
+ +\frac{3M_\theta(\ell)}{2e^\ell}.\label{app:rouche-bound}
+\end{align}
+The right side is decreasing from $\ell=12$ and is strictly below one at
+that endpoint.  Rouch\'e therefore gives one zero counted with multiplicity.
+No numerical sample of an interior zero is used in this conclusion.
+
+\subsection{Simplicity before differentiation}
+
+At the zero, exponentiation of the logarithmic equation yields
+$N=L_N(\pi e^{L_N}+3/4)$.  Set $r=L_N^{-1}$ and $\sigma=L_N/N$.  The
+derivative denominator factors as
+\begin{equation}\label{app:Q-factor}
+ Q_N=(1+L_N)N-\frac34L_N^2
+ =NL_N\left(1+r-\frac34\sigma\right).
+\end{equation}
+After enlarging $R$, the disc geometry gives $|r|,|\sigma|\le7/50$, whence
+\begin{equation}\label{app:Q-margins}
+ \left|1+r-\frac34\sigma\right|
+ \ge1-\frac7{50}-\frac{21}{200}=\frac{151}{200}>\frac9{16}.
+\end{equation}
+Thus the root is simple before the implicit-function theorem is invoked.
+Local branches patch because any two branches meeting the same Rouch\'e disc
+must select its unique zero.  Differentiation now legitimately gives
+$L_N'=L_N/Q_N$.
+
+The denominator arising after six differentiations is a power of
+$4+4r-3\sigma$.  The same box gives the stronger margin
+\begin{equation}\label{app:H6-margin}
+ |4+4r-3\sigma|\ge4-\frac{28}{50}-\frac{21}{50}
+ =\frac{151}{50}.
+\end{equation}
+Equations \eqref{app:Q-margins} and \eqref{app:H6-margin} are kept separate:
+the first licenses analytic differentiation; the second controls the exact
+rational derivative tower.
+
+\subsection{Imaginary part and Gaussian direction}
+
+Write $L_N=a+ib$ and $N=|N|e^{i\phi}$.  Taking arguments in the saddle
+equation gives
+\[
+ \phi=\arg L_N+\arg(\pi e^{L_N}+3/4).
+\]
+Because $a\ge m(12)>7.29$, the second argument differs from $b$ by at most
+$3e^{-a}/(2\pi)$, and $|\arg L_N|\le |b|/a$.  Therefore
+\begin{equation}\label{app:imag-bootstrap}
+ |b|\le|\phi|+\frac{|b|}{a}+\frac{3e^{-a}}{2\pi}.
+\end{equation}
+Solving \eqref{app:imag-bootstrap} at $|\phi|\le1/100$ gives
+$|b|<0.012<1/20$.  This direct argument avoids deriving the imaginary bound
+from the much coarser estimate $|L_N-L_0|<1$.
+
+Finally,
+\[
+ K_N=\frac{N}{L_N}
+ \left(1+\frac1{L_N}-\frac{3L_N}{4N}\right).
+\]
+The last factor is in the disc of radius $49/200$ about $1$.  Combining its
+argument with \eqref{app:imag-bootstrap}, and increasing $R$ once more,
+gives
+\begin{equation}\label{app:K-sector}
+ |\arg K_N|<1/20,\qquad
+ \Re K_N\ge\cos(1/20)|K_N|.
+\end{equation}
+The right-half-plane inequality, not merely $K_N\ne0$, supplies the uniform
+real Gaussian majorant.
+
+\section{Contour and coefficient details}\label{app:contour-details}
+
+\subsection{Truncation and connectors}
+
+Set
+\[
+ \Phi_N(u)=N\operatorname{Log}u-\frac34u-\pi e^u,
+ \qquad g_N(u)=e^u e^{\Phi_N(u)},
+ \qquad I_1(N):=F_1(N):=\int_0^\infty g_N(u)\,\dd u.
+\]
+Write $L_N=\alpha+ib$ and first split this integral at $1$.
+Apply Cauchy's theorem to the finite rectangle with vertices
+$1,X,X+ib,1+ib$.  The right connector tends to zero as $X\to\infty$, so
+\begin{equation}\label{app:legal-contour}
+ I_1(N)=E_N+\int_1^\infty g_N(x+ib)\,\dd x,
+ \qquad
+ E_N=\int_0^1g_N(x)\,\dd x+i\int_0^b g_N(1+iy)\,\dd y.
+\end{equation}
+The horizontal ray lies in $\Re u\ge1$, hence in a fixed principal-log
+domain.  The finite endpoint term satisfies
+\begin{equation}\label{app:connector-small}
+ |E_N|\le|\mathcal A(N)|e^{-c'|N|\log\log|N|}.
+\end{equation}
+This order of limits prevents the invalid shortcut of translating the whole
+infinite real line across the logarithmic cut.
+
+\subsection{Central window and odd cancellation}
+
+On the actual shifted ray write $u=L_N+r$, so $r\ge1-\Re L_N$, and choose
+$V=|K_N|^{-2/5}$.  For sufficiently large $|N|$, the central window is
+contained in this ray.  Taylor's formula with integral remainder yields,
+uniformly for $|r|\le V$,
+\begin{equation}\label{app:phase-four}
+ \Phi_N(L_N+r)-\Phi_N(L_N)
+ =-\frac12K_Nr^2+\frac16\kappa_3r^3+R_4(N,r),
+\end{equation}
+where
+\begin{equation}\label{app:R4-bound}
+ |R_4(N,r)|\le C|K_N||r|^4.
+\end{equation}
+The Jacobian outside the phase contributes $e^r$.  By
+\eqref{app:K-sector}, $e^{-K_Nr^2/2}$ is dominated by
+$e^{-c|K_N|r^2}$.  Extending the central comparison to the full real
+Gaussian introduces only an exponentially small left tail; the full real
+Gaussian is not the deformed contour.  Completing the square gives
+\[
+ \frac{\int_{\R}r^3e^{r-K_Nr^2/2}\,\dd r}
+ {\int_{\R}e^{r-K_Nr^2/2}\,\dd r}
+ =\frac3{K_N^2}+\frac1{K_N^3}.
+\]
+Since $\kappa_3=O(|K_N|)$, the signed cubic, its square, and the quartic
+remainder contribute $O(|K_N|^{-1})$ relatively.  Estimating the absolute
+value of the cubic before integration would lose this order.
+
+Outside the central window on the actual range $r\ge1-\Re L_N$, strict
+horizontal concavity makes the left tail increase up to the saddle window
+and gives a negative derivative of size $\gg|K_N|^{3/5}$ at the right edge.
+Splitting at $|r|=1$ reduces the two resulting tail bounds to elementary
+Gaussian and exponential integrals.  Together with
+\eqref{app:connector-small}, this proves the leading-mode formula
+\eqref{eq:leading-moment}.
+
+\subsection{Modes and relative error}
+
+The theta mode $m\ge2$ differs from the leading mode by
+$-\pi(m^2-1)e^{L_N+r}$.  On the central window,
+\eqref{app:imag-bootstrap} keeps its real part negative, while the saddle
+equation gives $e^{\Re L_N}\asymp |N|/\log|N|$.  Thus
+\begin{equation}\label{app:mode-suppression}
+ |F_m(N)|\le|\mathcal A(N)|
+ \exp\left(-c(m^2-1)|N|/\log|N|\right).
+\end{equation}
+The series in $m$ is dominated by its first term.  This bound is uniform on
+the fixed sector; it is not asserted with a constant uniform as the sector
+angle approaches $\pi/2$.
+
+For $a(s)=\log\mathcal A(s)$, use the saddle identity during
+differentiation to obtain
+\[
+ a'(s)=\log L_s+(L_sK_s)^{-1}-\tfrac12K_s'/K_s,
+ \qquad a''(s)=O((|s|\log|s|)^{-1}).
+\]
+Taylor's formula on a segment of length two gives
+\[
+ \frac{F(N+2)}{F(N)}=L_N^2
+ \left(1+O\left(\frac{\log|N|}{|N|}\right)\right).
+\]
+Combining this with \eqref{app:moment-assembly}, the leading-mode formula,
+and sectorial Stirling proves Theorem~\ref{thm:sector}.  Holomorphy of the
+relative error follows because the main term is nonzero on the outer sector
+and every preceding estimate was established there before restriction to
+the inner sector.
+
+\section{Derivative and polygamma audit}\label{app:derivative-audit}
+
+After Theorem~\ref{thm:sector}, $M_z$ is nonzero on a sufficiently remote
+outer sector.  Throughout this section
+\[
+ h(z)=\log M_z,
+\]
+on the branch real on the positive axis.  In particular, $h$ is not
+$\log\gamma(z)$; the gamma-ratio derivatives in the exact identity above are
+kept separate.
+
+\subsection{Implicit derivative coordinates}
+
+The direct differentiation is organized in the two small variables
+$r=L_N^{-1}$ and $\sigma=L_N/N$.  From \eqref{app:Q-factor},
+\begin{equation}\label{app:Lprime-reduced}
+ L_N'=\frac{1}{N(1+r-3\sigma/4)}.
+\end{equation}
+Every subsequent derivative of $r$ and $\sigma$ is obtained from
+\eqref{app:Lprime-reduced} by the product and quotient rules.  This keeps the
+denominator visible: through order six it is a power of
+$4+4r-3\sigma$, whose nonvanishing has already been proved in
+\eqref{app:H6-margin}.
+
+There are two differentiation variables in the final coefficient problem.
+The saddle main term is
+\[
+ G_0(N)=(N+1)\log L_N+\frac{L_N}{4}-\frac{N}{L_N}
+ -\frac12\log Q_N.
+\]
+First differentiate $G_0$ with respect to $N$.  Then apply
+$N=2x-2$.  The chain contributes a factor $2^j$ at derivative order $j$,
+while the prefactor powers of $N$ and $L_N$ absorb the corresponding powers
+in the reduced normalization.  The resulting leading constants at orders
+$2,3,4,5,6$ are
+\[
+ 2,-2,4,-12,48.
+\]
+At orders five and six the constants before the final chain are $-6$ and
+$24$.  Recording both lists is a guard against applying the factor two only
+once rather than at every differentiation.
+
+At fifth order, setting $\sigma=0$ in the exact reduced function gives
+\begin{equation}\label{app:H5-reduced}
+ -\frac{6+47r+146r^2+210r^3+126r^4+42r^5+6r^6}{(1+r)^7}.
+\end{equation}
+At sixth order the numerator has $82$ nonzero monomials and total degree
+$13$, over $(4+4r-3\sigma)^{12}$.  The canonical expanded numerator is kept
+in the exact computation ledger rather than typeset twice.  A coefficientwise
+triangle inequality on $|r|,|\sigma|\le7/50$ gives exactly
+\begin{equation}\label{app:H6-exact-majorant}
+ \frac{6422139805764931584036533551104}
+ {702576099728137594188684005}<10^4.
+\end{equation}
+Both sides of \eqref{app:H6-exact-majorant} are rational.  No rounded decimal
+is used to prove the strict inequality.
+
+\subsection{Cauchy transport of the relative error}
+
+Write $\gamma=\mathcal G(1+\mathcal E)$ on the outer sector.  For a positive
+$x$ in the inner sector choose $R_x=\eta_0x$, with $\eta_0$ from
+\eqref{app:sector-disc}.  Cauchy's formula gives
+\[
+ |\mathcal E^{(j)}(x)|
+ \le\frac{j!}{(\eta_0x)^j}
+ \sup_{|z-x|=\eta_0x}|\mathcal E(z)|.
+\]
+The sectorial bound on the circle is $O(\log x/x)$.  Leibniz expansion of
+$\log(1+\mathcal E)$ is legal after increasing the threshold so that
+$|\mathcal E|\le1/2$, and every derivative through order six is lower order
+than the corresponding term of the saddle tower.  This is the step that
+turns a holomorphic relative coefficient asymptotic into the uniform
+logarithmic derivative estimate; differentiating a real-axis big-$O$ term
+would not be valid.
+
+\subsection{Paired polygamma differences}
+
+For $\Re z>0$,
+\[
+ \psi^{(5)}(z)=120\sum_{k=0}^\infty(z+k)^{-6}.
+\]
+The terms are absolutely and locally uniformly convergent, so they may be
+differentiated and paired on the thickened domain.  The $B-C$ contribution
+is treated as one difference:
+\[
+ \psi^{(5)}(B+z)-\psi^{(5)}(C+z)
+ =(B-C)\int_0^1\psi^{(6)}(C+z+t(B-C))\,\dd t.
+\]
+The $D-(n+1/2)$ pair is handled identically.  Domain containment keeps every
+segment in $\Re z\ge cn$, and the series bounds the sixth polygamma by a
+constant times $n^{-6}$.  The lengths of the paired segments carry the
+small branch differences that would be lost by estimating the two
+polygamma terms separately.  Combining these paired estimates with the
+transported xi derivative proves \eqref{eq:E6}.
+
+\section{Cube calculus and the limiting branch}\label{app:cube-branch}
+
+\subsection{A direct proof of the cube identity}
+
+Let $f_0(U)=\log U-\log(U+1)$.  For $q=j+1$, apply the real fundamental
+theorem of calculus successively to each forward difference.  Since
+\[
+ \frac{\dd^q}{\dd U^q}\log U=(-1)^{q-1}(q-1)!U^{-q},
+\]
+Fubini gives
+\[
+ \Delta^jf_0(U)=(-1)^{j+1}j!
+ \int_{[0,1]^q}(U+u_1+\cdots+u_q)^{-q}\,\dd u.
+\]
+The integrand is continuous and positive on the parameter box, so no
+improper integration or interchange issue occurs.
+
+For
+\[
+ \Phi_q(s,z)=\int_{[0,1]^q}
+ (s+z(u_1+\cdots+u_q))^{-q}\,\dd u,
+\]
+differentiate under the integral.  The first two parameter derivatives are
+\begin{align*}
+ \partial_s\Phi_q(s,z)
+ &=-q\int_{[0,1]^q}(s+z\Sigma u)^{-q-1}\,\dd u,\\
+ \partial_s^2\Phi_q(s,z)
+ &=q(q+1)\int_{[0,1]^q}(s+z\Sigma u)^{-q-2}\,\dd u.
+\end{align*}
+If $s\ge s_0>0$ and $z\ge0$, the unit cube has mass one and therefore
+\begin{equation}\label{app:Phi-bounds}
+ |\partial_s^r\Phi_q(s,z)|\le(q)_rs_0^{-q-r},
+ \qquad r=0,1,2.
+\end{equation}
+Apply the mean-value theorem to the $z$ variable.  Since
+$0\le\Sigma u_i\le q$,
+\begin{equation}\label{app:Phi-comparison}
+ \left|\partial_s^r\Phi_q(s,z)-(-1)^r(q)_rs^{-q-r}\right|
+ \le(q)_r(q+r)qz\,s_0^{-q-r-1}.
+\end{equation}
+These two inequalities are the entire analytic content of the elementary
+cube stage.
+
+\subsection{Three limiting mechanisms}
+
+Substitute \eqref{app:Phi-bounds}--\eqref{app:Phi-comparison} in
+\eqref{eq:Hnj}.  The remote $A$ endpoint carries the external factor
+$e^{q-1}$: it survives only for $q=1$.  The $B-C$ pair is a divided
+difference across a segment of length $we$ and tends to $qw/t^{q+1}$.
+The $D$ term must be paired with the gamma half-shift before rescaling; its
+segment length tends to $\delta e-x/2$ and its normalized limit is
+$q\delta$.  Keeping these mechanisms separate gives exactly
+\[
+ H^\infty(\alpha,t,w,\delta)=
+ \left(\alpha^{-1}+wt^{-2}+\delta,
+ wt^{-3}+\delta,3wt^{-4}+3\delta,4wt^{-5}+4\delta\right).
+\]
+The value error is $O(e+x/e)$ and the first-derivative error is $O(e+x)$,
+uniformly on the rational box.  The estimates are obtained from compact
+endpoint inequalities, not from a plot of the limiting branch.
+
+\subsection{Exact limiting solution and inverse}
+
+Adding $S^\infty=(-2,-1,-2,-2)$ gives residuals $F_0,\ldots,F_3$.  Direct
+subtraction yields
+\[
+ 3F_1-F_2=\frac{3w(t-1)}{t^4}-1,
+ \qquad
+ \frac43F_2-F_3=\frac{4w(t-1)}{t^5}-\frac23.
+\]
+At a zero, these give $3w(t-1)=t^4$ and $6w(t-1)=t^5$; positivity forces
+$t=2$, then
+$w=16/3$, $\delta=1/3$, and the first equation gives $\alpha=3$.  Thus the
+positive solution is $y_*=(3,2,16/3,1/3)$.
+
+The exact inverse of the Jacobian in \eqref{eq:jacobian} is
+\begin{equation}\label{app:jacobian-inverse}
+ P=
+ \begin{pmatrix}
+ -9&45&-24&9\\
+ 0&6&-6&3\\
+ 0&48&-112/3&16\\
+ 0&1&-4/3&1
+ \end{pmatrix}.
+\end{equation}
+Direct multiplication in both orders gives the identity matrix, and the
+largest absolute row sum is $304/3$.  For $T_n(y)=y-PG_n(y)$, the two
+required certificates are
+\begin{equation}\label{app:branch-certificates}
+ \|G_n(y_*)\|_\infty\le\frac{3R}{608},\qquad
+ \sup_{\|y-y_*\|_\infty\le R}\|DT_n(y)\|_\infty\le\frac12.
+\end{equation}
+The first inequality and \eqref{app:jacobian-inverse} give
+$\|T_n(y_*)-y_*\|_\infty\le R/2$; the second supplies both the self-map and
+the contraction.  Checking the derivative only at the center would not be
+sufficient.
+
+The outer rational box has respective left and right margins
+\[
+ (1/2,1/2),\quad(1/4,1/4),\quad(1/3,2/3),\quad(1/12,1/12)
+\]
+about $y_*$.  For $e\le1/12$, endpoint arithmetic proves the ordering
+inequalities \eqref{eq:ordering-margins}.  Thus every denominator used in
+the finite model is positive on the whole certified branch box.
+
+\section{Finite-free orientation and root localization}\label{app:finitefree-details}
+
+\subsection{The convention adapter}
+
+Write ascending constant-term-one polynomials as
+\[
+ p(X)=\sum_{k=0}^d(-1)^ka_kX^k,\qquad
+ q(X)=\sum_{k=0}^d(-1)^kb_kX^k.
+\]
+Their multiplicative finite-free convolution is
+\begin{equation}\label{app:ascending-convolution}
+ (p\boxconv q)(X)=
+ \sum_{k=0}^d(-1)^k\binom dk^{-1}a_kb_kX^k.
+\end{equation}
+The cited literature states its theorems for monic descending polynomials.
+Let $\operatorname{rev}_d p=X^dp(1/X)/p(0)$.  Reindexing the finite sum in
+\eqref{app:ascending-convolution} gives
+\[
+ \operatorname{rev}_d(p\boxconv q)
+ =\operatorname{rev}_d(p)\boxconv\operatorname{rev}_d(q).
+\]
+If $p(0)\ne0$, reversal maps every positive root to its reciprocal.  Hence
+an interval $[a,b]$ is transported to $[b^{-1},a^{-1}]$, and strict
+logarithmic mesh is preserved.  This proves that the orientation change
+does not silently reverse either a root bound or a mesh inequality.
+
+\subsection{A ratio-free Jacobi interval}
+
+Transport the classical Jacobi matrix from $[-1,1]$ to the positive-root
+coordinate.  Under $U\ge V+d$ and $V\ge32d$, its diagonal displacement and
+adjacent off-diagonal row sum satisfy
+\[
+ |J_{ii}-V|\le4\sqrt{Vd},\qquad
+ |J_{i,i-1}|+|J_{i,i+1}|\le4\sqrt{Vd}.
+\]
+Gershgorin's theorem therefore places every root in
+\begin{equation}\label{app:jacobi-eight}
+ [V-8\sqrt{Vd},\,V+8\sqrt{Vd}].
+\end{equation}
+This estimate does not assume that the ratio of the two finite model gaps is
+small.  That distinction matters because the new branch has
+$(C-D)/D\to1$, whereas the sharper estimate used in the earlier argument
+requires this ratio to be at most $1/4$.
+
+The preliminary inequalities in \eqref{eq:coarse-parameter} make both
+Jacobi intervals positive.  In particular the safe threshold is
+$K_{\rm pre}=256$: using $32$ in the generic second factor would give the
+lower relative endpoint $1-8/\sqrt{32}<0$.  Applying the maximum-root
+product theorem in the original and reciprocal orientations gives both
+endpoints of the convolution interval.  If the deviations of the two
+factors are $u$ and $v$, then
+\begin{align*}
+ |(B+u)(1+v)-B|
+ &\le8\sqrt{Bd}+8B\sqrt{d/D}
+       +64\sqrt{Bd}\sqrt{d/D}\\
+ &\le(12+8\sqrt6)\sqrt{Bd}.
+\end{align*}
+This is $C_{\rm loc}=12+8\sqrt6$, not the transposed expression
+$8+12\sqrt6$.
+
+\section{Recurrence and global-maximum argument}\label{app:recurrence-details}
+
+\subsection{Finite coefficient proof}
+
+For fixed $m$, initialize $c_0=1$ and impose the exact finite recurrence
+\begin{equation}\label{app:finite-coefficients}
+ AC(k+1)(k+B+m)(k+D+m)c_{k+1}
+ =D(k+m-d)(k+A+m)(k+C+m)c_k.
+\end{equation}
+At $k=d-m$ the right side vanishes, so the producer terminates.  Every
+denominator on the preceding range is positive.  Equation
+\eqref{app:finite-coefficients} therefore proves the coefficient ratio
+without asking a symbolic system to simplify a quotient of analytically
+continued Pochhammer functions at unspecified arguments.
+
+On a monomial $y^k$, the Euler operator $\vartheta=y\,\dd/\dd y$ acts by
+multiplication by $k$.  Applying both sides of \eqref{eq:euler-ode} to the
+finite coefficient list and using \eqref{app:finite-coefficients} proves the
+ODE coefficient by coefficient.  The shift identity
+$(a)_{k+m}=(a)_m(a+m)_k$ identifies the shifted polynomial with the $m$th
+derivative up to a nonzero factor.
+
+Expanding the ODE gives the equivalent coefficients
+\begin{align}
+ P_{3,m}&=\frac{AC-Dy}{AC},\nonumber\\
+ P_{2,m}&=B+D+2m+1
+ -\frac{Dy}{AC}(A+C+3m-d+3),\nonumber\\
+ P_{1,m}&=(B+m)(D+m)
+ -\frac{Dy}{AC}\bigl((A+m)(C+m)
+ +(m-d)(A+C+2m+1)\bigr),\label{app:P-expanded}\\
+ P_{0,m}&=-\frac{Dy}{AC}(m-d)(A+m)(C+m).\nonumber
+\end{align}
+The final coefficient is nonnegative for $0\le m\le d$ and positive before
+termination.  Exact algebra proves equality of \eqref{app:P-expanded} with
+the decomposed formulas \eqref{eq:Pcoeffs}; the decomposed form, rather than
+the fully expanded form, is used for inequalities.
+
+\subsection{Normalization of the radius}
+
+At a critical point set
+\[
+ T_k=\frac{y^kp_F^{(k)}(y)}{p_F(y)}.
+\]
+Then $T_0=1$ and $T_1=0$.  There is no $1/k!$ in this definition.  Divide
+the recurrence at level $m$ by $P_{2,m}R^{m+2}$, where
+$R=K_r\sqrt{Bd}$ and $K_r=4096$.  Under the exact bounds
+\eqref{eq:recurrence-bounds}, the contributions of $P_0$, $P_1$, and $P_3$
+are bounded by fixed strict fractions of one.  The remaining inequalities
+use only the certified caps on $d/n$, $B/n$, and $D/n$.
+
+Set $\mathcal M=\max_{0\le j\le d}|T_j|/R^j$.  If $\mathcal M>1$, choose a
+maximizing index $k$.  Since $T_0=1$ and $T_1=0$, we have $k\ge2$.  Use the
+recurrence with $m=k-2$, isolate its $P_{2,k-2}T_k$ term, and divide by
+$P_{2,k-2}R^k\mathcal M$.  Every other normalized neighbor is at most one by
+the definition of $\mathcal M$; if $k=d$, the higher neighbor is
+$T_{d+1}=0$ by termination.  The three coefficient budgets have sum strictly
+below one, contradicting maximality.  Therefore
+\[
+ \max_{1\le k\le d}|T_k|^{1/k}\le K_r\sqrt{Bd}.
+\]
+This global maximum, rather than lower-index minimality, is what controls the
+higher neighbor $T_{k+1}$.  Thus no boundary order is silently omitted.
+
+\section{Six-node interpolation and stability}\label{app:HG-details}
+
+\subsection{The complex line-segment recursion}
+
+For holomorphic $f$ on an open convex set and $a,b$ in that set, complex FTC
+along the segment gives
+\begin{equation}\label{app:complex-ftc}
+ f(b)-f(a)=(b-a)\int_0^1f'(a+t(b-a))\,\dd t.
+\end{equation}
+Apply \eqref{app:complex-ftc} recursively to Newton divided differences.
+After six steps, every evaluation point is a convex combination of
+$z_0,\ldots,z_5,z$.  A stick-breaking parametrization of the standard
+six-simplex produces the weight
+\[
+ (1-u_0)^5(1-u_1)^4(1-u_2)^3(1-u_3)^2(1-u_4).
+\]
+Its integral over $[0,1]^6$ is
+\[
+ \frac16\frac15\frac14\frac13\frac12=\frac1{720}.
+\]
+If the six node values vanish, the Newton formula therefore reduces to
+\[
+ f(z)=\prod_{j=0}^5(z-z_j)
+ \int_{\Delta_6}f^{(6)}(\zeta(t))\,\dd t,
+\]
+which proves Lemma~\ref{lem:HG}.  Convexity is used exactly once: it keeps
+$\zeta(t)$ inside the derivative-bound domain.
+
+\subsection{Why the sixth match gives the exponent}
+
+For $E_F$, the nodes are $0,1,\ldots,5$.  On the thickened critical-point
+domain, projection to $[0,d]$ and $\rho\ge d$ give $|z-j|\le3\rho$.
+Consequently
+\begin{align*}
+ |E_F(z)|
+ &\le\frac{C_{B6}(3\rho)^6}{720n^5\log(n+2)}\\
+ &\le C_\ast\frac{d^3}{n^2\log(n+2)},
+\end{align*}
+because $\rho=K_r\sqrt{Bd}$ and $B\le3n$.  Five matched nodes would produce
+a fifth power of the localization radius and recover the older three-fifths
+scale.  The gain to two-thirds is therefore exactly the extra matching
+condition together with one additional derivative estimate.
+
+The logarithm branch is legitimate because the coefficient ratios are
+nonzero on the parameter and complex-domain boxes.  Once $|E_F|\le1$, the
+segment identity
+\[
+ e^{E_F}-1=E_F\int_0^1e^{tE_F}\,\dd t
+\]
+gives $|e^{E_F}-1|\le e|E_F|$; the final constant is enlarged to use the
+simpler bound $2|E_F|$ on the smaller certified disc.  This converts the
+logarithmic interpolation estimate to the multiplier estimate required in
+Lemma~\ref{lem:stability}.
+
+At each critical point, Cauchy's formula on the circle of radius $\rho$
+turns the bound on $c_F-1$ into a convergent derivative tail.  The critical
+point radius of Proposition~\ref{prop:radius} supplies the matching bound on
+the model derivatives.  Rouch\'e on disjoint critical-point discs then
+preserves one simple zero in each gap.  Positivity of coefficients and the
+constant-term convention fix the sign of those roots; the rescaling
+$y=-SX$ sends them to distinct negative roots of $\J^{d,n}$.
+
+\section{Effectivity, dependencies, and logical boundary}\label{app:effectivity-details}
+
+\subsection{Finite and analytic constants}
+
+Let $x_{\rm admissible}$ be the smallest rational cap on $d/n$ demanded by
+the branch box, the Jacobi intervals, the global-maximum budgets, and the
+complex-domain containment.  Since $\log(n+2)\le n$ for $n\ge2$, the wedge
+implies $d/n\le K^{-1/3}$.  The exact finite ledger takes
+\begin{equation}\label{app:K-geometry}
+ K_{\rm geometry}
+ =\lceil x_{\rm admissible}^{-3}\rceil+1
+ =522255954073519803473068032000000000000000001.
+\end{equation}
+The size of \eqref{app:K-geometry} reflects deliberately coarse uniform
+inequalities; it is not a prediction of the true transition.
+
+Only two analytic quantities remain symbolic:
+\begin{enumerate}
+\item $N_{\rm analytic}$, the threshold after which the fixed-sector saddle,
+contour, and coefficient estimates all hold;
+\item $C_{B6}$, the explicit constant in the uniform sixth-derivative bound
+\eqref{eq:E6}.
+\end{enumerate}
+Once those are read from the displayed paper estimates, the final proof may
+take the maximum of $K_{\rm geometry}$, the threshold conversion, and the
+multiplier constant.  Thus the theorem is effective even though this paper
+does not optimize or print a practically useful numerical $K$.
+
+\subsection{What is and is not kernel checked}
+
+The Lean development proves the concrete centered-xi theta/Mellin/omega
+identity, factor eight, quantitative moving-sector saddle, legal contour,
+Gaussian localization, infinite higher-mode suppression, Gamma/Stirling
+assembly, and uniform coefficient theorem through order six.  It also proves
+the exact xi whole-box branch, transformed comparison, six coefficient
+matches, finite-free specialization, complete critical-point localization,
+and literal normalized radius estimate.  The Phase-26 axiom audit covers
+1,217 declarations and reports only standard logical principles:
+propositional extensionality, classical choice, and quotient soundness.  The
+project contains no \code{sorry}, \code{admit}, project-specific axiom, or
+unsafe escape hatch on this proof surface.
+
+The Phase-28 terminal audit additionally covers the effective and literal
+forms of Theorem~\ref{thm:sector} and its derivative consequence through
+order six.  The Phase-29 Palomar package isolates these statements and has
+passed the repository's local fresh-kernel, source-fidelity, and mutation
+checks.  Palomar's own Comparator and NanoDa services have not yet replayed
+the candidate, so this document makes no official Palomar-verification
+claim.
+
+The Phase-30 endpoint constructs the final xi-specific sixth-multiplier
+interval certificate, instantiates the sign-transfer theorem, identifies the
+actual transformed xi Jensen polynomial, and proves the headline
+negative-root conclusion.  Exact symbolic systems and Arb/ACB remain
+corroborating channels rather than proof premises.  The mathematical
+statements imported from classical Jacobi theory, MMP, and MSS are typed
+inputs to the concrete headline theorem rather than re-proved in Lean.
+
+The most heavily imported external results are the classical Jacobi
+matrix/root correspondence, the finite-free nonnegative-root and log-mesh
+theorems in the pinned MMP version, and the MSS maximum-root theorem.  The
+source audit records exact versions and theorem numbers, translates every
+polynomial convention explicitly, and marks these results as imported rather
+than re-proved.  This separation is essential: a verified adapter is not a
+formalization of the external theorem it adapts.
+
+\subsection{Review status}
+
+The available analytic and algebraic adversarial reports were produced by
+AI systems with separated prompts and independent-recalculation requirements.
+They have found material transcription errors during development, and those
+errors were corrected and protected by regression tests.  They are useful
+evidence, but they are neither human nor peer review.  The release materials
+state this limitation prominently so that a prospective reviewer can assign
+the appropriate evidentiary weight to every channel.

@@ -1,0 +1,15 @@
+{
+  "artifact": "Jensen Two-Thirds Phase 30 Referee Packet",
+  "candidate_commit": "dca47a4d10f637e4c3737e93ffae58d2f30de69d",
+  "date": "2026-08-21",
+  "formal_endpoint": "Phase-30 xi-specific multiplier, concrete interval certificate, actual transformed Jensen connection, and headline Lean theorem",
+  "package_class": "P30-R",
+  "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
+  "review_status": "correlated AI-only review; no human or peer review",
+  "source_date_epoch": 1787313600,
+  "typed_external_inputs": [
+    "Jacobi",
+    "MMP",
+    "MSS"
+  ]
+}

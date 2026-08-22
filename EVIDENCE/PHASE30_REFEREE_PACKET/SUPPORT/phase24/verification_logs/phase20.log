@@ -1,0 +1,40 @@
+Build completed successfully (8710 jobs).
+'Zeta23.Research.JensenWedge.sixthOrderLeadingSystem_unique_of_t_w_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.leadingJacobian_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingJacobian_mul_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.leadingJacobian_inv_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.forwardDiff_newtonCubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.triangularReadout_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP3_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP2_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP1_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.recurrenceP0_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.dominantMaximum_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.sixthOrderTail_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fifthOrderTail_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fifthOrderTail_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.fifthOrderGeometricError_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.finiteMultiplierError_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.mul_pos_of_relativeError_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.exists_root_Ioo_of_mul_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Zeta23.Research.JensenWedge.hasDistinctPositiveRoots_of_signChangingIntervals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MultiplierIntervalCertificate.actual_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.MultiplierIntervalCertificate.actual_hasDistinctPositiveRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.JensenWedgeCertificate.target_hasDistinctNegativeRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.conditionalTwoThirdsWedge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Phase 20 verification PASS
+  Holland headline theorem excluded from the logical premises
+  saddle-variable endpoint and exact H6 coefficient bound reproduced
+  multiplier/sign/conditional firewall kernel-checked
+  former GORTTW sectorial premise has a direct Phase-21 paper proof
+  separated analytic AI pre-review passed; human review is not claimed

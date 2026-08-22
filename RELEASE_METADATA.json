@@ -1,0 +1,15 @@
+{
+  "artifact": "curated public research repository",
+  "author": "John Savva",
+  "formal_endpoint": "Phase 30 xi-specific multiplier and headline theorem",
+  "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
+  "review_status": "AI-only review; no human or peer review",
+  "source_candidate_commit": "72bb8442eb17677a277f7f2aab42a1e652505eac",
+  "repository_url": "https://github.com/aimathpapers/Jensen-2-Thirds",
+  "typed_literature_inputs": [
+    "Jacobi",
+    "MMP",
+    "MSS"
+  ],
+  "version": "1.0"
+}

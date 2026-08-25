@@ -1,0 +1,18 @@
+'Zeta23.Research.JensenWedge.MMPFiniteFreeLogMeshInput.hasDistinctPositiveRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.terminating3F2Polynomial_eq_finiteFree_jacobiFactors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.xiNaturalComparisonPolynomial_eq_finiteFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_hasDistinctPositiveRoots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.not_twoThirdsWedge_finiteCutoffAbsorption' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensen_twoThirds_headline' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

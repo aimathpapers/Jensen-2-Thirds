@@ -1,0 +1,324 @@
+{
+  "claims": [
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "exact_cas", "arb_acb", "high_precision", "separated_ai_review"],
+      "critical": true,
+      "dependencies": [],
+      "external_inputs": [],
+      "id": "T1",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.centeredXi_even",
+        "Zeta23.Research.JensenWedge.centeredXiCoefficient_taylor_normalization",
+        "Zeta23.Research.JensenWedge.centeredXiCoefficient_eq_factorEightMoment"
+      ],
+      "paper_source": "Expanded main paper Section 4; Phase 21 Mellin reconstruction",
+      "remaining_boundary": "Lean now connects the paper's centered coefficient convention to Mathlib's entire xi and proves the exact factor-eight consequence of a typed half-line moment identity. Direct completed-zeta balls overlap two rigorously tailed integral normalizations at n=0..3, but the concrete general theta-kernel moment identity remains paper analysis.",
+      "statement": "Exact xi/Mellin coefficient identity",
+      "upgrade_phase": "Phase I"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "arb_acb", "high_precision", "separated_ai_review"],
+      "critical": true,
+      "dependencies": [],
+      "external_inputs": [],
+      "id": "T2",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.saddlePolynomialDenominator_scaled",
+        "Zeta23.Research.JensenWedge.saddle_scaled_factor_ne_zero",
+        "Zeta23.Research.JensenWedge.complexClosedBall_existsUnique_fixedPoint"
+      ],
+      "paper_source": "Expanded main paper Lemma 5.1; Phase 21 Lemma S proof",
+      "remaining_boundary": "Lean checks exact denominator/norm margins and the generic unique closed-disc contraction implication; Arb certifies three small complex Rouché boxes with Q nonvanishing. A concrete whole-disc self-map certificate, full-sector patching, and logarithmic asymptotics remain paper analysis.",
+      "statement": "Sectorial saddle branch (Lemma S)",
+      "upgrade_phase": "Phase I"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "arb_acb", "high_precision", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T2"],
+      "external_inputs": [],
+      "id": "T3",
+      "lean_declarations": [],
+      "paper_source": "Expanded main paper Section 6; Phase 21 leading contour localization",
+      "remaining_boundary": "Arb encloses the horizontal contour, central window, connector, and Gaussian ratio at three points. Uniform contour deformation and signed-cubic cancellation remain paper analysis.",
+      "statement": "Legal leading-mode contour and Gaussian localization",
+      "upgrade_phase": "Phase I"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "arb_acb", "high_precision", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T2", "T3"],
+      "external_inputs": [],
+      "id": "T4",
+      "lean_declarations": [],
+      "paper_source": "Expanded main paper Section 7; Phase 21 higher-theta-mode proof",
+      "remaining_boundary": "Arb certifies modes two and three at three contour points and the coefficient integrals bound every omitted theta mode analytically. Uniform contour summation over the full sector remains paper analysis.",
+      "statement": "Uniform suppression of higher theta modes",
+      "upgrade_phase": "Phase I"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "arb_acb", "high_precision", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T1", "T2", "T3", "T4"],
+      "external_inputs": ["Stirling"],
+      "id": "T5",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.relativeError_iteratedDeriv_le",
+        "Zeta23.Research.JensenWedge.relativeError_derivatives_through_six"
+      ],
+      "paper_source": "Expanded main paper Theorem 7.1; Phase 21 xi-coefficient assembly",
+      "remaining_boundary": "Lean proves that a uniform holomorphic relative error on an enclosing disc transports to every derivative, explicitly through order six. Arb verifies selected coefficient, saddle, contour, and theta-mode ingredients, but construction of that uniform sectorial error and the fixed-sector Stirling assembly remain paper analysis.",
+      "statement": "Sectorial xi-coefficient asymptotic",
+      "upgrade_phase": "Phase I"
+    },
+    {
+      "assurance": "green",
+      "channels": ["paper_proof", "lean_kernel", "exact_cas", "arb_acb", "high_precision", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T5"],
+      "external_inputs": [],
+      "id": "T6",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.saddle_reduced_denominator_norm_lower",
+        "Zeta23.Research.JensenWedge.relativeError_derivatives_through_six"
+      ],
+      "paper_source": "Expanded main paper Section 8; Phase 18 complex sixth saddle",
+      "remaining_boundary": "The exact derivative tower has SymPy/Mathematica agreement, finite Lean margins, and an independent ACB implicit-series enclosure through order six. The Cauchy error-transport implication is now kernel checked; construction of its uniform sectorial input remains upstream in T5.",
+      "statement": "Logarithmic derivatives through order six",
+      "upgrade_phase": "Phase I"
+    },
+    {
+      "assurance": "green",
+      "channels": ["paper_proof", "lean_kernel"],
+      "critical": true,
+      "dependencies": [],
+      "external_inputs": [],
+      "id": "T7",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.fourQuotients_twoNormalizations_sixCoefficients",
+        "Zeta23.Research.JensenWedge.exp_sixCoefficients_of_log_sixCoefficients"
+      ],
+      "paper_source": "Expanded main paper Lemma 9.1",
+      "remaining_boundary": "The finite adapter is complete; construction of the four analytic quotient equalities belongs to T8--T9.",
+      "statement": "Quotient-to-six-coefficient adapter",
+      "upgrade_phase": "Phase A"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T6"],
+      "external_inputs": [],
+      "id": "T8",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.unitCube_volume_real",
+        "Zeta23.Research.JensenWedge.integral_unitCube_succ_tail",
+        "Zeta23.Research.JensenWedge.elementaryCubeIntegral_shift_sub",
+        "Zeta23.Research.JensenWedge.elementaryLogFactor_scaled_q1",
+        "Zeta23.Research.JensenWedge.elementaryLogFactor_scaled_q2",
+        "Zeta23.Research.JensenWedge.elementaryLogFactor_scaled_q3",
+        "Zeta23.Research.JensenWedge.elementaryLogFactor_scaled_q4",
+        "Zeta23.Research.JensenWedge.hasDerivAt_elementaryPhi_firstDerivative",
+        "Zeta23.Research.JensenWedge.elementaryPhi_paired_dividedDifference",
+        "Zeta23.Research.JensenWedge.hasDerivAt_elementaryPhi_paired_w",
+        "Zeta23.Research.JensenWedge.hasDerivAt_elementaryPhi_paired_t",
+        "Zeta23.Research.JensenWedge.hasDerivAt_elementaryPhi_boundary_delta",
+        "Zeta23.Research.JensenWedge.elementaryPhiD2_firstOrder_error",
+        "Zeta23.Research.JensenWedge.elementaryPhi_remote_q1_error",
+        "Zeta23.Research.JensenWedge.elementaryPhi_halfShift_div_bound"
+      ],
+      "paper_source": "Expanded main paper Section 10; Phase 14 elementary C1 proof",
+      "remaining_boundary": "The finite-difference, Fubini, differentiation, uniform kernel, paired-boundary, remote-boundary, and x/e half-shift calculus is kernel checked. Assembly into one common-box four-coordinate sup-norm constant, together with the xi saddle side, remains upstream of the Phase-E branch theorem.",
+      "statement": "Elementary C1 cube-integral estimates",
+      "upgrade_phase": "Phase C"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "exact_cas", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T8"],
+      "external_inputs": [],
+      "id": "T9",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.leadingJacobian_det",
+        "Zeta23.Research.JensenWedge.leadingJacobian_mul_inv",
+        "Zeta23.Research.JensenWedge.sixthOrderLeadingSystem_unique_of_t_w_pos",
+        "Zeta23.Research.JensenWedge.branchInnerBox_subset_outer",
+        "Zeta23.Research.JensenWedge.gaugeInverseAction_norm_le",
+        "Zeta23.Research.JensenWedge.fourDimensionalBranch_existsUnique",
+        "Zeta23.Research.JensenWedge.PositiveParameterBranch.jacobi_ordering"
+      ],
+      "paper_source": "Expanded main paper Section 11; Phase 15 full C1 branch",
+      "remaining_boundary": "The exact boxes, inverse norm, self-map, Banach existence, local uniqueness, positivity, and A>B>C>D ordering are kernel checked. The xi-specific center-residual and whole-box derivative-defect interval certificates are explicit inputs and have not yet been constructed in Lean.",
+      "statement": "Exact positive four-parameter branch",
+      "upgrade_phase": "Phase E"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "primary_source", "lean_kernel", "exact_cas", "separated_ai_review"],
+      "critical": true,
+      "dependencies": [],
+      "external_inputs": ["Jacobi"],
+      "id": "T10",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.transportedJacobiDiagonal_sub",
+        "Zeta23.Research.JensenWedge.RatioFreeJacobiInput.root_interval"
+      ],
+      "paper_source": "Expanded main paper Section 12; Szegő Jacobi theory",
+      "remaining_boundary": "The transported diagonal identity and the root-to-Gershgorin consequence are kernel checked. Classical Jacobi positivity/simplicity, the root-to-matrix identification, and the concrete entry inequalities remain precise external inputs.",
+      "statement": "Positive and simple Jacobi factors",
+      "upgrade_phase": "Phase F"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "primary_source", "lean_kernel", "exact_cas", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T10"],
+      "external_inputs": ["MMP"],
+      "id": "T11",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.reflect_finiteFreeAscending",
+        "Zeta23.Research.JensenWedge.MMPFiniteFreeLogMeshInput.hasDistinctPositiveRoots"
+      ],
+      "paper_source": "Expanded main paper Section 12; MMP v3 Propositions 2.7(iii) and 2.17",
+      "remaining_boundary": "The ascending/descending reversal and strict-log-mesh-to-distinct-roots adapter are kernel checked. MMP v3 real-root preservation and log-mesh monotonicity remain external paper inputs.",
+      "statement": "Positive and simple finite-free comparison polynomial",
+      "upgrade_phase": "Phase F"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "primary_source", "lean_kernel", "exact_cas", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T10", "T11"],
+      "external_inputs": ["MSS"],
+      "id": "T12",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.eigenvalue_mem_jacobi_interval",
+        "Zeta23.Research.JensenWedge.MSSProductRootInput.product_interval",
+        "Zeta23.Research.JensenWedge.productDeviation_le_localizationConstant"
+      ],
+      "paper_source": "Expanded main paper Section 12; Phase 16 ratio-free localization",
+      "remaining_boundary": "Gershgorin constant 8, reciprocal MSS endpoint conversion, the two-sided product interval, and the corrected localization arithmetic are kernel checked. Concrete Jacobi entry bounds and MSS Theorem 1.6 itself remain typed external inputs.",
+      "statement": "Uniform root and critical-point localization",
+      "upgrade_phase": "Phase F"
+    },
+    {
+      "assurance": "green",
+      "channels": ["paper_proof", "lean_kernel", "exact_cas", "separated_ai_review"],
+      "critical": true,
+      "dependencies": [],
+      "external_inputs": [],
+      "id": "T13",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.terminating3F2Coefficient_ratio_cross",
+        "Zeta23.Research.JensenWedge.terminating3F2_euler_ode",
+        "Zeta23.Research.JensenWedge.iterate_derivative_terminating3F2Polynomial",
+        "Zeta23.Research.JensenWedge.terminating3F2_shifted_fourTerm_recurrence",
+        "Zeta23.Research.JensenWedge.hypergeometricOdeCoefficients_match_directRecurrence",
+        "Zeta23.Research.JensenWedge.recurrenceP3_closed",
+        "Zeta23.Research.JensenWedge.recurrenceP2_closed",
+        "Zeta23.Research.JensenWedge.recurrenceP1_closed",
+        "Zeta23.Research.JensenWedge.recurrenceP0_closed"
+      ],
+      "paper_source": "Expanded main paper Section 13; Phase 16 direct recurrence",
+      "remaining_boundary": "The Phase-D assurance upgrade is complete: the finite producer, termination, coefficient ratio, shifted ODE, all derivative orders, and connection to the four closed coefficients are kernel checked. Downstream uniform coefficient inequalities belong to T14, not T13.",
+      "statement": "Shifted hypergeometric recurrence",
+      "upgrade_phase": "Phase D"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "exact_cas", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T12", "T13"],
+      "external_inputs": [],
+      "id": "T14",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.dominantMaximum_le_one",
+        "Zeta23.Research.JensenWedge.localizationConstant_lt_32",
+        "Zeta23.Research.JensenWedge.localizationThreshold_eq",
+        "Zeta23.Research.JensenWedge.localization_controls_squared_constant"
+      ],
+      "paper_source": "Expanded main paper Section 14; Phase 16 uniform radius proof",
+      "remaining_boundary": "The maximum implication and constant order are kernel checked; Phase H fixes exact envelopes C0=48, C1<96, K_r=4096 and an explicit geometry wedge constant. The concrete uniform analytic branch threshold remains part of N_analytic.",
+      "statement": "Critical-point derivative radius",
+      "upgrade_phase": "Phase E"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T6", "T7", "T8", "T9", "T14"],
+      "external_inputs": [],
+      "id": "T15",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.sixNode_newton_identity",
+        "Zeta23.Research.JensenWedge.hermiteGenocchiSix_newton_identityOn",
+        "Zeta23.Research.JensenWedge.hermiteGenocchiSix_remainder_bound_of_derivative_tower",
+        "Zeta23.Research.JensenWedge.hermiteGenocchiSix_remainder_bound_on",
+        "Zeta23.Research.JensenWedge.norm_hermiteGenocchiCubeSix_le",
+        "Zeta23.Research.JensenWedge.norm_hermiteGenocchiIntegralSix_le",
+        "Zeta23.Research.JensenWedge.hermiteGenocchiCubePoint_mem_convex",
+        "Zeta23.Research.JensenWedge.norm_sixNodeProduct_le"
+      ],
+      "paper_source": "Expanded main paper Section 15; Phase 18 sixth residual",
+      "remaining_boundary": "The local six-node repeated-FTC/Hermite--Genocchi adapter and exact constant propagation are checked. The assembled uniform derivative constant C_B6 and analytic threshold N_analytic remain named paper-analysis inputs upstream in T6, T8, T9, and T14.",
+      "statement": "Order-six multiplier defect",
+      "upgrade_phase": "Phase B"
+    },
+    {
+      "assurance": "green",
+      "channels": ["paper_proof", "lean_kernel", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T15"],
+      "external_inputs": [],
+      "id": "T16",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.finiteMultiplierError_lt_one",
+        "Zeta23.Research.JensenWedge.MultiplierIntervalCertificate.actual_hasDistinctPositiveRoots"
+      ],
+      "paper_source": "Expanded main paper Lemma 16.1; Phase 20 multiplier reproving",
+      "remaining_boundary": "The finite sign-transfer implication is complete; construction of its analytic hypotheses belongs to T15.",
+      "statement": "Multiplier stability",
+      "upgrade_phase": "Phase A"
+    },
+    {
+      "assurance": "green",
+      "channels": ["paper_proof", "lean_kernel"],
+      "critical": true,
+      "dependencies": ["T16"],
+      "external_inputs": [],
+      "id": "T17",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.JensenWedgeCertificate.target_hasDistinctNegativeRoots"
+      ],
+      "paper_source": "Expanded main paper Section 16",
+      "remaining_boundary": "The positive-to-negative scaling is complete; the certificate is supplied upstream.",
+      "statement": "Positive-to-negative Jensen scaling",
+      "upgrade_phase": "Phase A"
+    },
+    {
+      "assurance": "amber",
+      "channels": ["paper_proof", "lean_kernel", "exact_cas", "arb_acb", "separated_ai_review"],
+      "critical": true,
+      "dependencies": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16", "T17"],
+      "external_inputs": [],
+      "id": "T18",
+      "lean_declarations": [
+        "Zeta23.Research.JensenWedge.conditionalTwoThirdsWedge_jensenPolynomial",
+        "Zeta23.Research.JensenWedge.JensenWedgeAnalyticInputs.target_hasDistinctNegativeRoots"
+      ],
+      "paper_source": "Expanded main paper Theorem 1.1 and Sections 15--17",
+      "remaining_boundary": "The conditional Lean boundary is split into inspectable records, finite Arb examples pass, and K_final has an exact symbolic dependency formula. Concrete asymptotic xi records, C_B6, and N_analytic are not constructed numerically.",
+      "statement": "Main two-thirds wedge",
+      "upgrade_phase": "Phase E"
+    }
+  ],
+  "date": "2026-08-17",
+  "policy": "Baseline classification: green requires a kernel proof or complete paper proof with multiple independent channels; amber records a complete candidate proof with an explicit formal or external-input boundary; red records an unresolved correctness gap.",
+  "version": 1
+}

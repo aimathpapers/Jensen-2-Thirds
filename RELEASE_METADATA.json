@@ -1,10 +1,10 @@
 {
   "artifact": "curated public research repository",
   "author": "John Savva",
-  "formal_endpoint": "Phase 30 xi-specific multiplier and headline theorem",
+  "formal_endpoint": "Phase 32 concrete MMP specialization, finite-cutoff absorption, and xi-specific headline theorem",
   "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
   "review_status": "AI-only review; no human or peer review",
-  "source_candidate_commit": "72bb8442eb17677a277f7f2aab42a1e652505eac",
+  "source_candidate_commit": "624711e1ea948efee257081b6cf224141f93f5fa",
   "repository_url": "https://github.com/aimathpapers/Jensen-2-Thirds",
   "typed_literature_inputs": [
     "Jacobi",

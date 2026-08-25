@@ -30,30 +30,35 @@ of the zeta function.
 
 - [Theorem/evidence cross-reference](EVIDENCE/CURRENT_STATUS/THEOREM_EVIDENCE_CROSS_REFERENCE.md)
 - [Formal trust boundary](EVIDENCE/CURRENT_STATUS/TRUST_BOUNDARY.md)
-- [Phase-30 formal endpoint](EVIDENCE/PHASE30_REFEREE_PACKET/FORMAL/THEOREM_MAP.md)
-- [Lean project](EVIDENCE/PHASE30_REFEREE_PACKET/FORMAL/lean-project/)
-- [Mathematica and exact computations](EVIDENCE/PHASE30_REFEREE_PACKET/COMPUTATION/)
-- [Supporting proof calculations](EVIDENCE/PHASE30_REFEREE_PACKET/SUPPORT/)
-- [AI-only review record](EVIDENCE/PHASE30_REFEREE_PACKET/REVIEW/)
-- [Reproduction instructions](EVIDENCE/PHASE30_REFEREE_PACKET/REPRODUCE/)
+- [Phase-32 formal endpoint](EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/THEOREM_MAP.md)
+- [Concrete MMP specialization audit](EVIDENCE/CURRENT_STATUS/MMP_SPECIALIZATION_SOURCE_AUDIT.md)
+- [Lean project](EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/lean-project/)
+- [Mathematica and exact computations](EVIDENCE/PHASE32_REFEREE_PACKET/COMPUTATION/)
+- [Supporting proof calculations](EVIDENCE/PHASE32_REFEREE_PACKET/SUPPORT/)
+- [AI-only review record](EVIDENCE/PHASE32_REFEREE_PACKET/REVIEW/)
+- [Reproduction instructions](EVIDENCE/PHASE32_REFEREE_PACKET/REPRODUCE/)
 - [Curated-repository verification record](VERIFICATION_RECORD.md)
 
 The concrete headline Lean theorem is conditional only on explicitly typed
-Jacobi, MMP, and MSS literature inputs. Those imported results are not
-re-proved from first principles. The xi-specific multiplier, its six node
-values, the interval certificate, the transformed Jensen identity, and the
-headline negative-root implication are kernel checked. Read the trust-boundary
-document before interpreting the scope of the formalization.
+Jacobi, MMP, and MSS literature inputs. Those general results are not
+re-proved from first principles. The MMP input is attached to the two concrete
+Jacobi factors, not to the final xi comparison polynomial; the exact
+finite-free convolution identity transports its conclusion to the paper's
+particular terminating `_3F_2`. The xi-specific multiplier, its six node
+values, the interval certificate, the transformed Jensen identity, the finite
+pre-cutoff absorption, and the headline negative-root implication are kernel
+checked. Read the trust-boundary document before interpreting the scope of the
+formalization.
 
 ## Verification
 
-The Phase-30 evidence packet retains its original internal manifest. This
+The curated Phase-32 evidence packet has a complete internal manifest. This
 repository also has a manifest covering every committed file except the
 manifest itself. From the repository root, run:
 
 ```bash
 python3 VERIFY_REPOSITORY.py
-python3 EVIDENCE/PHASE30_REFEREE_PACKET/VERIFY_BUNDLE.py
+python3 EVIDENCE/PHASE32_REFEREE_PACKET/VERIFY_BUNDLE.py
 ```
 
 The verifier checks complete manifest coverage, unexpected hidden files,

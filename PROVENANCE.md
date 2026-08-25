@@ -3,10 +3,10 @@
 
 This repository is the curated research record for Version 1.0 of *A
 Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of Riemann's Xi-Function*.
-It was assembled from the verified Phase-31 candidate and its frozen Phase-30
-technical evidence packet.
+It was assembled from the verified Phase-32 candidate and its deterministic
+Phase-32 technical evidence packet.
 
-Some files inside `EVIDENCE/PHASE30_REFEREE_PACKET/` are historical review,
+Some files inside `EVIDENCE/PHASE32_REFEREE_PACKET/` are historical review,
 status, or calculation records. Labels such as “confidential,” “embargoed,”
 “internal,” or “do not distribute” describe the status of those particular
 records when they were created. Their inclusion in this released research
@@ -16,7 +16,7 @@ and calculations remain auditable.
 
 The public evidence tree is curated rather than a verbatim publication of the
 private packet. An author-facing Palomar publication/submission guide was
-removed. `EVIDENCE/PHASE30_REFEREE_PACKET/CURATION_RECORD.md` records the
+removed. `EVIDENCE/PHASE32_REFEREE_PACKET/CURATION_RECORD.md` records the
 source-packet hash and the exact removed path; the curated tree has a new,
 complete manifest.
 

@@ -136,8 +136,10 @@ required = {
     "PAPER_SOURCE/JENSEN_TWO_THIRDS_MAIN.tex",
     "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf",
     "EVIDENCE/CURRENT_STATUS/TRUST_BOUNDARY.md",
-    "EVIDENCE/PHASE30_REFEREE_PACKET/FORMAL/lean-project/lean-toolchain",
-    "EVIDENCE/PHASE30_REFEREE_PACKET/COMPUTATION/mathematica/C48_Mathematica_CleanRoom_2.nb",
+    "EVIDENCE/CURRENT_STATUS/MMP_SPECIALIZATION_SOURCE_AUDIT.md",
+    "EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/lean-project/lean-toolchain",
+    "EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/Phase32Axioms.lean",
+    "EVIDENCE/PHASE32_REFEREE_PACKET/COMPUTATION/mathematica/C48_Mathematica_CleanRoom_2.nb",
     "REVIEWER_PACKET/Jensen_Two_Thirds_Reviewer_Packet_v1.0.zip",
 }
 assert required <= set(current), f"missing required files: {sorted(required-set(current))}"

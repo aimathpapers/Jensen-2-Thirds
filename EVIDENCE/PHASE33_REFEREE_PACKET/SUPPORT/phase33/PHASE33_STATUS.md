@@ -46,3 +46,23 @@ refreshed, and the Phase 25 metadata verifier again returns **PASS**.
 The external mathematical boundary remains the explicitly typed classical
 Jacobi, MMP, and MSS literature inputs. Those results are not re-proved in
 Lean.
+
+## Re-review advisory repairs
+
+The fresh independent Phase-33 AI-only re-review returned RELEASE with no
+P0/P1/P2 and two P3 advisories. Both are repaired in this tree:
+
+- **R1 (stale trust boundary).** `ground_zero_work/phase33/TRUST_BOUNDARY.md`
+  now describes the actual Phase-33 endpoint (guarded MSS record with factor
+  certificates and strictly positive lower endpoints, exact degree and root
+  count, and the single global cutoff theorem). The packet builder ships it
+  as `DISCLOSURE/TRUST_BOUNDARY.md` in place of the former Phase-30 text,
+  and the release verifier requires its Phase-33 content.
+- **R2 (packet-replayable source gate).** `phase33_source_checks.py` gained
+  the same dual monorepo/packet layout branch as the Phase-32 gate, and the
+  magazine-article source is packaged at
+  `PUBLIC/JENSEN_TWO_THIRDS_GHOST_POST.md`, so every Phase-33 source-contract
+  check and attribution mutation now replays from the extracted packet.
+
+These advisory repairs touch documentation, gating, and packaging only; no
+Lean source, paper mathematics, or manuscript PDF changed.

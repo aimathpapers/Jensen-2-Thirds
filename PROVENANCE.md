@@ -3,16 +3,16 @@
 This repository is the curated research record for Version 1.0 of *A
 Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of Riemann's Xi-Function*.
 It was assembled from private source candidate
-`1a50e490ad4c7a0d2cdd998af00f4bc1836acb62`. The substantive Phase 33 repair is
+`46774668e7d0acbe58030228ee12e2d861370116`. The substantive Phase 33 repair is
 anchored at `0e478b0166fafd14eff349988048791f336d5e92`, and the required proof
 checkpoint `5f79158f9c6276dd09142edeea279e35b0d58406` lies in that history.
 
 The original deterministic Phase 33 referee packet has SHA-256
-`595c01139fcbffdc05511ed7182161a94447b0c33f0fe57e716977f152289870`.
+`aa21e34eea6f37490eb7119f9c1f98e8459c06bf3fbd2bc277d2b39ef5f58dfc`.
 The reassembled private full-audit archive has SHA-256
-`30f5a15b2d6611c64db9d83071cf991c83d18c60e214f25f5491e334f2174c30`.
+`a229076d6ce5edadd77efb4cac11268789a45eb66891725db2341a1d892b14ee`.
 The curated public reviewer ZIP has SHA-256
-`95a116b3aee594938a950813bfde31ec4ebaa71c49c64c209d1884262f99c3fc`.
+`a15d0de579f8a4b0d885c1205e6f9b4834bab767ff664ede673cdcc48bd3dd02`.
 
 The public evidence tree is curated rather than a verbatim publication of the
 private packet. Exactly one author-facing Palomar publication/submission guide
@@ -33,5 +33,6 @@ that contains itself; the immutable public tag or commit published with this
 tree is therefore the outermost binding.
 
 No human mathematical review or peer review is claimed. The included review
-reports were produced by AI systems. A fresh independent Phase 33 AI re-review
-remains pending.
+reports were produced by AI systems. The fresh independent Phase 33 AI-only
+re-review returned no release-blocking finding and two P3 advisories; both
+advisories are repaired in this record.

@@ -71,6 +71,18 @@ PHASE33_FILES = (
 )
 P30.ASSURANCE_FILES = P30.ASSURANCE_FILES + PHASE33_FILES
 P30.SUPPORT_PREFIXES = P30.SUPPORT_PREFIXES + ("ground_zero_work/phase33/",)
+# Phase-33 re-review advisory R1: ship the current Phase-33 trust boundary
+# instead of the stale Phase-30 text.
+P30.DISCLOSURE_FILES = tuple(
+    "ground_zero_work/phase33/TRUST_BOUNDARY.md"
+    if source.endswith("/TRUST_BOUNDARY.md")
+    else source
+    for source in P30.DISCLOSURE_FILES
+)
+# Phase-33 re-review advisory R2: package the magazine-article source so the
+# attribution gate is fully replayable from the extracted packet.
+GHOST_POST_SOURCE = "ground_zero_work/phase31/blog/JENSEN_TWO_THIRDS_GHOST_POST.md"
+
 
 
 def metadata(candidate: str, package_class: str, title: str) -> bytes:
@@ -86,8 +98,9 @@ def metadata(candidate: str, package_class: str, title: str) -> bytes:
         "phase33_source_repair_commit": REPAIR_COMMIT,
         "required_checkpoint": CHECKPOINT,
         "review_status": (
-            "fresh Phase-32 AI-only review repaired; fresh Phase-33 re-review pending; "
-            "no human or peer review"
+            "fresh Phase-32 AI-only review repaired; fresh Phase-33 AI-only "
+            "re-review returned no release-blocking finding, and its two P3 "
+            "advisories are repaired in this packet; no human or peer review"
         ),
         "source_date_epoch": int(SOURCE_DATE_EPOCH),
         "typed_external_inputs": ["Jacobi", "MMP", "MSS"],
@@ -209,6 +222,12 @@ def add_phase33_navigation(candidate: str, entries: dict[str, bytes]) -> None:
         "ground_zero_work/phase33/PHASE33_REPAIR_DISPOSITION.md",
         "REVIEW/PHASE33_REPAIR_DISPOSITION.md",
     )
+    BASE.add_snapshot(
+        entries,
+        candidate,
+        GHOST_POST_SOURCE,
+        "PUBLIC/JENSEN_TWO_THIRDS_GHOST_POST.md",
+    )
     entries["START_HERE.md"] = BASE.candidate_bytes(
         candidate, "ground_zero_work/phase33/package_materials/START_HERE.md"
     )
@@ -285,6 +304,8 @@ def main() -> None:
         [
             "ground_zero_work/phase33/package_materials/START_HERE.md",
             "ground_zero_work/phase33/package_materials/EXPECTED_RESULTS.md",
+            "ground_zero_work/phase33/TRUST_BOUNDARY.md",
+            GHOST_POST_SOURCE,
             "requirements-c48.lock",
         ]
     )

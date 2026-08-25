@@ -7,7 +7,36 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-LEAN = ROOT / "Kimi_Agent_Riemann Lean Exploration" / "zeta-23-lean" / "Zeta23" / "Research" / "JensenWedge"
+PACKET_LAYOUT = (ROOT / "PAPER" / "source").is_dir()
+if PACKET_LAYOUT:
+    PAPER = ROOT / "PAPER" / "source"
+    LEAN = ROOT / "FORMAL" / "lean-project" / "Zeta23" / "Research" / "JensenWedge"
+    PUBLIC_EXPLAINER = ROOT / "PUBLIC" / "JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
+    GHOST_POST = ROOT / "PUBLIC" / "JENSEN_TWO_THIRDS_GHOST_POST.md"
+else:
+    PAPER = ROOT / "paper"
+    LEAN = (
+        ROOT
+        / "Kimi_Agent_Riemann Lean Exploration"
+        / "zeta-23-lean"
+        / "Zeta23"
+        / "Research"
+        / "JensenWedge"
+    )
+    PUBLIC_EXPLAINER = (
+        ROOT
+        / "ground_zero_work"
+        / "phase24"
+        / "manuscript"
+        / "JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
+    )
+    GHOST_POST = (
+        ROOT
+        / "ground_zero_work"
+        / "phase31"
+        / "blog"
+        / "JENSEN_TWO_THIRDS_GHOST_POST.md"
+    )
 
 
 def require(text: str, needle: str, label: str) -> None:
@@ -48,22 +77,10 @@ def main() -> None:
     specialization = (LEAN / "XiNaturalFiniteFreeSpecialization.lean").read_text()
     certificate = (LEAN / "XiNaturalMultiplierCertificate.lean").read_text()
     roots = (LEAN / "MultiplierStability.lean").read_text()
-    bibliography = (ROOT / "paper" / "references.bib").read_text()
-    appendix = (ROOT / "paper" / "c48_detailed_appendices.tex").read_text()
-    public_explainer = (
-        ROOT
-        / "ground_zero_work"
-        / "phase24"
-        / "manuscript"
-        / "JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
-    ).read_text()
-    ghost_post = (
-        ROOT
-        / "ground_zero_work"
-        / "phase31"
-        / "blog"
-        / "JENSEN_TWO_THIRDS_GHOST_POST.md"
-    ).read_text()
+    bibliography = (PAPER / "references.bib").read_text()
+    appendix = (PAPER / "c48_detailed_appendices.tex").read_text()
+    public_explainer = PUBLIC_EXPLAINER.read_text()
+    ghost_post = GHOST_POST.read_text()
 
     for needle, label in (
         ("structure MSSFiniteFreeIntervalInput", "MSS record"),

@@ -1,12 +1,12 @@
 {
-  "candidate_commit": "1a50e490ad4c7a0d2cdd998af00f4bc1836acb62",
-  "candidate_tree": "db0b26dde0168cf1bc68f5c86b6381ec7e3bceaf",
+  "candidate_commit": "46774668e7d0acbe58030228ee12e2d861370116",
+  "candidate_tree": "d3a1e7690c8c2c5bd34be440f936834ea90e7563",
   "coverage": "All curated packet files except MANIFEST.sha256 and this self-referential binding; candidate_matches list every byte-identical blob in the private candidate tree, while CURATION_RECORD.md is an explicit public-repository addition.",
   "packet_entries": [
     {
       "candidate_matches": [],
       "packet_path": "ANCESTRY_PROOF.json",
-      "sha256": "57df4e5f53e5ae5354d111809da27e139fd89d123b2375f13cd0697a9edee70b"
+      "sha256": "f241e7a53676eb6f34d15c6b8a313809786b1921eafc1e598fb6cea346ab129d"
     },
     {
       "candidate_matches": [
@@ -489,7 +489,7 @@
     {
       "candidate_matches": [],
       "packet_path": "CURATION_RECORD.md",
-      "sha256": "ad8ac641a71437950f14ba9d70c4744193565f4affedbbbf9aafc0f42fd0d888"
+      "sha256": "7695b3f226824e4e04ba655e8f75227ed499346d7409ca9627f3810132e81bbf"
     },
     {
       "candidate_matches": [
@@ -527,13 +527,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "201e6df0614094baf19f0df3abdaab3629f0c3de",
+          "git_blob_oid": "caf647f258f7181bd02da2606188a04d65989805",
           "git_mode": "100644",
-          "source_path": "ground_zero_work/phase30/TRUST_BOUNDARY.md"
+          "source_path": "ground_zero_work/phase33/TRUST_BOUNDARY.md"
         }
       ],
       "packet_path": "DISCLOSURE/TRUST_BOUNDARY.md",
-      "sha256": "67bc64268437c6c3fbdf3640f61b96bf3f0d843d828b4460aba74bfa4002c8af"
+      "sha256": "997aa8cdbc8ee7c0777ce99606cef6866fc7cddb6a367636f8b74fc281bd8c33"
     },
     {
       "candidate_matches": [
@@ -758,13 +758,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "dbd8f72a67a48fb25a1beaa59baca565d5a0aab7",
+          "git_blob_oid": "23f5bfc60245f77ec264ff49d222aa8c2214611f",
           "git_mode": "100644",
           "source_path": "ground_zero_work/phase33/PHASE33_STATUS.md"
         }
       ],
       "packet_path": "FORMAL/evidence/PHASE33_STATUS.md",
-      "sha256": "20bea683e3fdf62a86463c5f84b4ce75fee00d5880649372450e547febc77ebc"
+      "sha256": "0f768bfcea27112254d1151af95a6fe6984133cbb21e8b159cb7cd4894940646"
     },
     {
       "candidate_matches": [
@@ -835,13 +835,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "b2b41e3c8dc770beb37c2b911e2235cde22d75f2",
+          "git_blob_oid": "e28749b78a4ab8ba45cea684605646cf5f146c6c",
           "git_mode": "100755",
           "source_path": "ground_zero_work/phase33/build_phase33_release.py"
         }
       ],
       "packet_path": "FORMAL/evidence/build_phase33_release.py",
-      "sha256": "5f688904b542602fdf95897ce25bda312c8e6302d77e89566cf4bfccf708ab84"
+      "sha256": "8c4e8a821a37f7bd06112d6793c75fca0a1c314f1491e099f73a978f304af755"
     },
     {
       "candidate_matches": [
@@ -879,13 +879,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "c0502193d38403eb1a11c08489d05dd577a51846",
+          "git_blob_oid": "f54594061b6f4bfe05b21ccc0efa6c15d8f71623",
           "git_mode": "100755",
           "source_path": "ground_zero_work/phase33/phase33_source_checks.py"
         }
       ],
       "packet_path": "FORMAL/evidence/phase33_source_checks.py",
-      "sha256": "2a8c8f28fb06aa20f4afd341185a2c889358cecc110a4ced461f37e3b8c8a20b"
+      "sha256": "5b6c1f07fec57b250c766dd67111e4da16e395d295aa69d450b9148555cf73fd"
     },
     {
       "candidate_matches": [
@@ -967,13 +967,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "530592bc1585403cf91b2bfb3dc3f73759d1d249",
+          "git_blob_oid": "2c20d75b4773a8f3c1a225f0b41a74e19f5cb486",
           "git_mode": "100755",
           "source_path": "ground_zero_work/phase33/verify_phase33_release.py"
         }
       ],
       "packet_path": "FORMAL/evidence/verify_phase33_release.py",
-      "sha256": "03dc4ba6be38715f91405f39bf0169d15957fe675fee4d526fc4835a33a4359a"
+      "sha256": "f9ae79dd51b4647df8dd66f6254bdc76eb1c69038437b6efe8247cc084f335c2"
     },
     {
       "candidate_matches": [
@@ -6726,6 +6726,17 @@
     {
       "candidate_matches": [
         {
+          "git_blob_oid": "d871249fe65333b7a72fe4c885becd8b0e5a13ee",
+          "git_mode": "100644",
+          "source_path": "ground_zero_work/phase31/blog/JENSEN_TWO_THIRDS_GHOST_POST.md"
+        }
+      ],
+      "packet_path": "PUBLIC/JENSEN_TWO_THIRDS_GHOST_POST.md",
+      "sha256": "6a14f39c9690eea25a7d250f15de2c896104a1f0f862462cb4c98993ec3bafce"
+    },
+    {
+      "candidate_matches": [
+        {
           "git_blob_oid": "4b9becfbe95cb2ddeab0e7b19756647cb9d6f477",
           "git_mode": "100644",
           "source_path": "ground_zero_work/phase24/manuscript/JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
@@ -6737,7 +6748,7 @@
     {
       "candidate_matches": [],
       "packet_path": "RELEASE_METADATA.json",
-      "sha256": "2872a0a9a586488a5bc92c0c8b0b8578e3876c7e7d52077d0b28d32d435ceb7b"
+      "sha256": "6269af833fff42925e8576de68f227c8388fbb004e1af284073c01bbcb838c19"
     },
     {
       "candidate_matches": [],
@@ -10903,13 +10914,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "dbd8f72a67a48fb25a1beaa59baca565d5a0aab7",
+          "git_blob_oid": "23f5bfc60245f77ec264ff49d222aa8c2214611f",
           "git_mode": "100644",
           "source_path": "ground_zero_work/phase33/PHASE33_STATUS.md"
         }
       ],
       "packet_path": "SUPPORT/phase33/PHASE33_STATUS.md",
-      "sha256": "20bea683e3fdf62a86463c5f84b4ce75fee00d5880649372450e547febc77ebc"
+      "sha256": "0f768bfcea27112254d1151af95a6fe6984133cbb21e8b159cb7cd4894940646"
     },
     {
       "candidate_matches": [
@@ -10925,13 +10936,24 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "b2b41e3c8dc770beb37c2b911e2235cde22d75f2",
+          "git_blob_oid": "caf647f258f7181bd02da2606188a04d65989805",
+          "git_mode": "100644",
+          "source_path": "ground_zero_work/phase33/TRUST_BOUNDARY.md"
+        }
+      ],
+      "packet_path": "SUPPORT/phase33/TRUST_BOUNDARY.md",
+      "sha256": "997aa8cdbc8ee7c0777ce99606cef6866fc7cddb6a367636f8b74fc281bd8c33"
+    },
+    {
+      "candidate_matches": [
+        {
+          "git_blob_oid": "e28749b78a4ab8ba45cea684605646cf5f146c6c",
           "git_mode": "100755",
           "source_path": "ground_zero_work/phase33/build_phase33_release.py"
         }
       ],
       "packet_path": "SUPPORT/phase33/build_phase33_release.py",
-      "sha256": "5f688904b542602fdf95897ce25bda312c8e6302d77e89566cf4bfccf708ab84"
+      "sha256": "8c4e8a821a37f7bd06112d6793c75fca0a1c314f1491e099f73a978f304af755"
     },
     {
       "candidate_matches": [
@@ -10958,13 +10980,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "c0502193d38403eb1a11c08489d05dd577a51846",
+          "git_blob_oid": "f54594061b6f4bfe05b21ccc0efa6c15d8f71623",
           "git_mode": "100755",
           "source_path": "ground_zero_work/phase33/phase33_source_checks.py"
         }
       ],
       "packet_path": "SUPPORT/phase33/phase33_source_checks.py",
-      "sha256": "2a8c8f28fb06aa20f4afd341185a2c889358cecc110a4ced461f37e3b8c8a20b"
+      "sha256": "5b6c1f07fec57b250c766dd67111e4da16e395d295aa69d450b9148555cf73fd"
     },
     {
       "candidate_matches": [
@@ -11002,13 +11024,13 @@
     {
       "candidate_matches": [
         {
-          "git_blob_oid": "530592bc1585403cf91b2bfb3dc3f73759d1d249",
+          "git_blob_oid": "2c20d75b4773a8f3c1a225f0b41a74e19f5cb486",
           "git_mode": "100755",
           "source_path": "ground_zero_work/phase33/verify_phase33_release.py"
         }
       ],
       "packet_path": "SUPPORT/phase33/verify_phase33_release.py",
-      "sha256": "03dc4ba6be38715f91405f39bf0169d15957fe675fee4d526fc4835a33a4359a"
+      "sha256": "f9ae79dd51b4647df8dd66f6254bdc76eb1c69038437b6efe8247cc084f335c2"
     },
     {
       "candidate_matches": [

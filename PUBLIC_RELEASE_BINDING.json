@@ -1,11 +1,11 @@
 {
   "binding_note": "The public Git commit or immutable tag containing this file is the outer binding and cannot be self-embedded here.",
-  "private_source_candidate_tree": "db0b26dde0168cf1bc68f5c86b6381ec7e3bceaf",
-  "original_phase33_referee_packet_sha256": "595c01139fcbffdc05511ed7182161a94447b0c33f0fe57e716977f152289870",
-  "phase33_full_audit_sha256": "30f5a15b2d6611c64db9d83071cf991c83d18c60e214f25f5491e334f2174c30",
-  "private_source_candidate_commit": "1a50e490ad4c7a0d2cdd998af00f4bc1836acb62",
+  "original_phase33_referee_packet_sha256": "aa21e34eea6f37490eb7119f9c1f98e8459c06bf3fbd2bc277d2b39ef5f58dfc",
+  "phase33_full_audit_sha256": "a229076d6ce5edadd77efb4cac11268789a45eb66891725db2341a1d892b14ee",
+  "private_source_candidate_commit": "46774668e7d0acbe58030228ee12e2d861370116",
+  "private_source_candidate_tree": "d3a1e7690c8c2c5bd34be440f936834ea90e7563",
   "public_repository": "https://github.com/aimathpapers/Jensen-2-Thirds",
-  "public_reviewer_packet_sha256": "95a116b3aee594938a950813bfde31ec4ebaa71c49c64c209d1884262f99c3fc",
+  "public_reviewer_packet_sha256": "a15d0de579f8a4b0d885c1205e6f9b4834bab767ff664ede673cdcc48bd3dd02",
   "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
-  "version": 1
+  "version": 2
 }

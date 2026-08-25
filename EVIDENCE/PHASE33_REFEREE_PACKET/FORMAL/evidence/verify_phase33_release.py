@@ -56,10 +56,23 @@ def main() -> None:
             "VERIFY_BUNDLE.py",
             "VERIFY_ANCESTRY.py",
             "REPRODUCE/VERIFY_ARCHIVE.sh",
+            "DISCLOSURE/TRUST_BOUNDARY.md",
+            "PUBLIC/JENSEN_TWO_THIRDS_GHOST_POST.md",
         }
         missing = required - stripped
         if missing:
             raise AssertionError(f"referee packet missing: {sorted(missing)}")
+        boundary = archive.read(f"{root}/DISCLOSURE/TRUST_BOUNDARY.md")
+        for needle in (
+            b"# Phase 33 trust boundary",
+            b"riemannXiJensen_twoThirds_global_headline_exactly",
+            b"strictly positive",
+        ):
+            if needle not in boundary:
+                raise AssertionError(f"current trust boundary absent: {needle!r}")
+        ghost = archive.read(f"{root}/PUBLIC/JENSEN_TWO_THIRDS_GHOST_POST.md")
+        if b"Jonathan Holland" not in ghost or b"James Holland" in ghost:
+            raise AssertionError("packaged magazine source attribution incorrect")
         bibliography = archive.read(f"{root}/PAPER/source/references.bib")
         if b"Holland, Jonathan" not in bibliography or b"Morales, Rafael" not in bibliography:
             raise AssertionError("corrected bibliography absent from packet")

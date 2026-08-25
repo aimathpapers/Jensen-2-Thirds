@@ -162,10 +162,10 @@ for name, path in current.items():
 
 metadata = json.loads((ROOT / "RELEASE_METADATA.json").read_text())
 binding = json.loads((ROOT / "PUBLIC_RELEASE_BINDING.json").read_text())
-expected_candidate = "1a50e490ad4c7a0d2cdd998af00f4bc1836acb62"
-expected_tree = "db0b26dde0168cf1bc68f5c86b6381ec7e3bceaf"
-expected_packet = "595c01139fcbffdc05511ed7182161a94447b0c33f0fe57e716977f152289870"
-expected_public_zip = "95a116b3aee594938a950813bfde31ec4ebaa71c49c64c209d1884262f99c3fc"
+expected_candidate = "46774668e7d0acbe58030228ee12e2d861370116"
+expected_tree = "d3a1e7690c8c2c5bd34be440f936834ea90e7563"
+expected_packet = "aa21e34eea6f37490eb7119f9c1f98e8459c06bf3fbd2bc277d2b39ef5f58dfc"
+expected_public_zip = "a15d0de579f8a4b0d885c1205e6f9b4834bab767ff664ede673cdcc48bd3dd02"
 expected_magazine = "a553cb2a64c259cf77deeebc18cbb4e2dc82031fe4fa69ce240d508d9309dc35"
 assert metadata["source_candidate_commit"] == expected_candidate
 assert binding["private_source_candidate_commit"] == expected_candidate

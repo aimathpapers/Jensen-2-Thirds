@@ -1,0 +1,15 @@
+'Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_root_product_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensenPolynomialObject_natDegree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensenPolynomial_exactly_d_negative_roots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensen_twoThirds_headline_exactly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Zeta23.Research.JensenWedge.riemannXiJensen_twoThirds_global_headline_exactly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

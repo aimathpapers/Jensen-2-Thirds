@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 import stat
 import zipfile
@@ -104,6 +105,35 @@ def verify_zip(path: Path, reviewer: bool = False) -> None:
                 assert hashlib.sha256(payload).hexdigest() == expected, (
                     f"reviewer ZIP digest mismatch: {relative}"
                 )
+            binding_name = f"{prefix}/SOURCE_TREE_BINDING.json"
+            assert binding_name in names, "reviewer ZIP lacks source-tree binding"
+            binding = json.loads(archive.read(binding_name))
+            metadata = json.loads(archive.read(f"{prefix}/RELEASE_METADATA.json"))
+            ancestry = json.loads(archive.read(f"{prefix}/ANCESTRY_PROOF.json"))
+            candidate = binding["candidate_commit"]
+            assert candidate == metadata["candidate_commit"] == ancestry["candidate"], (
+                "reviewer ZIP candidate identity drift"
+            )
+            rows = binding["packet_entries"]
+            row_paths = {row["packet_path"] for row in rows}
+            assert len(row_paths) == len(rows), "duplicate source-binding path"
+            assert row_paths == actual - {"SOURCE_TREE_BINDING.json"}, (
+                "reviewer ZIP source-binding coverage mismatch"
+            )
+            for row in rows:
+                payload = archive.read(f"{prefix}/{row['packet_path']}")
+                assert hashlib.sha256(payload).hexdigest() == row["sha256"], (
+                    f"reviewer ZIP source-binding digest mismatch: {row['packet_path']}"
+                )
+            assert not any("PALOMAR_PUBLICATION_AND_SUBMISSION_GUIDE" in name for name in names), (
+                "author-facing Palomar guide remains in reviewer ZIP"
+            )
+            explainer = archive.read(
+                f"{prefix}/PUBLIC/JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
+            )
+            assert b"Jonathan Holland" in explainer and b"by James Holland" not in explainer, (
+                "reviewer ZIP retains an incorrect Holland attribution"
+            )
 
 
 assert not (FORBIDDEN_TOP_LEVEL & {path.name for path in ROOT.iterdir()}), (
@@ -130,6 +160,28 @@ for name, path in current.items():
     if path.suffix.lower() == ".zip":
         verify_zip(path, reviewer=name.startswith("REVIEWER_PACKET/"))
 
+metadata = json.loads((ROOT / "RELEASE_METADATA.json").read_text())
+binding = json.loads((ROOT / "PUBLIC_RELEASE_BINDING.json").read_text())
+expected_candidate = "1a50e490ad4c7a0d2cdd998af00f4bc1836acb62"
+expected_tree = "db0b26dde0168cf1bc68f5c86b6381ec7e3bceaf"
+expected_packet = "595c01139fcbffdc05511ed7182161a94447b0c33f0fe57e716977f152289870"
+expected_public_zip = "95a116b3aee594938a950813bfde31ec4ebaa71c49c64c209d1884262f99c3fc"
+expected_magazine = "a553cb2a64c259cf77deeebc18cbb4e2dc82031fe4fa69ce240d508d9309dc35"
+assert metadata["source_candidate_commit"] == expected_candidate
+assert binding["private_source_candidate_commit"] == expected_candidate
+assert binding["private_source_candidate_tree"] == expected_tree
+assert metadata["original_phase33_referee_packet_sha256"] == expected_packet
+assert binding["original_phase33_referee_packet_sha256"] == expected_packet
+assert metadata["public_reviewer_packet_sha256"] == expected_public_zip
+assert binding["public_reviewer_packet_sha256"] == expected_public_zip
+assert sha(ROOT / "REVIEWER_PACKET/Jensen_Two_Thirds_Reviewer_Packet_v1.0.zip") == expected_public_zip
+assert sha(ROOT / "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf") == expected_magazine
+explainer = (
+    ROOT
+    / "EVIDENCE/PHASE33_REFEREE_PACKET/PUBLIC/JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
+).read_bytes()
+assert b"Jonathan Holland" in explainer and b"by James Holland" not in explainer
+
 required = {
     "README.md", "PROVENANCE.md", "CITATION.cff", "VERIFICATION_RECORD.md",
     "PAPERS/JENSEN_TWO_THIRDS_MAIN.pdf",
@@ -137,13 +189,17 @@ required = {
     "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf",
     "EVIDENCE/CURRENT_STATUS/TRUST_BOUNDARY.md",
     "EVIDENCE/CURRENT_STATUS/MMP_SPECIALIZATION_SOURCE_AUDIT.md",
-    "EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/lean-project/lean-toolchain",
-    "EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/Phase32Axioms.lean",
-    "EVIDENCE/PHASE32_REFEREE_PACKET/COMPUTATION/mathematica/C48_Mathematica_CleanRoom_2.nb",
+    "PUBLIC_RELEASE_BINDING.json",
+    "EVIDENCE/CURRENT_STATUS/PHASE33_STATUS.md",
+    "EVIDENCE/CURRENT_STATUS/PHASE33_REPAIR_DISPOSITION.md",
+    "EVIDENCE/PHASE33_REFEREE_PACKET/SOURCE_TREE_BINDING.json",
+    "EVIDENCE/PHASE33_REFEREE_PACKET/FORMAL/lean-project/lean-toolchain",
+    "EVIDENCE/PHASE33_REFEREE_PACKET/FORMAL/Phase33Axioms.lean",
+    "EVIDENCE/PHASE33_REFEREE_PACKET/COMPUTATION/mathematica/C48_Mathematica_CleanRoom_2.nb",
     "REVIEWER_PACKET/Jensen_Two_Thirds_Reviewer_Packet_v1.0.zip",
 }
 assert required <= set(current), f"missing required files: {sorted(required-set(current))}"
 print(
-    f"PASS curated repository: {len(current)} files, complete manifest, "
-    "allowed hidden paths only, no credential signature, clean reviewer ZIP"
+    f"PASS curated Phase 33 repository: {len(current)} files, complete manifest, "
+    "source bindings, allowed hidden paths, no credential signature, clean reviewer ZIP"
 )

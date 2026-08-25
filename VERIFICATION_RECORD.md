@@ -1,50 +1,52 @@
-
 # Curated-repository verification record
 
-The following checks were run on 24 August 2026 as final validation of the
-clean publication tree. They concern integrity and reproducibility; they are
-not human mathematical review or peer review.
+The checks below concern integrity and reproducibility. They are not human
+mathematical review or peer review.
 
-## Repository and packet integrity
+## Phase 33 repair and downstream verification
 
-- `python3 VERIFY_REPOSITORY.py` — **PASS**, with 998 manifested files,
-  allowed hidden paths only, no credential signature, and a clean reviewer ZIP.
-- `python3 EVIDENCE/PHASE32_REFEREE_PACKET/VERIFY_BUNDLE.py` — **PASS**, with
-  970 files in the curated Phase-32 manifest.
-- The reviewer ZIP's internal manifest was independently replayed, and neither
-  it nor its nested Phase-32 ZIP contains a `SUBMISSION`, `LAUNCH`, or `GHOST`
-  component.
-- Text extracted with `pypdf 6.10.0` from all nine PDFs contained no email
-  address.
+- `ground_zero_work/phase33/verify_phase33.sh` — **PASS**: guarded MSS source
+  contract, eight fail-closed source-contract mutations, 8,830-job Lean build,
+  fresh kernel replay, complete multiline axiom audit, and rejection of the
+  former unguarded negative-endpoint call.
+- Three additional attribution source-contract mutations reject regressions in
+  the bibliography, public explainer, and magazine-article source.
+- `ground_zero_work/phase21/verify_phase21.sh` — **PASS**.
+- `ground_zero_work/phase20/verify_phase20.sh` — **PASS**, including the
+  8,833-job top-level build and fresh kernel replay.
+- Phase 25 metadata, manuscript, interval, effectivity, Mathematica, mutation,
+  and reproducibility gates — **PASS** during extracted full-audit replay.
 
-## Manuscripts and ancestry
+## Formal boundary
 
-- `bash EVIDENCE/PHASE32_REFEREE_PACKET/REPRODUCE/VERIFY_ARCHIVE.sh packet`
-  — **PASS** for the curated manifest, the 207-commit cryptographic ancestry
-  proof back to checkpoint `5f79158f9c6276dd09142edeea279e35b0d58406`, and
-  the fixed-epoch Phase-32 manuscript replay.
-- The current Version 1.0 main-paper and supplement sources compiled cleanly
-  with Tectonic 0.17.0 from the curated source directory.
+The terminal Phase 33 axiom audit covers the guarded MSS call, exact-degree
+adapter, no-`d+1` theorem, exact headline, and global exact headline. It reports
+only `propext`, `Classical.choice`, and `Quot.sound`. The general Jacobi, MMP,
+and MSS results remain explicitly typed literature inputs, not project axioms
+and not first-principles reimplementations.
 
-## Lean
+## Packages and provenance
 
-The Lean project was copied to a separate clean temporary directory. Using
-the pinned toolchain `leanprover/lean4:v4.33.0-rc2` and Mathlib revision
-`51e6992efd06126df61a496bebf8f49482a4e129`:
+- Original Phase 33 referee packet — 1,004 manifested files, deterministic
+  double build, 214-commit ancestry proof, packet/source binding, and
+  extraction-local replay of all three PDFs: **PASS**.
+- Full audit archive — 2,104 manifested files, bundled Git-tree binding,
+  extraction-local quick replay, and byte-exact 28-part reassembly: **PASS**.
+- Curated public evidence tree — 1,004 manifested files after removing only
+  the recorded author-facing Palomar guide: manifest and source binding
+  **PASS**.
+- Curated reviewer ZIP — deterministic double build and internal-manifest
+  replay: **PASS**.
 
-- `lake exe cache get` — **PASS**.
-- `lake build Zeta23.Research.JensenWedge` — **PASS**, 8,833 jobs.
-- The Phase-32 MMP/cutoff and Phase-30 terminal `#print axioms` audits —
-  **PASS**; only `propext`,
-  `Classical.choice`, and `Quot.sound` occur on the audited surface.
-- `lake env leanchecker --fresh
-  Zeta23.Research.JensenWedge.XiNaturalMultiplierCertificate` — **PASS**.
+The private source candidate is
+`1a50e490ad4c7a0d2cdd998af00f4bc1836acb62`. Package hashes are recorded in
+`RELEASE_METADATA.json`, `PUBLIC_RELEASE_BINDING.json`, and
+`EVIDENCE/CURRENT_STATUS/PHASE33_PACKAGE_INDEX.md`.
 
-The Phase-32 source contract and seven semantic mutations also passed. They
-reject the wrong Holland attribution, restoration of the former final-function
-MMP seam, disconnection of either Jacobi factor, removal of the exact `_3F_2`
-transport, and weakening of the finite-cutoff theorem.
+## Review status
 
-The build emitted ordinary style and deprecation warnings but no compilation
-error. No `sorry`, `admit`, custom project axiom, or unsafe escape hatch is
-claimed on the audited terminal surface.
+The fresh clean-packet Phase 32 adversarial review was AI-only and found one
+P1 formal-vacuity defect, two P2s, and six P3s. Phase 33 addresses those
+findings and has passed the automated gates above. A fresh independent AI
+re-review of the repaired candidate remains pending. No human or peer review
+is claimed.

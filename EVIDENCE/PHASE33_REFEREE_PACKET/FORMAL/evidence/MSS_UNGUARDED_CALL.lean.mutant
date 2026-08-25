@@ -1,0 +1,22 @@
+import Zeta23.Research.JensenWedge.XiNaturalFiniteFreeSpecialization
+
+namespace Zeta23.Research.JensenWedge
+
+open Polynomial
+
+/- This file is intentionally rejected by the repaired interface. It models
+the Phase-32 call shape, which supplied negative lower endpoints without
+positivity proofs. If the two positivity arguments are removed again, this
+example elaborates and the Phase-33 regression must fail. -/
+example {p q : ℝ[X]} {d : ℕ} (M : MSSFiniteFreeIntervalInput p q d)
+    {P Q z : ℝ}
+    (hp : ∀ x, p.eval x = 0 → -(P + 1) ≤ x ∧ x ≤ P + 1)
+    (hq : ∀ x, q.eval x = 0 → -(Q + 1) ≤ x ∧ x ≤ Q + 1)
+    (hz : (finiteFreeAscending d p q).eval z = 0) :
+    (-(P + 1)) * (-(Q + 1)) ≤ z ∧ z ≤ (P + 1) * (Q + 1) := by
+  exact M.product_interval
+    (uLower := -(P + 1)) (uUpper := P + 1)
+    (vLower := -(Q + 1)) (vUpper := Q + 1)
+    hp hq z hz
+
+end Zeta23.Research.JensenWedge

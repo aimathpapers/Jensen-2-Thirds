@@ -16,5 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify repository integrity and publication boundary
         run: python3 VERIFY_REPOSITORY.py
-      - name: Verify curated Phase-32 evidence manifest
-        run: python3 EVIDENCE/PHASE32_REFEREE_PACKET/VERIFY_BUNDLE.py
+      - name: Verify curated Phase-33 evidence manifest
+        run: python3 EVIDENCE/PHASE33_REFEREE_PACKET/VERIFY_BUNDLE.py
+      - name: Verify Phase-33 packet-to-source binding
+        run: python3 EVIDENCE/PHASE33_REFEREE_PACKET/VERIFY_SOURCE_BINDING.py

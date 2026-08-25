@@ -16,13 +16,17 @@ two-thirds candidate.
 Build from the repository root with:
 
 ```bash
-/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic -X compile \
-  paper/JENSEN_TWO_THIRDS_MAIN.tex --outdir output/pdf \
-  --keep-logs --keep-intermediates
-/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic -X compile \
-  paper/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.tex --outdir output/pdf \
-  --keep-logs --keep-intermediates
+JENSEN_BUILD_DIR="$(mktemp -d)"
+cd PAPER_SOURCE
+SOURCE_DATE_EPOCH=1787659200 tectonic -X compile \
+  JENSEN_TWO_THIRDS_MAIN.tex --outdir "$JENSEN_BUILD_DIR"
+SOURCE_DATE_EPOCH=1787659200 tectonic -X compile \
+  JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.tex --outdir "$JENSEN_BUILD_DIR"
+SOURCE_DATE_EPOCH=1787659200 tectonic -X compile \
+  JENSEN_TWO_THIRDS_UNIFIED.tex --outdir "$JENSEN_BUILD_DIR"
 ```
+
+The fixed epoch is the one recorded in the bundled Phase 33 release metadata.
 
 The release gate rejects unresolved references, layout warnings, changed
 normalizations, incorrect page counts, and claims of human or peer review.
@@ -53,3 +57,11 @@ statements.  Lean transports the resulting convolution roots to the xi
 comparison through the kernel-checked coefficient identity.  It also checks
 the finite pre-cutoff absorption arithmetically, without assuming low-index
 hyperbolicity.
+
+The post-Phase-32 repair makes the MSS reciprocal boundary non-vacuous:
+positive-root and degree side conditions are explicit, both lower endpoints
+must be strictly positive, and Lean derives those inequalities from the
+`256d` geometry before applying the typed MSS result.  It also adds one
+all-`n` global theorem and a degree argument proving the paper's literal
+"exactly `d`" root count.  The terminal axiom checker now parses complete
+multiline summaries and includes a continuation-line custom-axiom mutation.

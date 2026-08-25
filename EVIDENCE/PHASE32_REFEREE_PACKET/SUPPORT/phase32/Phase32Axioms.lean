@@ -1,8 +1,0 @@
-import Zeta23.Research.JensenWedge.XiNaturalMultiplierCertificate
-
-#print axioms Zeta23.Research.JensenWedge.MMPFiniteFreeLogMeshInput.hasDistinctPositiveRoots
-#print axioms Zeta23.Research.JensenWedge.terminating3F2Polynomial_eq_finiteFree_jacobiFactors
-#print axioms Zeta23.Research.JensenWedge.xiNaturalComparisonPolynomial_eq_finiteFree
-#print axioms Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_hasDistinctPositiveRoots
-#print axioms Zeta23.Research.JensenWedge.not_twoThirdsWedge_finiteCutoffAbsorption
-#print axioms Zeta23.Research.JensenWedge.riemannXiJensen_twoThirds_headline

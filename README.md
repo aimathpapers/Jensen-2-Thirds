@@ -1,4 +1,3 @@
-
 # A Two-Thirds Hyperbolicity Wedge for Riemann's Xi-Function
 
 This repository contains the paper, Lean 4 formalization, exact calculations,
@@ -11,8 +10,8 @@ The main theorem establishes an absolute constant `K > 0` such that
 n^2 log(n+2) >= K d^3
 ```
 
-implies that the degree-`d` Jensen polynomial based at `n` has `d` distinct
-negative real zeros.
+implies that the degree-`d` Jensen polynomial based at `n` has exactly `d`
+distinct negative real zeros.
 
 This result does **not** prove the Riemann hypothesis and does not locate zeros
 of the zeta function.
@@ -30,35 +29,43 @@ of the zeta function.
 
 - [Theorem/evidence cross-reference](EVIDENCE/CURRENT_STATUS/THEOREM_EVIDENCE_CROSS_REFERENCE.md)
 - [Formal trust boundary](EVIDENCE/CURRENT_STATUS/TRUST_BOUNDARY.md)
-- [Phase-32 formal endpoint](EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/THEOREM_MAP.md)
+- [Phase 33 status](EVIDENCE/CURRENT_STATUS/PHASE33_STATUS.md)
+- [Fresh Phase 32 AI-only findings](EVIDENCE/CURRENT_STATUS/PHASE32_FRESH_AI_REVIEW_FINDINGS.md)
+- [Phase 33 repair disposition](EVIDENCE/CURRENT_STATUS/PHASE33_REPAIR_DISPOSITION.md)
 - [Concrete MMP specialization audit](EVIDENCE/CURRENT_STATUS/MMP_SPECIALIZATION_SOURCE_AUDIT.md)
-- [Lean project](EVIDENCE/PHASE32_REFEREE_PACKET/FORMAL/lean-project/)
-- [Mathematica and exact computations](EVIDENCE/PHASE32_REFEREE_PACKET/COMPUTATION/)
-- [Supporting proof calculations](EVIDENCE/PHASE32_REFEREE_PACKET/SUPPORT/)
-- [AI-only review record](EVIDENCE/PHASE32_REFEREE_PACKET/REVIEW/)
-- [Reproduction instructions](EVIDENCE/PHASE32_REFEREE_PACKET/REPRODUCE/)
+- [Lean project](EVIDENCE/PHASE33_REFEREE_PACKET/FORMAL/lean-project/)
+- [Mathematica and exact computations](EVIDENCE/PHASE33_REFEREE_PACKET/COMPUTATION/)
+- [Supporting proof calculations](EVIDENCE/PHASE33_REFEREE_PACKET/SUPPORT/)
+- [AI-only review record](EVIDENCE/PHASE33_REFEREE_PACKET/REVIEW/)
+- [Reproduction instructions](EVIDENCE/PHASE33_REFEREE_PACKET/REPRODUCE/)
 - [Curated-repository verification record](VERIFICATION_RECORD.md)
 
-The concrete headline Lean theorem is conditional only on explicitly typed
+The concrete global Lean theorem is conditional only on explicitly typed
 Jacobi, MMP, and MSS literature inputs. Those general results are not
 re-proved from first principles. The MMP input is attached to the two concrete
-Jacobi factors, not to the final xi comparison polynomial; the exact
-finite-free convolution identity transports its conclusion to the paper's
-particular terminating `_3F_2`. The xi-specific multiplier, its six node
-values, the interval certificate, the transformed Jensen identity, the finite
-pre-cutoff absorption, and the headline negative-root implication are kernel
-checked. Read the trust-boundary document before interpreting the scope of the
-formalization.
+Jacobi factors, not to the final xi comparison polynomial. The finite-free
+identity transports its conclusion to the terminating `_3F_2` model.
+
+Phase 33 repairs a vacuity defect found by fresh AI-only review. The MSS record
+now requires positive-root and degree certificates for both factors and
+strictly positive interval lower endpoints. Lean derives those endpoint
+inequalities from the displayed `B,D >= 256d` geometry before using the typed
+MSS result. It also proves exact degree, rules out `d+1` distinct roots, and
+performs the analytic-range versus finite-cutoff split in one global theorem.
+The final publication audit also corrected Jonathan Holland's first name in
+both public-facing explanatory sources and added attribution mutation checks.
 
 ## Verification
 
-The curated Phase-32 evidence packet has a complete internal manifest. This
-repository also has a manifest covering every committed file except the
-manifest itself. From the repository root, run:
+The curated Phase 33 evidence packet has a complete internal manifest and a
+packet-to-source-tree binding. This repository has a separate manifest
+covering every committed file except that manifest itself. From the repository
+root, run:
 
 ```bash
 python3 VERIFY_REPOSITORY.py
-python3 EVIDENCE/PHASE32_REFEREE_PACKET/VERIFY_BUNDLE.py
+python3 EVIDENCE/PHASE33_REFEREE_PACKET/VERIFY_BUNDLE.py
+python3 EVIDENCE/PHASE33_REFEREE_PACKET/VERIFY_SOURCE_BINDING.py
 ```
 
 The verifier checks complete manifest coverage, unexpected hidden files,
@@ -68,9 +75,11 @@ absence of author-only launch and submission material.
 ## Review and attribution
 
 AI systems assisted substantially with research, formalization, computation,
-writing, and adversarial checking. All reviews included here are AI-only.
-No human mathematical review or peer review is claimed.
+writing, and adversarial checking. The clean-packet Phase 32 review found a P1
+formal-vacuity defect, which Phase 33 repairs. A fresh independent AI re-review
+of the repaired candidate remains pending. No human mathematical review or
+peer review is claimed.
 
-See [PROVENANCE.md](PROVENANCE.md) for the status of historical labels and
-frozen calculation records. No repository-wide license is asserted; the Lean
-subproject retains its own included license and notice files.
+See [PROVENANCE.md](PROVENANCE.md) for source and curation hashes. No
+repository-wide license is asserted; the Lean subproject retains its own
+included license and notice files.

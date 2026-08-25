@@ -1,0 +1,8 @@
+import Zeta23.Research.JensenWedge.XiNaturalMultiplierCertificate
+
+#print axioms Zeta23.Research.JensenWedge.XiNaturalClassicalRootInputs.comparison_root_product_interval
+#print axioms Zeta23.Research.JensenWedge.riemannXiJensenPolynomialObject_natDegree
+#print axioms Zeta23.Research.JensenWedge.riemannXiJensenPolynomial_exactly_d_negative_roots
+#print axioms Zeta23.Research.JensenWedge.riemannXiJensen_twoThirds_headline_exactly
+#print axioms Zeta23.Research.JensenWedge.riemannXiJensen_twoThirds_global_headline_exactly
+

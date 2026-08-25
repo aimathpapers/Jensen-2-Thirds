@@ -47,6 +47,7 @@ The private source candidate is
 
 The fresh clean-packet Phase 32 adversarial review was AI-only and found one
 P1 formal-vacuity defect, two P2s, and six P3s. Phase 33 addresses those
-findings and has passed the automated gates above. A fresh independent AI
-re-review of the repaired candidate remains pending. No human or peer review
-is claimed.
+findings and has passed the automated gates above. The fresh independent
+AI-only re-review of the repaired candidate verified every repair, returned
+no release-blocking finding, and raised two P3 advisories; both advisories
+are repaired in this record. No human or peer review is claimed.

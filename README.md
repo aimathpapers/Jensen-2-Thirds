@@ -76,9 +76,10 @@ absence of author-only launch and submission material.
 
 AI systems assisted substantially with research, formalization, computation,
 writing, and adversarial checking. The clean-packet Phase 32 review found a P1
-formal-vacuity defect, which Phase 33 repairs. A fresh independent AI re-review
-of the repaired candidate remains pending. No human mathematical review or
-peer review is claimed.
+formal-vacuity defect, which Phase 33 repairs. A fresh independent AI-only
+re-review of the repaired candidate returned no release-blocking finding and
+two P3 advisories; both advisories are repaired in this record. No human
+mathematical review or peer review is claimed.
 
 See [PROVENANCE.md](PROVENANCE.md) for source and curation hashes. No
 repository-wide license is asserted; the Lean subproject retains its own

@@ -16,14 +16,18 @@ distinct negative real zeros.
 This result does **not** prove the Riemann hypothesis and does not locate zeros
 of the zeta function.
 
+Version 1.1 (3 September 2026) is an attribution-only revision.  The
+mathematical content and frozen Version 1.0 reviewer evidence are unchanged.
+
 ## Read the work
 
 - [Main paper](PAPERS/JENSEN_TWO_THIRDS_MAIN.pdf)
 - [Technical supplement](PAPERS/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.pdf)
 - [Reader's synopsis](PAPERS/JENSEN_TWO_THIRDS_READERS_SYNOPSIS.pdf)
 - [Expository article](EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf)
+- [Expository front matter and disclosure](EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_FRONT_MATTER.md)
 - [Manuscript source](PAPER_SOURCE/)
-- [Downloadable reviewer packet](REVIEWER_PACKET/Jensen_Two_Thirds_Reviewer_Packet_v1.0.zip)
+- [Frozen Version 1.0 reviewer packet](REVIEWER_PACKET/Jensen_Two_Thirds_Reviewer_Packet_v1.0.zip)
 
 ## Inspect the evidence
 
@@ -74,12 +78,23 @@ absence of author-only launch and submission material.
 
 ## Review and attribution
 
-AI systems assisted substantially with research, formalization, computation,
-writing, and adversarial checking. The clean-packet Phase 32 review found a P1
-formal-vacuity defect, which Phase 33 repairs. A fresh independent AI-only
-re-review of the repaired candidate returned no release-blocking finding and
-two P3 advisories; both advisories are repaired in this record. No human
-mathematical review or peer review is claimed.
+These papers and the associated Lean 4 formalization were developed with
+substantial artificial-intelligence assistance, primarily from **OpenAI
+GPT-5.6 Sol Pro**. Additional models assisted with adversarial testing, source
+comparison, independent recalculation, and AI-only technical review.
+**Wolfram Mathematica 15.0.1** was used in a clean-room computation executed
+by the author to check selected symbolic identities and exact algebraic
+calculations. Those computations provide independent-CAS corroboration of the
+specified calculations; they do not constitute a proof of the entire theorem,
+human mathematical review, or peer review. The author directed, reviewed, and
+edited the work, authorized the repository changes, and accepts responsibility
+for the contents. AI systems are not authors.
+
+The clean-packet Phase 32 review found a P1 formal-vacuity defect, which Phase
+33 repairs. A fresh independent AI-only re-review of the repaired candidate
+returned no release-blocking finding and two P3 advisories; both advisories are
+repaired in the frozen record.
+
 
 See [PROVENANCE.md](PROVENANCE.md) for source and curation hashes. No
 repository-wide license is asserted; the Lean subproject retains its own

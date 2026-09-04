@@ -2,6 +2,7 @@
   "artifact": "curated public research repository",
   "author": "John Savva",
   "formal_endpoint": "Phase 33 guarded MSS specialization, exact degree and root count, global cutoff split, and xi-specific headline theorem",
+  "primary_ai_assistance": "OpenAI GPT-5.6 Sol Pro",
   "original_phase33_referee_packet_sha256": "aa21e34eea6f37490eb7119f9c1f98e8459c06bf3fbd2bc277d2b39ef5f58dfc",
   "phase33_full_audit_sha256": "a229076d6ce5edadd77efb4cac11268789a45eb66891725db2341a1d892b14ee",
   "phase33_source_repair_commit": "0e478b0166fafd14eff349988048791f336d5e92",
@@ -9,11 +10,12 @@
   "repository_url": "https://github.com/aimathpapers/Jensen-2-Thirds",
   "required_checkpoint": "5f79158f9c6276dd09142edeea279e35b0d58406",
   "review_status": "fresh Phase 32 AI-only review repaired; fresh Phase 33 AI-only re-review returned no release-blocking finding, and its two P3 advisories are repaired in this record; no human or peer review",
+  "revision_scope": "Version 1.1 attribution-only revision; mathematical content and frozen Version 1.0 reviewer evidence unchanged",
   "source_candidate_commit": "46774668e7d0acbe58030228ee12e2d861370116",
   "typed_literature_inputs": [
     "Jacobi",
     "MMP",
     "MSS"
   ],
-  "version": "1.0"
+  "version": "1.1"
 }

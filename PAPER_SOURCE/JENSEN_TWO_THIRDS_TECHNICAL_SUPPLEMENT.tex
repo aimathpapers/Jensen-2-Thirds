@@ -4,7 +4,7 @@
 
 \title{Technical Supplement to ``A Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of Riemann's Xi-Function''}
 \author{John Savva\\{\small Independent researcher}}
-\date{Version 1.0 \textemdash{} 21 August 2026}
+\date{Version 1.1 \textemdash{} 3 September 2026}
 
 \begin{document}
 \maketitle
@@ -17,6 +17,19 @@ step inspectable without searching historical project notes.  Numerical
 enclosures are clearly separated from uniform analytic proofs.  All review
 evidence currently available is AI review, not human or peer review.
 \end{abstract}
+\subsection*{AI-assistance disclosure}
+These papers and the associated Lean 4 formalization were developed with
+substantial artificial-intelligence assistance, primarily from
+\textbf{OpenAI GPT-5.6 Sol Pro}.  Additional models assisted with adversarial
+testing, source comparison, independent recalculation, and AI-only technical
+review.  \textbf{Wolfram Mathematica 15.0.1} was used in a clean-room
+computation executed by the author to check selected symbolic identities and
+exact algebraic calculations.  Those computations provide independent-CAS
+corroboration of the specified calculations; they do not constitute a proof
+of the entire theorem, human mathematical review, or peer review.  The author
+directed, reviewed, and edited the work, authorized the repository changes,
+and accepts responsibility for the contents.
+
 
 \tableofcontents
 
@@ -633,26 +646,26 @@ string check alone is not accepted as evidence of a mathematical equation.
 
 \section{AI assistance and review disclosure}\label{sup:disclosure}
 
-AI systems assisted with proof exploration, symbolic scripts, Lean code,
-manuscript drafting, source comparison, and adversarial review.  Review
-packets were separated by analytic and algebraic scope, and later phases add
-separate Lean and reproducibility audits.  Separation reduces some correlated
-failure modes but does not create a human reviewer.  No report in the package
-is described as human review, expert certification, or peer review.
+These papers and the associated Lean 4 formalization were developed with
+substantial artificial-intelligence assistance, primarily from
+\textbf{OpenAI GPT-5.6 Sol Pro}.  Additional models assisted with adversarial
+testing, source comparison, independent recalculation, and AI-only technical
+review.  \textbf{Wolfram Mathematica 15.0.1} was used in a clean-room
+computation executed by the author to check selected symbolic identities and
+exact algebraic calculations.  Those computations provide independent-CAS
+corroboration of the specified calculations; they do not constitute a proof
+of the entire theorem, human mathematical review, or peer review.  The author
+directed, reviewed, and edited the work, authorized the repository changes,
+and accepts responsibility for the contents.  AI systems are not authors.
 
-The AI systems used across the project include OpenAI Codex (GPT-5-family
-deployments), Anthropic Claude Opus 5, Moonshot AI Kimi K3, and Qwen3.8-Max
-via OpenRouter.  Their roles included proof exploration, Lean and Python code
-generation, manuscript drafting, source comparison, and AI-only adversarial
-review; model-specific reports record their scope and context.  AI systems
-are not authors.  The author reviewed and edited the resulting material,
-accepts responsibility for the contents, executed the Mathematica cells, and
-authorized repository changes and release preparation.
-The exact-computation provenance is therefore different from a fully
-independent rederivation by another mathematician.  The package is structured
-to make such a rederivation easier: expected values are not fed into the
-clean-room notebook, directed integral tails are explicit, and every formal
-boundary is named.
+Review packets were separated by analytic, algebraic, Lean, and
+reproducibility scope.  Separation reduces some correlated failure modes but
+does not create a human reviewer.  The model-specific reports record their
+provider, scope, context, and limitations.  The exact-computation provenance
+is different from a fully independent rederivation by another mathematician:
+expected values were not fed into the clean-room notebook, but its cells were
+prepared with AI assistance and executed by the author.
+
 
 \section{Reproduction entry points}\label{sup:reproduction}
 

@@ -3,6 +3,16 @@
 The checks below concern integrity and reproducibility. They are not human
 mathematical review or peer review.
 
+## Version 1.1 attribution revision
+
+Version 1.1 adds prominent AI-assistance disclosures to the main paper,
+technical supplement, reader's synopsis, expository article, citation
+metadata, and repository entry points.  The mathematical content, Lean source,
+computations, and frozen Version 1.0 reviewer evidence are unchanged.  The
+original expository PDF is retained byte-for-byte as the Version 1.0 article
+body; Version 1.1 places a disclosure cover before it.
+
+
 ## Phase 33 repair and downstream verification
 
 - `ground_zero_work/phase33/verify_phase33.sh` — **PASS**: guarded MSS source
@@ -51,3 +61,10 @@ findings and has passed the automated gates above. The fresh independent
 AI-only re-review of the repaired candidate verified every repair, returned
 no release-blocking finding, and raised two P3 advisories; both advisories
 are repaired in this record. No human or peer review is claimed.
+
+The Version 1.1 disclosures state that the papers and associated Lean 4
+formalization were developed with substantial AI assistance, primarily from
+OpenAI GPT-5.6 Sol Pro.  Additional models supplied adversarial testing and
+AI-only technical review.  Mathematica's stated role is limited to clean-room
+computational corroboration of selected symbolic identities and exact
+algebraic calculations.

@@ -1,9 +1,10 @@
 
 cff-version: 1.2.0
-message: "Please cite the Version 1.0 paper and the archived repository release."
+message: "Please cite the Version 1.1 paper and archived repository release."
 title: "Lean and computational evidence for a two-thirds hyperbolicity wedge"
 type: software
-version: 1.0.0
+version: 1.1.0
+date-released: 2026-09-03
 authors:
   - family-names: Savva
     given-names: John
@@ -18,8 +19,13 @@ keywords:
 abstract: >-
   Lean source, exact calculations, and reproducibility evidence accompanying
   the paper A Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of
-  Riemann's Xi-Function. The headline formal theorem retains explicitly typed
-  Jacobi, MMP, and MSS literature inputs.
+  Riemann's Xi-Function. The papers and Lean 4 formalization were developed
+  with substantial AI assistance, primarily from OpenAI GPT-5.6 Sol Pro.
+  Mathematica 15.0.1 supplied clean-room computational corroboration of
+  selected symbolic identities and exact algebraic calculations. The headline
+  formal theorem retains explicitly typed Jacobi, MMP, and MSS literature
+  inputs.
+
 preferred-citation:
   type: article
   title: "A Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of Riemann's Xi-Function"

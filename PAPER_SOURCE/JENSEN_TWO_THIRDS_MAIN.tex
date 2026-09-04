@@ -5,7 +5,7 @@
 
 \title{A Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of Riemann's Xi-Function}
 \author{John Savva\\{\small Independent researcher}}
-\date{Version 1.0 \textemdash{} 21 August 2026}
+\date{Version 1.1 \textemdash{} 3 September 2026}
 
 \begin{document}
 \maketitle
@@ -29,6 +29,19 @@ Hermite--Genocchi interpolation.  The argument does not prove the Riemann
 hypothesis and does not locate zeros of $\zeta(s)$.
 
 \end{abstract}
+\subsection*{AI-assistance disclosure}
+These papers and the associated Lean 4 formalization were developed with
+substantial artificial-intelligence assistance, primarily from
+\textbf{OpenAI GPT-5.6 Sol Pro}.  Additional models assisted with adversarial
+testing, source comparison, independent recalculation, and AI-only technical
+review.  \textbf{Wolfram Mathematica 15.0.1} was used in a clean-room
+computation executed by the author to check selected symbolic identities and
+exact algebraic calculations.  Those computations provide independent-CAS
+corroboration of the specified calculations; they do not constitute a proof
+of the entire theorem, human mathematical review, or peer review.  The author
+directed, reviewed, and edited the work, authorized the repository changes,
+and accepts responsibility for the contents.
+
 
 \subsection*{Verification and review status}
 The accompanying formal record kernel-checks the complete T1--T5 analytic
@@ -37,10 +50,9 @@ multiplier and final sign-transfer assembly.  Its headline xi theorem is
 conditional only on explicitly typed Jacobi, MMP, and MSS literature inputs.
 Exact SymPy, a user-executed clean-room Mathematica reconstruction, and
 directed Arb/ACB calculations provide separate computational corroboration.
-AI systems assisted substantially with proof exploration, formalization,
-code, exposition, and adversarial review.  No human mathematical review or
-peer review is claimed.  A local Palomar candidate covers the literal T5
-statement, but official Comparator and NanoDa replay has not yet occurred.
+The AI-assistance disclosure above applies to the paper and formal record.
+A local Palomar candidate covers the literal T5 statement, but official
+Comparator and NanoDa replay has not yet occurred.
 
 \noindent\textbf{2020 Mathematics Subject Classification.}
 Primary 11M26; Secondary 26C10, 33C45, 68V15.\\
@@ -1258,7 +1270,7 @@ without relying on another channel's saved numerical answer.
 The public-release set is versioned independently of the private development
 repository.  Its version-specific archive, checksums, source commit, and DOI
 should be cited together once the public deposit is registered.  Until that
-identifier is inserted, cite this manuscript as Version 1.0, 21 August 2026.
+identifier is inserted, cite this manuscript as Version 1.1, 3 September 2026.
 Later corrections are to be issued as new numbered versions; the files of
 this version are not to be silently replaced.
 
@@ -1269,15 +1281,21 @@ available, the public entry and immutable identifier must be added here
 before any Palomar verification claim is made.
 
 \subsection*{Declaration of AI and AI-assisted technologies}
-OpenAI Codex (GPT-5-family deployments), Anthropic Claude Opus 5, Moonshot
-AI Kimi K3, and Qwen3.8-Max via OpenRouter were used at different stages for
-proof exploration, Lean and Python code generation, manuscript drafting,
-source comparison, and AI-only adversarial review.  The model-specific review
-reports identify their provider, scope, context, and limitations.  The author
-executed the Mathematica clean-room cells, reviewed and edited the manuscript
-and artifacts, authorized the release, and accepts responsibility for the
-contents.  AI systems are not authors and their reviews are not described as
-human or peer review.
+These papers and the associated Lean 4 formalization were developed with
+substantial artificial-intelligence assistance, primarily from
+\textbf{OpenAI GPT-5.6 Sol Pro}.  Additional models assisted with adversarial
+testing, source comparison, independent recalculation, and AI-only technical
+review.  \textbf{Wolfram Mathematica 15.0.1} was used in a clean-room
+computation executed by the author to check selected symbolic identities and
+exact algebraic calculations.  Those computations provide independent-CAS
+corroboration of the specified calculations; they do not constitute a proof
+of the entire theorem, human mathematical review, or peer review.  The author
+directed, reviewed, and edited the work, authorized the repository changes,
+and accepts responsibility for the contents.  AI systems are not authors.
+
+The model-specific review reports identify their provider, scope, context,
+and limitations.
+
 
 \appendix
 \section{Theorem-to-evidence map}\label{app:map}

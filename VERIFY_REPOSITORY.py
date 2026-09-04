@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import stat
+import sys
 import zipfile
 from pathlib import Path, PurePosixPath
 
@@ -140,6 +141,13 @@ assert not (FORBIDDEN_TOP_LEVEL & {path.name for path in ROOT.iterdir()}), (
     "author-only top-level material is present"
 )
 current = repository_files()
+if sys.argv[1:]:
+    assert sys.argv[1:] == ["--write-manifest"], "unknown verifier option"
+    lines = [f"{sha(path)}  {name}\n" for name, path in sorted(current.items())]
+    MANIFEST.write_text("".join(lines), encoding="utf-8")
+    print(f"WROTE repository manifest for {len(current)} files")
+    raise SystemExit(0)
+
 declared = {}
 for line in MANIFEST.read_text(encoding="utf-8").splitlines():
     digest, name = line.split("  ", 1)
@@ -166,7 +174,29 @@ expected_candidate = "46774668e7d0acbe58030228ee12e2d861370116"
 expected_tree = "d3a1e7690c8c2c5bd34be440f936834ea90e7563"
 expected_packet = "aa21e34eea6f37490eb7119f9c1f98e8459c06bf3fbd2bc277d2b39ef5f58dfc"
 expected_public_zip = "a15d0de579f8a4b0d885c1205e6f9b4834bab767ff664ede673cdcc48bd3dd02"
-expected_magazine = "a553cb2a64c259cf77deeebc18cbb4e2dc82031fe4fa69ce240d508d9309dc35"
+expected_magazine_v1_0 = "a553cb2a64c259cf77deeebc18cbb4e2dc82031fe4fa69ce240d508d9309dc35"
+expected_magazine_v1_1 = "60e31e549f9b00a536300048dfd115f5ef5dec71893359b19849bd937ec94c76"
+assert metadata["version"] == "1.1"
+assert metadata["primary_ai_assistance"] == "OpenAI GPT-5.6 Sol Pro"
+assert binding["public_release_version"] == "1.1"
+
+active_disclosures = (
+    "README.md",
+    "PROVENANCE.md",
+    "CITATION.cff",
+    "VERIFICATION_RECORD.md",
+    "PAPER_SOURCE/JENSEN_TWO_THIRDS_MAIN.tex",
+    "PAPER_SOURCE/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.tex",
+    "PAPER_SOURCE/JENSEN_TWO_THIRDS_UNIFIED.tex",
+    "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_FRONT_MATTER.md",
+)
+for name in active_disclosures:
+    normalized = " ".join((ROOT / name).read_text(encoding="utf-8").split())
+    assert "OpenAI GPT-5.6 Sol Pro" in normalized, f"primary AI disclosure absent: {name}"
+    assert "OpenRouter" not in normalized and "Oh My Pi" not in normalized, (
+        f"removed platform detail remains in active disclosure: {name}"
+    )
+
 assert metadata["source_candidate_commit"] == expected_candidate
 assert binding["private_source_candidate_commit"] == expected_candidate
 assert binding["private_source_candidate_tree"] == expected_tree
@@ -175,7 +205,8 @@ assert binding["original_phase33_referee_packet_sha256"] == expected_packet
 assert metadata["public_reviewer_packet_sha256"] == expected_public_zip
 assert binding["public_reviewer_packet_sha256"] == expected_public_zip
 assert sha(ROOT / "REVIEWER_PACKET/Jensen_Two_Thirds_Reviewer_Packet_v1.0.zip") == expected_public_zip
-assert sha(ROOT / "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf") == expected_magazine
+assert sha(ROOT / "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE_V1.0.pdf") == expected_magazine_v1_0
+assert sha(ROOT / "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf") == expected_magazine_v1_1
 explainer = (
     ROOT
     / "EVIDENCE/PHASE33_REFEREE_PACKET/PUBLIC/JENSEN_TWO_THIRDS_PUBLIC_EXPLAINER.md"
@@ -185,8 +216,15 @@ assert b"Jonathan Holland" in explainer and b"by James Holland" not in explainer
 required = {
     "README.md", "PROVENANCE.md", "CITATION.cff", "VERIFICATION_RECORD.md",
     "PAPERS/JENSEN_TWO_THIRDS_MAIN.pdf",
+    "PAPERS/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.pdf",
+    "PAPERS/JENSEN_TWO_THIRDS_READERS_SYNOPSIS.pdf",
     "PAPER_SOURCE/JENSEN_TWO_THIRDS_MAIN.tex",
+    "PAPER_SOURCE/JENSEN_TWO_THIRDS_TECHNICAL_SUPPLEMENT.tex",
+    "PAPER_SOURCE/JENSEN_TWO_THIRDS_UNIFIED.tex",
     "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE.pdf",
+    "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_ARTICLE_V1.0.pdf",
+    "EXPOSITORY/JENSEN_TWO_THIRDS_MAGAZINE_FRONT_MATTER.md",
+    "EXPOSITORY/merge_pdf_cover.swift",
     "EVIDENCE/CURRENT_STATUS/TRUST_BOUNDARY.md",
     "EVIDENCE/CURRENT_STATUS/MMP_SPECIALIZATION_SOURCE_AUDIT.md",
     "PUBLIC_RELEASE_BINDING.json",

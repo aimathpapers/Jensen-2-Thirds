@@ -1,8 +1,14 @@
 # Provenance and historical records
 
-This repository is the curated research record for Version 1.0 of *A
+This repository is the curated research record for Version 1.1 of *A
 Two-Thirds Hyperbolicity Wedge for Jensen Polynomials of Riemann's Xi-Function*.
-It was assembled from private source candidate
+Version 1.1 is an attribution-only revision of Version 1.0: it adds prominent
+AI-assistance disclosures and updates reader-facing release metadata.  No
+theorem statement, proof argument, Lean source, calculation, or historical
+review report changed.  The frozen Version 1.0 reviewer packet remains
+unchanged.
+
+Version 1.0 was assembled from private source candidate
 `46774668e7d0acbe58030228ee12e2d861370116`. The substantive Phase 33 repair is
 anchored at `0e478b0166fafd14eff349988048791f336d5e92`, and the required proof
 checkpoint `5f79158f9c6276dd09142edeea279e35b0d58406` lies in that history.
@@ -36,3 +42,11 @@ No human mathematical review or peer review is claimed. The included review
 reports were produced by AI systems. The fresh independent Phase 33 AI-only
 re-review returned no release-blocking finding and two P3 advisories; both
 advisories are repaired in this record.
+
+The papers and associated Lean 4 formalization were developed with substantial
+artificial-intelligence assistance, primarily from OpenAI GPT-5.6 Sol Pro.
+Additional models assisted with adversarial testing, source comparison,
+independent recalculation, and AI-only technical review.  Mathematica 15.0.1
+provided clean-room computational corroboration of selected symbolic
+identities and exact algebraic calculations; it did not prove the entire
+theorem or constitute human or peer review.

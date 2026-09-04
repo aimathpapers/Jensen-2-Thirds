@@ -19,6 +19,8 @@ of the zeta function.
 Version 1.1 (3 September 2026) is an attribution-only revision.  The
 mathematical content and frozen Version 1.0 reviewer evidence are unchanged.
 
+Permanent Version 1.1 record: [doi:10.5281/zenodo.22293642](https://doi.org/10.5281/zenodo.22293642).
+
 ## Read the work
 
 - [Main paper](PAPERS/JENSEN_TWO_THIRDS_MAIN.pdf)

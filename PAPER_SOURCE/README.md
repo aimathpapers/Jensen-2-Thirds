@@ -50,10 +50,10 @@ All reviews currently available are AI adversarial reviews.
 
 The maintained submission version is Version 1.1 (3 September 2026).  This is
 an attribution-only revision of Version 1.0; the author is identified as an
-independent researcher.  A version-specific DOI
-will be inserted after it is reserved during the public-deposit sequence;
-until then the date, version, immutable source commit, and SHA-256 manifest
-are the citation anchors.
+independent researcher.  Its permanent version-specific record is
+[doi:10.5281/zenodo.22293642](https://doi.org/10.5281/zenodo.22293642).
+The source commit and SHA-256 manifest provide the accompanying immutable
+repository anchors.
 
 The maintained source includes the Phase-28 literal T5 Lean closure.  The
 Phase-29 Palomar package is locally verified and submission-ready, but an

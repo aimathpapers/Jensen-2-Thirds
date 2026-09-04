@@ -8,6 +8,9 @@ theorem statement, proof argument, Lean source, calculation, or historical
 review report changed.  The frozen Version 1.0 reviewer packet remains
 unchanged.
 
+The permanent Version 1.1 preprint record is
+[doi:10.5281/zenodo.22293642](https://doi.org/10.5281/zenodo.22293642).
+
 Version 1.0 was assembled from private source candidate
 `46774668e7d0acbe58030228ee12e2d861370116`. The substantive Phase 33 repair is
 anchored at `0e478b0166fafd14eff349988048791f336d5e92`, and the required proof
